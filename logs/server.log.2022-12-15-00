@@ -1,0 +1,1385 @@
+[2022-12-15 00:33:46,396] INFO Reading configuration from: config/zookeeper.properties (org.apache.zookeeper.server.quorum.QuorumPeerConfig)
+[2022-12-15 00:33:46,398] WARN config/zookeeper.properties is relative. Prepend ./ to indicate that you're sure! (org.apache.zookeeper.server.quorum.QuorumPeerConfig)
+[2022-12-15 00:33:46,402] INFO clientPortAddress is 0.0.0.0:2181 (org.apache.zookeeper.server.quorum.QuorumPeerConfig)
+[2022-12-15 00:33:46,402] INFO secureClientPort is not set (org.apache.zookeeper.server.quorum.QuorumPeerConfig)
+[2022-12-15 00:33:46,402] INFO observerMasterPort is not set (org.apache.zookeeper.server.quorum.QuorumPeerConfig)
+[2022-12-15 00:33:46,402] INFO metricsProvider.className is org.apache.zookeeper.metrics.impl.DefaultMetricsProvider (org.apache.zookeeper.server.quorum.QuorumPeerConfig)
+[2022-12-15 00:33:46,404] INFO autopurge.snapRetainCount set to 3 (org.apache.zookeeper.server.DatadirCleanupManager)
+[2022-12-15 00:33:46,404] INFO autopurge.purgeInterval set to 0 (org.apache.zookeeper.server.DatadirCleanupManager)
+[2022-12-15 00:33:46,404] INFO Purge task is not scheduled. (org.apache.zookeeper.server.DatadirCleanupManager)
+[2022-12-15 00:33:46,404] WARN Either no config or no quorum defined in config, running in standalone mode (org.apache.zookeeper.server.quorum.QuorumPeerMain)
+[2022-12-15 00:33:46,406] INFO Log4j 1.2 jmx support not found; jmx disabled. (org.apache.zookeeper.jmx.ManagedUtil)
+[2022-12-15 00:33:46,407] INFO Reading configuration from: config/zookeeper.properties (org.apache.zookeeper.server.quorum.QuorumPeerConfig)
+[2022-12-15 00:33:46,407] WARN config/zookeeper.properties is relative. Prepend ./ to indicate that you're sure! (org.apache.zookeeper.server.quorum.QuorumPeerConfig)
+[2022-12-15 00:33:46,407] INFO clientPortAddress is 0.0.0.0:2181 (org.apache.zookeeper.server.quorum.QuorumPeerConfig)
+[2022-12-15 00:33:46,407] INFO secureClientPort is not set (org.apache.zookeeper.server.quorum.QuorumPeerConfig)
+[2022-12-15 00:33:46,407] INFO observerMasterPort is not set (org.apache.zookeeper.server.quorum.QuorumPeerConfig)
+[2022-12-15 00:33:46,407] INFO metricsProvider.className is org.apache.zookeeper.metrics.impl.DefaultMetricsProvider (org.apache.zookeeper.server.quorum.QuorumPeerConfig)
+[2022-12-15 00:33:46,407] INFO Starting server (org.apache.zookeeper.server.ZooKeeperServerMain)
+[2022-12-15 00:33:46,420] INFO ServerMetrics initialized with provider org.apache.zookeeper.metrics.impl.DefaultMetricsProvider@53ca01a2 (org.apache.zookeeper.server.ServerMetrics)
+[2022-12-15 00:33:46,423] INFO zookeeper.snapshot.trust.empty : false (org.apache.zookeeper.server.persistence.FileTxnSnapLog)
+[2022-12-15 00:33:46,434] INFO  (org.apache.zookeeper.server.ZooKeeperServer)
+[2022-12-15 00:33:46,434] INFO   ______                  _                                           (org.apache.zookeeper.server.ZooKeeperServer)
+[2022-12-15 00:33:46,434] INFO  |___  /                 | |                                          (org.apache.zookeeper.server.ZooKeeperServer)
+[2022-12-15 00:33:46,434] INFO     / /    ___     ___   | | __   ___    ___   _ __     ___   _ __    (org.apache.zookeeper.server.ZooKeeperServer)
+[2022-12-15 00:33:46,434] INFO    / /    / _ \   / _ \  | |/ /  / _ \  / _ \ | '_ \   / _ \ | '__| (org.apache.zookeeper.server.ZooKeeperServer)
+[2022-12-15 00:33:46,434] INFO   / /__  | (_) | | (_) | |   <  |  __/ |  __/ | |_) | |  __/ | |     (org.apache.zookeeper.server.ZooKeeperServer)
+[2022-12-15 00:33:46,434] INFO  /_____|  \___/   \___/  |_|\_\  \___|  \___| | .__/   \___| |_| (org.apache.zookeeper.server.ZooKeeperServer)
+[2022-12-15 00:33:46,434] INFO                                               | |                      (org.apache.zookeeper.server.ZooKeeperServer)
+[2022-12-15 00:33:46,434] INFO                                               |_|                      (org.apache.zookeeper.server.ZooKeeperServer)
+[2022-12-15 00:33:46,434] INFO  (org.apache.zookeeper.server.ZooKeeperServer)
+[2022-12-15 00:33:46,435] INFO Server environment:zookeeper.version=3.6.3--6401e4ad2087061bc6b9f80dec2d69f2e3c8660a, built on 04/08/2021 16:35 GMT (org.apache.zookeeper.server.ZooKeeperServer)
+[2022-12-15 00:33:46,435] INFO Server environment:host.name=H110M (org.apache.zookeeper.server.ZooKeeperServer)
+[2022-12-15 00:33:46,435] INFO Server environment:java.version=11.0.17 (org.apache.zookeeper.server.ZooKeeperServer)
+[2022-12-15 00:33:46,435] INFO Server environment:java.vendor=Ubuntu (org.apache.zookeeper.server.ZooKeeperServer)
+[2022-12-15 00:33:46,435] INFO Server environment:java.home=/usr/lib/jvm/java-11-openjdk-amd64 (org.apache.zookeeper.server.ZooKeeperServer)
+[2022-12-15 00:33:46,436] INFO Server environment:java.class.path=/home/nefi/kafka/bin/../libs/activation-1.1.1.jar:/home/nefi/kafka/bin/../libs/aopalliance-repackaged-2.6.1.jar:/home/nefi/kafka/bin/../libs/argparse4j-0.7.0.jar:/home/nefi/kafka/bin/../libs/audience-annotations-0.5.0.jar:/home/nefi/kafka/bin/../libs/commons-cli-1.4.jar:/home/nefi/kafka/bin/../libs/commons-lang3-3.12.0.jar:/home/nefi/kafka/bin/../libs/commons-lang3-3.8.1.jar:/home/nefi/kafka/bin/../libs/connect-api-3.3.1.jar:/home/nefi/kafka/bin/../libs/connect-basic-auth-extension-3.3.1.jar:/home/nefi/kafka/bin/../libs/connect-json-3.3.1.jar:/home/nefi/kafka/bin/../libs/connect-mirror-3.3.1.jar:/home/nefi/kafka/bin/../libs/connect-mirror-client-3.3.1.jar:/home/nefi/kafka/bin/../libs/connect-runtime-3.3.1.jar:/home/nefi/kafka/bin/../libs/connect-transforms-3.3.1.jar:/home/nefi/kafka/bin/../libs/hk2-api-2.6.1.jar:/home/nefi/kafka/bin/../libs/hk2-locator-2.6.1.jar:/home/nefi/kafka/bin/../libs/hk2-utils-2.6.1.jar:/home/nefi/kafka/bin/../libs/jackson-annotations-2.13.3.jar:/home/nefi/kafka/bin/../libs/jackson-core-2.13.3.jar:/home/nefi/kafka/bin/../libs/jackson-databind-2.13.3.jar:/home/nefi/kafka/bin/../libs/jackson-dataformat-csv-2.13.3.jar:/home/nefi/kafka/bin/../libs/jackson-datatype-jdk8-2.13.3.jar:/home/nefi/kafka/bin/../libs/jackson-jaxrs-base-2.13.3.jar:/home/nefi/kafka/bin/../libs/jackson-jaxrs-json-provider-2.13.3.jar:/home/nefi/kafka/bin/../libs/jackson-module-jaxb-annotations-2.13.3.jar:/home/nefi/kafka/bin/../libs/jackson-module-scala_2.13-2.13.3.jar:/home/nefi/kafka/bin/../libs/jakarta.activation-api-1.2.2.jar:/home/nefi/kafka/bin/../libs/jakarta.annotation-api-1.3.5.jar:/home/nefi/kafka/bin/../libs/jakarta.inject-2.6.1.jar:/home/nefi/kafka/bin/../libs/jakarta.validation-api-2.0.2.jar:/home/nefi/kafka/bin/../libs/jakarta.ws.rs-api-2.1.6.jar:/home/nefi/kafka/bin/../libs/jakarta.xml.bind-api-2.3.3.jar:/home/nefi/kafka/bin/../libs/javassist-3.27.0-GA.jar:/home/nefi/kafka/bin/../libs/javax.servlet-api-3.1.0.jar:/home/nefi/kafka/bin/../libs/javax.ws.rs-api-2.1.1.jar:/home/nefi/kafka/bin/../libs/jaxb-api-2.3.0.jar:/home/nefi/kafka/bin/../libs/jersey-client-2.34.jar:/home/nefi/kafka/bin/../libs/jersey-common-2.34.jar:/home/nefi/kafka/bin/../libs/jersey-container-servlet-2.34.jar:/home/nefi/kafka/bin/../libs/jersey-container-servlet-core-2.34.jar:/home/nefi/kafka/bin/../libs/jersey-hk2-2.34.jar:/home/nefi/kafka/bin/../libs/jersey-server-2.34.jar:/home/nefi/kafka/bin/../libs/jetty-client-9.4.48.v20220622.jar:/home/nefi/kafka/bin/../libs/jetty-continuation-9.4.48.v20220622.jar:/home/nefi/kafka/bin/../libs/jetty-http-9.4.48.v20220622.jar:/home/nefi/kafka/bin/../libs/jetty-io-9.4.48.v20220622.jar:/home/nefi/kafka/bin/../libs/jetty-security-9.4.48.v20220622.jar:/home/nefi/kafka/bin/../libs/jetty-server-9.4.48.v20220622.jar:/home/nefi/kafka/bin/../libs/jetty-servlet-9.4.48.v20220622.jar:/home/nefi/kafka/bin/../libs/jetty-servlets-9.4.48.v20220622.jar:/home/nefi/kafka/bin/../libs/jetty-util-9.4.48.v20220622.jar:/home/nefi/kafka/bin/../libs/jetty-util-ajax-9.4.48.v20220622.jar:/home/nefi/kafka/bin/../libs/jline-3.21.0.jar:/home/nefi/kafka/bin/../libs/jopt-simple-5.0.4.jar:/home/nefi/kafka/bin/../libs/jose4j-0.7.9.jar:/home/nefi/kafka/bin/../libs/kafka_2.13-3.3.1.jar:/home/nefi/kafka/bin/../libs/kafka-clients-3.3.1.jar:/home/nefi/kafka/bin/../libs/kafka-log4j-appender-3.3.1.jar:/home/nefi/kafka/bin/../libs/kafka-metadata-3.3.1.jar:/home/nefi/kafka/bin/../libs/kafka-raft-3.3.1.jar:/home/nefi/kafka/bin/../libs/kafka-server-common-3.3.1.jar:/home/nefi/kafka/bin/../libs/kafka-shell-3.3.1.jar:/home/nefi/kafka/bin/../libs/kafka-storage-3.3.1.jar:/home/nefi/kafka/bin/../libs/kafka-storage-api-3.3.1.jar:/home/nefi/kafka/bin/../libs/kafka-streams-3.3.1.jar:/home/nefi/kafka/bin/../libs/kafka-streams-examples-3.3.1.jar:/home/nefi/kafka/bin/../libs/kafka-streams-scala_2.13-3.3.1.jar:/home/nefi/kafka/bin/../libs/kafka-streams-test-utils-3.3.1.jar:/home/nefi/kafka/bin/../libs/kafka-tools-3.3.1.jar:/home/nefi/kafka/bin/../libs/lz4-java-1.8.0.jar:/home/nefi/kafka/bin/../libs/maven-artifact-3.8.4.jar:/home/nefi/kafka/bin/../libs/metrics-core-2.2.0.jar:/home/nefi/kafka/bin/../libs/metrics-core-4.1.12.1.jar:/home/nefi/kafka/bin/../libs/netty-buffer-4.1.78.Final.jar:/home/nefi/kafka/bin/../libs/netty-codec-4.1.78.Final.jar:/home/nefi/kafka/bin/../libs/netty-common-4.1.78.Final.jar:/home/nefi/kafka/bin/../libs/netty-handler-4.1.78.Final.jar:/home/nefi/kafka/bin/../libs/netty-resolver-4.1.78.Final.jar:/home/nefi/kafka/bin/../libs/netty-transport-4.1.78.Final.jar:/home/nefi/kafka/bin/../libs/netty-transport-classes-epoll-4.1.78.Final.jar:/home/nefi/kafka/bin/../libs/netty-transport-native-epoll-4.1.78.Final.jar:/home/nefi/kafka/bin/../libs/netty-transport-native-unix-common-4.1.78.Final.jar:/home/nefi/kafka/bin/../libs/osgi-resource-locator-1.0.3.jar:/home/nefi/kafka/bin/../libs/paranamer-2.8.jar:/home/nefi/kafka/bin/../libs/plexus-utils-3.3.0.jar:/home/nefi/kafka/bin/../libs/reflections-0.9.12.jar:/home/nefi/kafka/bin/../libs/reload4j-1.2.19.jar:/home/nefi/kafka/bin/../libs/rocksdbjni-6.29.4.1.jar:/home/nefi/kafka/bin/../libs/scala-collection-compat_2.13-2.6.0.jar:/home/nefi/kafka/bin/../libs/scala-java8-compat_2.13-1.0.2.jar:/home/nefi/kafka/bin/../libs/scala-library-2.13.8.jar:/home/nefi/kafka/bin/../libs/scala-logging_2.13-3.9.4.jar:/home/nefi/kafka/bin/../libs/scala-reflect-2.13.8.jar:/home/nefi/kafka/bin/../libs/slf4j-api-1.7.36.jar:/home/nefi/kafka/bin/../libs/slf4j-reload4j-1.7.36.jar:/home/nefi/kafka/bin/../libs/snappy-java-1.1.8.4.jar:/home/nefi/kafka/bin/../libs/swagger-annotations-2.2.0.jar:/home/nefi/kafka/bin/../libs/trogdor-3.3.1.jar:/home/nefi/kafka/bin/../libs/zookeeper-3.6.3.jar:/home/nefi/kafka/bin/../libs/zookeeper-jute-3.6.3.jar:/home/nefi/kafka/bin/../libs/zstd-jni-1.5.2-1.jar (org.apache.zookeeper.server.ZooKeeperServer)
+[2022-12-15 00:33:46,436] INFO Server environment:java.library.path=/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib (org.apache.zookeeper.server.ZooKeeperServer)
+[2022-12-15 00:33:46,436] INFO Server environment:java.io.tmpdir=/tmp (org.apache.zookeeper.server.ZooKeeperServer)
+[2022-12-15 00:33:46,436] INFO Server environment:java.compiler=<NA> (org.apache.zookeeper.server.ZooKeeperServer)
+[2022-12-15 00:33:46,436] INFO Server environment:os.name=Linux (org.apache.zookeeper.server.ZooKeeperServer)
+[2022-12-15 00:33:46,436] INFO Server environment:os.arch=amd64 (org.apache.zookeeper.server.ZooKeeperServer)
+[2022-12-15 00:33:46,436] INFO Server environment:os.version=5.15.0-56-generic (org.apache.zookeeper.server.ZooKeeperServer)
+[2022-12-15 00:33:46,436] INFO Server environment:user.name=nefi (org.apache.zookeeper.server.ZooKeeperServer)
+[2022-12-15 00:33:46,436] INFO Server environment:user.home=/home/nefi (org.apache.zookeeper.server.ZooKeeperServer)
+[2022-12-15 00:33:46,436] INFO Server environment:user.dir=/home/nefi/kafka (org.apache.zookeeper.server.ZooKeeperServer)
+[2022-12-15 00:33:46,436] INFO Server environment:os.memory.free=489MB (org.apache.zookeeper.server.ZooKeeperServer)
+[2022-12-15 00:33:46,436] INFO Server environment:os.memory.max=512MB (org.apache.zookeeper.server.ZooKeeperServer)
+[2022-12-15 00:33:46,436] INFO Server environment:os.memory.total=512MB (org.apache.zookeeper.server.ZooKeeperServer)
+[2022-12-15 00:33:46,436] INFO zookeeper.enableEagerACLCheck = false (org.apache.zookeeper.server.ZooKeeperServer)
+[2022-12-15 00:33:46,436] INFO zookeeper.digest.enabled = true (org.apache.zookeeper.server.ZooKeeperServer)
+[2022-12-15 00:33:46,436] INFO zookeeper.closeSessionTxn.enabled = true (org.apache.zookeeper.server.ZooKeeperServer)
+[2022-12-15 00:33:46,436] INFO zookeeper.flushDelay=0 (org.apache.zookeeper.server.ZooKeeperServer)
+[2022-12-15 00:33:46,437] INFO zookeeper.maxWriteQueuePollTime=0 (org.apache.zookeeper.server.ZooKeeperServer)
+[2022-12-15 00:33:46,437] INFO zookeeper.maxBatchSize=1000 (org.apache.zookeeper.server.ZooKeeperServer)
+[2022-12-15 00:33:46,437] INFO zookeeper.intBufferStartingSizeBytes = 1024 (org.apache.zookeeper.server.ZooKeeperServer)
+[2022-12-15 00:33:46,438] INFO Weighed connection throttling is disabled (org.apache.zookeeper.server.BlueThrottle)
+[2022-12-15 00:33:46,439] INFO minSessionTimeout set to 6000 (org.apache.zookeeper.server.ZooKeeperServer)
+[2022-12-15 00:33:46,439] INFO maxSessionTimeout set to 60000 (org.apache.zookeeper.server.ZooKeeperServer)
+[2022-12-15 00:33:46,440] INFO Response cache size is initialized with value 400. (org.apache.zookeeper.server.ResponseCache)
+[2022-12-15 00:33:46,440] INFO Response cache size is initialized with value 400. (org.apache.zookeeper.server.ResponseCache)
+[2022-12-15 00:33:46,441] INFO zookeeper.pathStats.slotCapacity = 60 (org.apache.zookeeper.server.util.RequestPathMetricsCollector)
+[2022-12-15 00:33:46,441] INFO zookeeper.pathStats.slotDuration = 15 (org.apache.zookeeper.server.util.RequestPathMetricsCollector)
+[2022-12-15 00:33:46,441] INFO zookeeper.pathStats.maxDepth = 6 (org.apache.zookeeper.server.util.RequestPathMetricsCollector)
+[2022-12-15 00:33:46,441] INFO zookeeper.pathStats.initialDelay = 5 (org.apache.zookeeper.server.util.RequestPathMetricsCollector)
+[2022-12-15 00:33:46,441] INFO zookeeper.pathStats.delay = 5 (org.apache.zookeeper.server.util.RequestPathMetricsCollector)
+[2022-12-15 00:33:46,441] INFO zookeeper.pathStats.enabled = false (org.apache.zookeeper.server.util.RequestPathMetricsCollector)
+[2022-12-15 00:33:46,444] INFO The max bytes for all large requests are set to 104857600 (org.apache.zookeeper.server.ZooKeeperServer)
+[2022-12-15 00:33:46,445] INFO The large request threshold is set to -1 (org.apache.zookeeper.server.ZooKeeperServer)
+[2022-12-15 00:33:46,445] INFO Created server with tickTime 3000 minSessionTimeout 6000 maxSessionTimeout 60000 clientPortListenBacklog -1 datadir /tmp/zookeeper/version-2 snapdir /tmp/zookeeper/version-2 (org.apache.zookeeper.server.ZooKeeperServer)
+[2022-12-15 00:33:46,457] INFO Using org.apache.zookeeper.server.NIOServerCnxnFactory as server connection factory (org.apache.zookeeper.server.ServerCnxnFactory)
+[2022-12-15 00:33:46,459] WARN maxCnxns is not configured, using default value 0. (org.apache.zookeeper.server.ServerCnxnFactory)
+[2022-12-15 00:33:46,461] INFO Configuring NIO connection handler with 10s sessionless connection timeout, 1 selector thread(s), 8 worker threads, and 64 kB direct buffers. (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2022-12-15 00:33:46,467] INFO binding to port 0.0.0.0/0.0.0.0:2181 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2022-12-15 00:33:46,495] INFO Using org.apache.zookeeper.server.watch.WatchManager as watch manager (org.apache.zookeeper.server.watch.WatchManagerFactory)
+[2022-12-15 00:33:46,495] INFO Using org.apache.zookeeper.server.watch.WatchManager as watch manager (org.apache.zookeeper.server.watch.WatchManagerFactory)
+[2022-12-15 00:33:46,496] INFO zookeeper.snapshotSizeFactor = 0.33 (org.apache.zookeeper.server.ZKDatabase)
+[2022-12-15 00:33:46,496] INFO zookeeper.commitLogCount=500 (org.apache.zookeeper.server.ZKDatabase)
+[2022-12-15 00:33:46,502] INFO zookeeper.snapshot.compression.method = CHECKED (org.apache.zookeeper.server.persistence.SnapStream)
+[2022-12-15 00:33:46,503] INFO Snapshotting: 0x0 to /tmp/zookeeper/version-2/snapshot.0 (org.apache.zookeeper.server.persistence.FileTxnSnapLog)
+[2022-12-15 00:33:46,505] INFO Snapshot loaded in 9 ms, highest zxid is 0x0, digest is 1371985504 (org.apache.zookeeper.server.ZKDatabase)
+[2022-12-15 00:33:46,506] INFO Snapshotting: 0x0 to /tmp/zookeeper/version-2/snapshot.0 (org.apache.zookeeper.server.persistence.FileTxnSnapLog)
+[2022-12-15 00:33:46,506] INFO Snapshot taken in 0 ms (org.apache.zookeeper.server.ZooKeeperServer)
+[2022-12-15 00:33:46,516] INFO zookeeper.request_throttler.shutdownTimeout = 10000 (org.apache.zookeeper.server.RequestThrottler)
+[2022-12-15 00:33:46,516] INFO PrepRequestProcessor (sid:0) started, reconfigEnabled=false (org.apache.zookeeper.server.PrepRequestProcessor)
+[2022-12-15 00:33:46,539] INFO Using checkIntervalMs=60000 maxPerMinute=10000 maxNeverUsedIntervalMs=0 (org.apache.zookeeper.server.ContainerManager)
+[2022-12-15 00:33:46,539] INFO ZooKeeper audit is disabled. (org.apache.zookeeper.audit.ZKAuditProvider)
+[2022-12-15 00:33:55,173] INFO Registered kafka:type=kafka.Log4jController MBean (kafka.utils.Log4jControllerRegistration$)
+[2022-12-15 00:33:55,415] INFO Setting -D jdk.tls.rejectClientInitiatedRenegotiation=true to disable client-initiated TLS renegotiation (org.apache.zookeeper.common.X509Util)
+[2022-12-15 00:33:55,484] INFO Registered signal handlers for TERM, INT, HUP (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2022-12-15 00:33:55,486] INFO starting (kafka.server.KafkaServer)
+[2022-12-15 00:33:55,486] INFO Connecting to zookeeper on localhost:2181 (kafka.server.KafkaServer)
+[2022-12-15 00:33:55,506] INFO [ZooKeeperClient Kafka server] Initializing a new session to localhost:2181. (kafka.zookeeper.ZooKeeperClient)
+[2022-12-15 00:33:55,510] INFO Client environment:zookeeper.version=3.6.3--6401e4ad2087061bc6b9f80dec2d69f2e3c8660a, built on 04/08/2021 16:35 GMT (org.apache.zookeeper.ZooKeeper)
+[2022-12-15 00:33:55,510] INFO Client environment:host.name=H110M (org.apache.zookeeper.ZooKeeper)
+[2022-12-15 00:33:55,510] INFO Client environment:java.version=11.0.17 (org.apache.zookeeper.ZooKeeper)
+[2022-12-15 00:33:55,510] INFO Client environment:java.vendor=Ubuntu (org.apache.zookeeper.ZooKeeper)
+[2022-12-15 00:33:55,510] INFO Client environment:java.home=/usr/lib/jvm/java-11-openjdk-amd64 (org.apache.zookeeper.ZooKeeper)
+[2022-12-15 00:33:55,510] INFO Client environment:java.class.path=/home/nefi/kafka/bin/../libs/activation-1.1.1.jar:/home/nefi/kafka/bin/../libs/aopalliance-repackaged-2.6.1.jar:/home/nefi/kafka/bin/../libs/argparse4j-0.7.0.jar:/home/nefi/kafka/bin/../libs/audience-annotations-0.5.0.jar:/home/nefi/kafka/bin/../libs/commons-cli-1.4.jar:/home/nefi/kafka/bin/../libs/commons-lang3-3.12.0.jar:/home/nefi/kafka/bin/../libs/commons-lang3-3.8.1.jar:/home/nefi/kafka/bin/../libs/connect-api-3.3.1.jar:/home/nefi/kafka/bin/../libs/connect-basic-auth-extension-3.3.1.jar:/home/nefi/kafka/bin/../libs/connect-json-3.3.1.jar:/home/nefi/kafka/bin/../libs/connect-mirror-3.3.1.jar:/home/nefi/kafka/bin/../libs/connect-mirror-client-3.3.1.jar:/home/nefi/kafka/bin/../libs/connect-runtime-3.3.1.jar:/home/nefi/kafka/bin/../libs/connect-transforms-3.3.1.jar:/home/nefi/kafka/bin/../libs/hk2-api-2.6.1.jar:/home/nefi/kafka/bin/../libs/hk2-locator-2.6.1.jar:/home/nefi/kafka/bin/../libs/hk2-utils-2.6.1.jar:/home/nefi/kafka/bin/../libs/jackson-annotations-2.13.3.jar:/home/nefi/kafka/bin/../libs/jackson-core-2.13.3.jar:/home/nefi/kafka/bin/../libs/jackson-databind-2.13.3.jar:/home/nefi/kafka/bin/../libs/jackson-dataformat-csv-2.13.3.jar:/home/nefi/kafka/bin/../libs/jackson-datatype-jdk8-2.13.3.jar:/home/nefi/kafka/bin/../libs/jackson-jaxrs-base-2.13.3.jar:/home/nefi/kafka/bin/../libs/jackson-jaxrs-json-provider-2.13.3.jar:/home/nefi/kafka/bin/../libs/jackson-module-jaxb-annotations-2.13.3.jar:/home/nefi/kafka/bin/../libs/jackson-module-scala_2.13-2.13.3.jar:/home/nefi/kafka/bin/../libs/jakarta.activation-api-1.2.2.jar:/home/nefi/kafka/bin/../libs/jakarta.annotation-api-1.3.5.jar:/home/nefi/kafka/bin/../libs/jakarta.inject-2.6.1.jar:/home/nefi/kafka/bin/../libs/jakarta.validation-api-2.0.2.jar:/home/nefi/kafka/bin/../libs/jakarta.ws.rs-api-2.1.6.jar:/home/nefi/kafka/bin/../libs/jakarta.xml.bind-api-2.3.3.jar:/home/nefi/kafka/bin/../libs/javassist-3.27.0-GA.jar:/home/nefi/kafka/bin/../libs/javax.servlet-api-3.1.0.jar:/home/nefi/kafka/bin/../libs/javax.ws.rs-api-2.1.1.jar:/home/nefi/kafka/bin/../libs/jaxb-api-2.3.0.jar:/home/nefi/kafka/bin/../libs/jersey-client-2.34.jar:/home/nefi/kafka/bin/../libs/jersey-common-2.34.jar:/home/nefi/kafka/bin/../libs/jersey-container-servlet-2.34.jar:/home/nefi/kafka/bin/../libs/jersey-container-servlet-core-2.34.jar:/home/nefi/kafka/bin/../libs/jersey-hk2-2.34.jar:/home/nefi/kafka/bin/../libs/jersey-server-2.34.jar:/home/nefi/kafka/bin/../libs/jetty-client-9.4.48.v20220622.jar:/home/nefi/kafka/bin/../libs/jetty-continuation-9.4.48.v20220622.jar:/home/nefi/kafka/bin/../libs/jetty-http-9.4.48.v20220622.jar:/home/nefi/kafka/bin/../libs/jetty-io-9.4.48.v20220622.jar:/home/nefi/kafka/bin/../libs/jetty-security-9.4.48.v20220622.jar:/home/nefi/kafka/bin/../libs/jetty-server-9.4.48.v20220622.jar:/home/nefi/kafka/bin/../libs/jetty-servlet-9.4.48.v20220622.jar:/home/nefi/kafka/bin/../libs/jetty-servlets-9.4.48.v20220622.jar:/home/nefi/kafka/bin/../libs/jetty-util-9.4.48.v20220622.jar:/home/nefi/kafka/bin/../libs/jetty-util-ajax-9.4.48.v20220622.jar:/home/nefi/kafka/bin/../libs/jline-3.21.0.jar:/home/nefi/kafka/bin/../libs/jopt-simple-5.0.4.jar:/home/nefi/kafka/bin/../libs/jose4j-0.7.9.jar:/home/nefi/kafka/bin/../libs/kafka_2.13-3.3.1.jar:/home/nefi/kafka/bin/../libs/kafka-clients-3.3.1.jar:/home/nefi/kafka/bin/../libs/kafka-log4j-appender-3.3.1.jar:/home/nefi/kafka/bin/../libs/kafka-metadata-3.3.1.jar:/home/nefi/kafka/bin/../libs/kafka-raft-3.3.1.jar:/home/nefi/kafka/bin/../libs/kafka-server-common-3.3.1.jar:/home/nefi/kafka/bin/../libs/kafka-shell-3.3.1.jar:/home/nefi/kafka/bin/../libs/kafka-storage-3.3.1.jar:/home/nefi/kafka/bin/../libs/kafka-storage-api-3.3.1.jar:/home/nefi/kafka/bin/../libs/kafka-streams-3.3.1.jar:/home/nefi/kafka/bin/../libs/kafka-streams-examples-3.3.1.jar:/home/nefi/kafka/bin/../libs/kafka-streams-scala_2.13-3.3.1.jar:/home/nefi/kafka/bin/../libs/kafka-streams-test-utils-3.3.1.jar:/home/nefi/kafka/bin/../libs/kafka-tools-3.3.1.jar:/home/nefi/kafka/bin/../libs/lz4-java-1.8.0.jar:/home/nefi/kafka/bin/../libs/maven-artifact-3.8.4.jar:/home/nefi/kafka/bin/../libs/metrics-core-2.2.0.jar:/home/nefi/kafka/bin/../libs/metrics-core-4.1.12.1.jar:/home/nefi/kafka/bin/../libs/netty-buffer-4.1.78.Final.jar:/home/nefi/kafka/bin/../libs/netty-codec-4.1.78.Final.jar:/home/nefi/kafka/bin/../libs/netty-common-4.1.78.Final.jar:/home/nefi/kafka/bin/../libs/netty-handler-4.1.78.Final.jar:/home/nefi/kafka/bin/../libs/netty-resolver-4.1.78.Final.jar:/home/nefi/kafka/bin/../libs/netty-transport-4.1.78.Final.jar:/home/nefi/kafka/bin/../libs/netty-transport-classes-epoll-4.1.78.Final.jar:/home/nefi/kafka/bin/../libs/netty-transport-native-epoll-4.1.78.Final.jar:/home/nefi/kafka/bin/../libs/netty-transport-native-unix-common-4.1.78.Final.jar:/home/nefi/kafka/bin/../libs/osgi-resource-locator-1.0.3.jar:/home/nefi/kafka/bin/../libs/paranamer-2.8.jar:/home/nefi/kafka/bin/../libs/plexus-utils-3.3.0.jar:/home/nefi/kafka/bin/../libs/reflections-0.9.12.jar:/home/nefi/kafka/bin/../libs/reload4j-1.2.19.jar:/home/nefi/kafka/bin/../libs/rocksdbjni-6.29.4.1.jar:/home/nefi/kafka/bin/../libs/scala-collection-compat_2.13-2.6.0.jar:/home/nefi/kafka/bin/../libs/scala-java8-compat_2.13-1.0.2.jar:/home/nefi/kafka/bin/../libs/scala-library-2.13.8.jar:/home/nefi/kafka/bin/../libs/scala-logging_2.13-3.9.4.jar:/home/nefi/kafka/bin/../libs/scala-reflect-2.13.8.jar:/home/nefi/kafka/bin/../libs/slf4j-api-1.7.36.jar:/home/nefi/kafka/bin/../libs/slf4j-reload4j-1.7.36.jar:/home/nefi/kafka/bin/../libs/snappy-java-1.1.8.4.jar:/home/nefi/kafka/bin/../libs/swagger-annotations-2.2.0.jar:/home/nefi/kafka/bin/../libs/trogdor-3.3.1.jar:/home/nefi/kafka/bin/../libs/zookeeper-3.6.3.jar:/home/nefi/kafka/bin/../libs/zookeeper-jute-3.6.3.jar:/home/nefi/kafka/bin/../libs/zstd-jni-1.5.2-1.jar (org.apache.zookeeper.ZooKeeper)
+[2022-12-15 00:33:55,510] INFO Client environment:java.library.path=/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib (org.apache.zookeeper.ZooKeeper)
+[2022-12-15 00:33:55,510] INFO Client environment:java.io.tmpdir=/tmp (org.apache.zookeeper.ZooKeeper)
+[2022-12-15 00:33:55,510] INFO Client environment:java.compiler=<NA> (org.apache.zookeeper.ZooKeeper)
+[2022-12-15 00:33:55,510] INFO Client environment:os.name=Linux (org.apache.zookeeper.ZooKeeper)
+[2022-12-15 00:33:55,510] INFO Client environment:os.arch=amd64 (org.apache.zookeeper.ZooKeeper)
+[2022-12-15 00:33:55,511] INFO Client environment:os.version=5.15.0-56-generic (org.apache.zookeeper.ZooKeeper)
+[2022-12-15 00:33:55,511] INFO Client environment:user.name=nefi (org.apache.zookeeper.ZooKeeper)
+[2022-12-15 00:33:55,511] INFO Client environment:user.home=/home/nefi (org.apache.zookeeper.ZooKeeper)
+[2022-12-15 00:33:55,511] INFO Client environment:user.dir=/home/nefi/kafka (org.apache.zookeeper.ZooKeeper)
+[2022-12-15 00:33:55,511] INFO Client environment:os.memory.free=1015MB (org.apache.zookeeper.ZooKeeper)
+[2022-12-15 00:33:55,511] INFO Client environment:os.memory.max=1024MB (org.apache.zookeeper.ZooKeeper)
+[2022-12-15 00:33:55,511] INFO Client environment:os.memory.total=1024MB (org.apache.zookeeper.ZooKeeper)
+[2022-12-15 00:33:55,512] INFO Initiating client connection, connectString=localhost:2181 sessionTimeout=18000 watcher=kafka.zookeeper.ZooKeeperClient$ZooKeeperClientWatcher$@4ea5b703 (org.apache.zookeeper.ZooKeeper)
+[2022-12-15 00:33:55,516] INFO jute.maxbuffer value is 4194304 Bytes (org.apache.zookeeper.ClientCnxnSocket)
+[2022-12-15 00:33:55,524] INFO zookeeper.request.timeout value is 0. feature enabled=false (org.apache.zookeeper.ClientCnxn)
+[2022-12-15 00:33:55,526] INFO [ZooKeeperClient Kafka server] Waiting until connected. (kafka.zookeeper.ZooKeeperClient)
+[2022-12-15 00:33:55,527] INFO Opening socket connection to server localhost/127.0.0.1:2181. (org.apache.zookeeper.ClientCnxn)
+[2022-12-15 00:33:55,532] INFO Socket connection established, initiating session, client: /127.0.0.1:47566, server: localhost/127.0.0.1:2181 (org.apache.zookeeper.ClientCnxn)
+[2022-12-15 00:33:55,540] INFO Creating new log file: log.1 (org.apache.zookeeper.server.persistence.FileTxnLog)
+[2022-12-15 00:33:55,553] INFO Session establishment complete on server localhost/127.0.0.1:2181, session id = 0x100000247bd0000, negotiated timeout = 18000 (org.apache.zookeeper.ClientCnxn)
+[2022-12-15 00:33:55,555] INFO [ZooKeeperClient Kafka server] Connected. (kafka.zookeeper.ZooKeeperClient)
+[2022-12-15 00:33:55,853] INFO Cluster ID = F1t3-IsgTN-atkjncalxTA (kafka.server.KafkaServer)
+[2022-12-15 00:33:55,856] WARN No meta.properties file under dir /tmp/kafka-logs/meta.properties (kafka.server.BrokerMetadataCheckpoint)
+[2022-12-15 00:33:55,894] INFO KafkaConfig values: 
+	advertised.listeners = null
+	alter.config.policy.class.name = null
+	alter.log.dirs.replication.quota.window.num = 11
+	alter.log.dirs.replication.quota.window.size.seconds = 1
+	authorizer.class.name = 
+	auto.create.topics.enable = true
+	auto.leader.rebalance.enable = true
+	background.threads = 10
+	broker.heartbeat.interval.ms = 2000
+	broker.id = 0
+	broker.id.generation.enable = true
+	broker.rack = null
+	broker.session.timeout.ms = 9000
+	client.quota.callback.class = null
+	compression.type = producer
+	connection.failed.authentication.delay.ms = 100
+	connections.max.idle.ms = 600000
+	connections.max.reauth.ms = 0
+	control.plane.listener.name = null
+	controlled.shutdown.enable = true
+	controlled.shutdown.max.retries = 3
+	controlled.shutdown.retry.backoff.ms = 5000
+	controller.listener.names = null
+	controller.quorum.append.linger.ms = 25
+	controller.quorum.election.backoff.max.ms = 1000
+	controller.quorum.election.timeout.ms = 1000
+	controller.quorum.fetch.timeout.ms = 2000
+	controller.quorum.request.timeout.ms = 2000
+	controller.quorum.retry.backoff.ms = 20
+	controller.quorum.voters = []
+	controller.quota.window.num = 11
+	controller.quota.window.size.seconds = 1
+	controller.socket.timeout.ms = 30000
+	create.topic.policy.class.name = null
+	default.replication.factor = 1
+	delegation.token.expiry.check.interval.ms = 3600000
+	delegation.token.expiry.time.ms = 86400000
+	delegation.token.master.key = null
+	delegation.token.max.lifetime.ms = 604800000
+	delegation.token.secret.key = null
+	delete.records.purgatory.purge.interval.requests = 1
+	delete.topic.enable = true
+	early.start.listeners = null
+	fetch.max.bytes = 57671680
+	fetch.purgatory.purge.interval.requests = 1000
+	group.initial.rebalance.delay.ms = 0
+	group.max.session.timeout.ms = 1800000
+	group.max.size = 2147483647
+	group.min.session.timeout.ms = 6000
+	initial.broker.registration.timeout.ms = 60000
+	inter.broker.listener.name = null
+	inter.broker.protocol.version = 3.3-IV3
+	kafka.metrics.polling.interval.secs = 10
+	kafka.metrics.reporters = []
+	leader.imbalance.check.interval.seconds = 300
+	leader.imbalance.per.broker.percentage = 10
+	listener.security.protocol.map = PLAINTEXT:PLAINTEXT,SSL:SSL,SASL_PLAINTEXT:SASL_PLAINTEXT,SASL_SSL:SASL_SSL
+	listeners = PLAINTEXT://:9092
+	log.cleaner.backoff.ms = 15000
+	log.cleaner.dedupe.buffer.size = 134217728
+	log.cleaner.delete.retention.ms = 86400000
+	log.cleaner.enable = true
+	log.cleaner.io.buffer.load.factor = 0.9
+	log.cleaner.io.buffer.size = 524288
+	log.cleaner.io.max.bytes.per.second = 1.7976931348623157E308
+	log.cleaner.max.compaction.lag.ms = 9223372036854775807
+	log.cleaner.min.cleanable.ratio = 0.5
+	log.cleaner.min.compaction.lag.ms = 0
+	log.cleaner.threads = 1
+	log.cleanup.policy = [delete]
+	log.dir = /tmp/kafka-logs
+	log.dirs = /tmp/kafka-logs
+	log.flush.interval.messages = 9223372036854775807
+	log.flush.interval.ms = null
+	log.flush.offset.checkpoint.interval.ms = 60000
+	log.flush.scheduler.interval.ms = 9223372036854775807
+	log.flush.start.offset.checkpoint.interval.ms = 60000
+	log.index.interval.bytes = 4096
+	log.index.size.max.bytes = 10485760
+	log.message.downconversion.enable = true
+	log.message.format.version = 3.0-IV1
+	log.message.timestamp.difference.max.ms = 9223372036854775807
+	log.message.timestamp.type = CreateTime
+	log.preallocate = false
+	log.retention.bytes = -1
+	log.retention.check.interval.ms = 300000
+	log.retention.hours = 168
+	log.retention.minutes = null
+	log.retention.ms = null
+	log.roll.hours = 168
+	log.roll.jitter.hours = 0
+	log.roll.jitter.ms = null
+	log.roll.ms = null
+	log.segment.bytes = 1073741824
+	log.segment.delete.delay.ms = 60000
+	max.connection.creation.rate = 2147483647
+	max.connections = 2147483647
+	max.connections.per.ip = 2147483647
+	max.connections.per.ip.overrides = 
+	max.incremental.fetch.session.cache.slots = 1000
+	message.max.bytes = 1048588
+	metadata.log.dir = null
+	metadata.log.max.record.bytes.between.snapshots = 20971520
+	metadata.log.segment.bytes = 1073741824
+	metadata.log.segment.min.bytes = 8388608
+	metadata.log.segment.ms = 604800000
+	metadata.max.idle.interval.ms = 500
+	metadata.max.retention.bytes = -1
+	metadata.max.retention.ms = 604800000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	min.insync.replicas = 1
+	node.id = 0
+	num.io.threads = 8
+	num.network.threads = 3
+	num.partitions = 1
+	num.recovery.threads.per.data.dir = 1
+	num.replica.alter.log.dirs.threads = null
+	num.replica.fetchers = 1
+	offset.metadata.max.bytes = 4096
+	offsets.commit.required.acks = -1
+	offsets.commit.timeout.ms = 5000
+	offsets.load.buffer.size = 5242880
+	offsets.retention.check.interval.ms = 600000
+	offsets.retention.minutes = 10080
+	offsets.topic.compression.codec = 0
+	offsets.topic.num.partitions = 50
+	offsets.topic.replication.factor = 1
+	offsets.topic.segment.bytes = 104857600
+	password.encoder.cipher.algorithm = AES/CBC/PKCS5Padding
+	password.encoder.iterations = 4096
+	password.encoder.key.length = 128
+	password.encoder.keyfactory.algorithm = null
+	password.encoder.old.secret = null
+	password.encoder.secret = null
+	principal.builder.class = class org.apache.kafka.common.security.authenticator.DefaultKafkaPrincipalBuilder
+	process.roles = []
+	producer.purgatory.purge.interval.requests = 1000
+	queued.max.request.bytes = -1
+	queued.max.requests = 500
+	quota.window.num = 11
+	quota.window.size.seconds = 1
+	remote.log.index.file.cache.total.size.bytes = 1073741824
+	remote.log.manager.task.interval.ms = 30000
+	remote.log.manager.task.retry.backoff.max.ms = 30000
+	remote.log.manager.task.retry.backoff.ms = 500
+	remote.log.manager.task.retry.jitter = 0.2
+	remote.log.manager.thread.pool.size = 10
+	remote.log.metadata.manager.class.name = null
+	remote.log.metadata.manager.class.path = null
+	remote.log.metadata.manager.impl.prefix = null
+	remote.log.metadata.manager.listener.name = null
+	remote.log.reader.max.pending.tasks = 100
+	remote.log.reader.threads = 10
+	remote.log.storage.manager.class.name = null
+	remote.log.storage.manager.class.path = null
+	remote.log.storage.manager.impl.prefix = null
+	remote.log.storage.system.enable = false
+	replica.fetch.backoff.ms = 1000
+	replica.fetch.max.bytes = 1048576
+	replica.fetch.min.bytes = 1
+	replica.fetch.response.max.bytes = 10485760
+	replica.fetch.wait.max.ms = 500
+	replica.high.watermark.checkpoint.interval.ms = 5000
+	replica.lag.time.max.ms = 30000
+	replica.selector.class = null
+	replica.socket.receive.buffer.bytes = 65536
+	replica.socket.timeout.ms = 30000
+	replication.quota.window.num = 11
+	replication.quota.window.size.seconds = 1
+	request.timeout.ms = 30000
+	reserved.broker.max.id = 1000
+	sasl.client.callback.handler.class = null
+	sasl.enabled.mechanisms = [GSSAPI]
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.principal.to.local.rules = [DEFAULT]
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism.controller.protocol = GSSAPI
+	sasl.mechanism.inter.broker.protocol = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	sasl.server.callback.handler.class = null
+	sasl.server.max.receive.size = 524288
+	security.inter.broker.protocol = PLAINTEXT
+	security.providers = null
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	socket.listen.backlog.size = 50
+	socket.receive.buffer.bytes = 102400
+	socket.request.max.bytes = 104857600
+	socket.send.buffer.bytes = 102400
+	ssl.cipher.suites = []
+	ssl.client.auth = none
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.principal.mapping.rules = DEFAULT
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.abort.timed.out.transaction.cleanup.interval.ms = 10000
+	transaction.max.timeout.ms = 900000
+	transaction.remove.expired.transaction.cleanup.interval.ms = 3600000
+	transaction.state.log.load.buffer.size = 5242880
+	transaction.state.log.min.isr = 1
+	transaction.state.log.num.partitions = 50
+	transaction.state.log.replication.factor = 1
+	transaction.state.log.segment.bytes = 104857600
+	transactional.id.expiration.ms = 604800000
+	unclean.leader.election.enable = false
+	zookeeper.clientCnxnSocket = null
+	zookeeper.connect = localhost:2181
+	zookeeper.connection.timeout.ms = 18000
+	zookeeper.max.in.flight.requests = 10
+	zookeeper.session.timeout.ms = 18000
+	zookeeper.set.acl = false
+	zookeeper.ssl.cipher.suites = null
+	zookeeper.ssl.client.enable = false
+	zookeeper.ssl.crl.enable = false
+	zookeeper.ssl.enabled.protocols = null
+	zookeeper.ssl.endpoint.identification.algorithm = HTTPS
+	zookeeper.ssl.keystore.location = null
+	zookeeper.ssl.keystore.password = null
+	zookeeper.ssl.keystore.type = null
+	zookeeper.ssl.ocsp.enable = false
+	zookeeper.ssl.protocol = TLSv1.2
+	zookeeper.ssl.truststore.location = null
+	zookeeper.ssl.truststore.password = null
+	zookeeper.ssl.truststore.type = null
+ (kafka.server.KafkaConfig)
+[2022-12-15 00:33:55,931] INFO [ThrottledChannelReaper-Fetch]: Starting (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2022-12-15 00:33:55,932] INFO [ThrottledChannelReaper-Produce]: Starting (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2022-12-15 00:33:55,933] INFO [ThrottledChannelReaper-Request]: Starting (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2022-12-15 00:33:55,934] INFO [ThrottledChannelReaper-ControllerMutation]: Starting (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2022-12-15 00:33:55,959] INFO Log directory /tmp/kafka-logs not found, creating it. (kafka.log.LogManager)
+[2022-12-15 00:33:55,981] INFO Loading logs from log dirs ArraySeq(/tmp/kafka-logs) (kafka.log.LogManager)
+[2022-12-15 00:33:55,983] INFO Attempting recovery for all logs in /tmp/kafka-logs since no clean shutdown file was found (kafka.log.LogManager)
+[2022-12-15 00:33:55,993] INFO Loaded 0 logs in 13ms. (kafka.log.LogManager)
+[2022-12-15 00:33:55,994] INFO Starting log cleanup with a period of 300000 ms. (kafka.log.LogManager)
+[2022-12-15 00:33:55,996] INFO Starting log flusher with a default period of 9223372036854775807 ms. (kafka.log.LogManager)
+[2022-12-15 00:33:56,088] INFO [feature-zk-node-event-process-thread]: Starting (kafka.server.FinalizedFeatureChangeListener$ChangeNotificationProcessorThread)
+[2022-12-15 00:33:56,095] INFO Feature ZK node at path: /feature does not exist (kafka.server.FinalizedFeatureChangeListener)
+[2022-12-15 00:33:56,118] INFO [BrokerToControllerChannelManager broker=0 name=forwarding]: Starting (kafka.server.BrokerToControllerRequestThread)
+[2022-12-15 00:33:56,392] INFO Updated connection-accept-rate max connection creation rate to 2147483647 (kafka.network.ConnectionQuotas)
+[2022-12-15 00:33:56,395] INFO Awaiting socket connections on 0.0.0.0:9092. (kafka.network.DataPlaneAcceptor)
+[2022-12-15 00:33:56,421] INFO [SocketServer listenerType=ZK_BROKER, nodeId=0] Created data-plane acceptor and processors for endpoint : ListenerName(PLAINTEXT) (kafka.network.SocketServer)
+[2022-12-15 00:33:56,427] INFO [BrokerToControllerChannelManager broker=0 name=alterPartition]: Starting (kafka.server.BrokerToControllerRequestThread)
+[2022-12-15 00:33:56,447] INFO [ExpirationReaper-0-Produce]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2022-12-15 00:33:56,447] INFO [ExpirationReaper-0-DeleteRecords]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2022-12-15 00:33:56,447] INFO [ExpirationReaper-0-Fetch]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2022-12-15 00:33:56,448] INFO [ExpirationReaper-0-ElectLeader]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2022-12-15 00:33:56,478] INFO [LogDirFailureHandler]: Starting (kafka.server.ReplicaManager$LogDirFailureHandler)
+[2022-12-15 00:33:56,505] INFO Creating /brokers/ids/0 (is it secure? false) (kafka.zk.KafkaZkClient)
+[2022-12-15 00:33:56,523] INFO Stat of the created znode at /brokers/ids/0 is: 25,25,1671093236515,1671093236515,1,0,0,72057603831431168,194,0,25
+ (kafka.zk.KafkaZkClient)
+[2022-12-15 00:33:56,524] INFO Registered broker 0 at path /brokers/ids/0 with addresses: PLAINTEXT://H110M:9092, czxid (broker epoch): 25 (kafka.zk.KafkaZkClient)
+[2022-12-15 00:33:56,624] INFO [ExpirationReaper-0-topic]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2022-12-15 00:33:56,624] INFO [ExpirationReaper-0-Heartbeat]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2022-12-15 00:33:56,630] INFO Successfully created /controller_epoch with initial epoch 0 (kafka.zk.KafkaZkClient)
+[2022-12-15 00:33:56,631] INFO [ExpirationReaper-0-Rebalance]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2022-12-15 00:33:56,648] INFO [GroupCoordinator 0]: Starting up. (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:33:56,648] INFO Feature ZK node created at path: /feature (kafka.server.FinalizedFeatureChangeListener)
+[2022-12-15 00:33:56,659] INFO [GroupCoordinator 0]: Startup complete. (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:33:56,674] INFO [MetadataCache brokerId=0] Updated cache from existing <empty> to latest FinalizedFeaturesAndEpoch(features=Map(), epoch=0). (kafka.server.metadata.ZkMetadataCache)
+[2022-12-15 00:33:56,677] INFO [TransactionCoordinator id=0] Starting up. (kafka.coordinator.transaction.TransactionCoordinator)
+[2022-12-15 00:33:56,683] INFO [TransactionCoordinator id=0] Startup complete. (kafka.coordinator.transaction.TransactionCoordinator)
+[2022-12-15 00:33:56,696] INFO [Transaction Marker Channel Manager 0]: Starting (kafka.coordinator.transaction.TransactionMarkerChannelManager)
+[2022-12-15 00:33:56,716] INFO [ExpirationReaper-0-AlterAcls]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2022-12-15 00:33:56,743] INFO [/config/changes-event-process-thread]: Starting (kafka.common.ZkNodeChangeNotificationListener$ChangeEventProcessThread)
+[2022-12-15 00:33:56,759] INFO [SocketServer listenerType=ZK_BROKER, nodeId=0] Enabling request processing. (kafka.network.SocketServer)
+[2022-12-15 00:33:56,775] INFO Kafka version: 3.3.1 (org.apache.kafka.common.utils.AppInfoParser)
+[2022-12-15 00:33:56,775] INFO Kafka commitId: e23c59d00e687ff5 (org.apache.kafka.common.utils.AppInfoParser)
+[2022-12-15 00:33:56,775] INFO Kafka startTimeMs: 1671093236771 (org.apache.kafka.common.utils.AppInfoParser)
+[2022-12-15 00:33:56,776] INFO [KafkaServer id=0] started (kafka.server.KafkaServer)
+[2022-12-15 00:33:56,830] INFO [BrokerToControllerChannelManager broker=0 name=alterPartition]: Recorded new controller, from now on will use broker H110M:9092 (id: 0 rack: null) (kafka.server.BrokerToControllerRequestThread)
+[2022-12-15 00:33:56,833] INFO [BrokerToControllerChannelManager broker=0 name=forwarding]: Recorded new controller, from now on will use broker H110M:9092 (id: 0 rack: null) (kafka.server.BrokerToControllerRequestThread)
+[2022-12-15 00:34:09,905] INFO Creating topic quickstart-events with configuration {} and initial partition assignment HashMap(0 -> ArrayBuffer(0)) (kafka.zk.AdminZkClient)
+[2022-12-15 00:34:10,017] INFO [ReplicaFetcherManager on broker 0] Removed fetcher for partitions Set(quickstart-events-0) (kafka.server.ReplicaFetcherManager)
+[2022-12-15 00:34:10,075] INFO [LogLoader partition=quickstart-events-0, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2022-12-15 00:34:10,088] INFO Created log for partition quickstart-events-0 in /tmp/kafka-logs/quickstart-events-0 with properties {} (kafka.log.LogManager)
+[2022-12-15 00:34:10,089] INFO [Partition quickstart-events-0 broker=0] No checkpointed highwatermark is found for partition quickstart-events-0 (kafka.cluster.Partition)
+[2022-12-15 00:34:10,090] INFO [Partition quickstart-events-0 broker=0] Log loaded for partition quickstart-events-0 with initial high watermark 0 (kafka.cluster.Partition)
+[2022-12-15 00:34:15,400] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2022-12-15 00:34:15,403] INFO [KafkaServer id=0] shutting down (kafka.server.KafkaServer)
+[2022-12-15 00:34:15,407] INFO [KafkaServer id=0] Starting controlled shutdown (kafka.server.KafkaServer)
+[2022-12-15 00:34:15,421] INFO [KafkaServer id=0] Controlled shutdown request returned successfully after 10ms (kafka.server.KafkaServer)
+[2022-12-15 00:34:15,423] INFO [/config/changes-event-process-thread]: Shutting down (kafka.common.ZkNodeChangeNotificationListener$ChangeEventProcessThread)
+[2022-12-15 00:34:15,424] INFO [/config/changes-event-process-thread]: Shutdown completed (kafka.common.ZkNodeChangeNotificationListener$ChangeEventProcessThread)
+[2022-12-15 00:34:15,424] INFO [/config/changes-event-process-thread]: Stopped (kafka.common.ZkNodeChangeNotificationListener$ChangeEventProcessThread)
+[2022-12-15 00:34:15,424] INFO [SocketServer listenerType=ZK_BROKER, nodeId=0] Stopping socket server request processors (kafka.network.SocketServer)
+[2022-12-15 00:34:15,430] INFO [SocketServer listenerType=ZK_BROKER, nodeId=0] Stopped socket server request processors (kafka.network.SocketServer)
+[2022-12-15 00:34:15,430] INFO [data-plane Kafka Request Handler on Broker 0], shutting down (kafka.server.KafkaRequestHandlerPool)
+[2022-12-15 00:34:15,432] INFO [data-plane Kafka Request Handler on Broker 0], shut down completely (kafka.server.KafkaRequestHandlerPool)
+[2022-12-15 00:34:15,435] INFO [ExpirationReaper-0-AlterAcls]: Shutting down (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2022-12-15 00:34:15,437] INFO [ExpirationReaper-0-AlterAcls]: Stopped (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2022-12-15 00:34:15,437] INFO [ExpirationReaper-0-AlterAcls]: Shutdown completed (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2022-12-15 00:34:15,437] INFO [KafkaApi-0] Shutdown complete. (kafka.server.KafkaApis)
+[2022-12-15 00:34:15,438] INFO [ExpirationReaper-0-topic]: Shutting down (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2022-12-15 00:34:15,438] INFO [ExpirationReaper-0-topic]: Stopped (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2022-12-15 00:34:15,438] INFO [ExpirationReaper-0-topic]: Shutdown completed (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2022-12-15 00:34:15,440] INFO [TransactionCoordinator id=0] Shutting down. (kafka.coordinator.transaction.TransactionCoordinator)
+[2022-12-15 00:34:15,440] INFO [Transaction State Manager 0]: Shutdown complete (kafka.coordinator.transaction.TransactionStateManager)
+[2022-12-15 00:34:15,440] INFO [Transaction Marker Channel Manager 0]: Shutting down (kafka.coordinator.transaction.TransactionMarkerChannelManager)
+[2022-12-15 00:34:15,441] INFO [Transaction Marker Channel Manager 0]: Shutdown completed (kafka.coordinator.transaction.TransactionMarkerChannelManager)
+[2022-12-15 00:34:15,441] INFO [Transaction Marker Channel Manager 0]: Stopped (kafka.coordinator.transaction.TransactionMarkerChannelManager)
+[2022-12-15 00:34:15,441] INFO [TransactionCoordinator id=0] Shutdown complete. (kafka.coordinator.transaction.TransactionCoordinator)
+[2022-12-15 00:34:15,442] INFO [GroupCoordinator 0]: Shutting down. (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:34:15,442] INFO [ExpirationReaper-0-Heartbeat]: Shutting down (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2022-12-15 00:34:15,442] INFO [ExpirationReaper-0-Heartbeat]: Stopped (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2022-12-15 00:34:15,442] INFO [ExpirationReaper-0-Heartbeat]: Shutdown completed (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2022-12-15 00:34:15,443] INFO [ExpirationReaper-0-Rebalance]: Shutting down (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2022-12-15 00:34:15,443] INFO [ExpirationReaper-0-Rebalance]: Stopped (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2022-12-15 00:34:15,443] INFO [ExpirationReaper-0-Rebalance]: Shutdown completed (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2022-12-15 00:34:15,444] INFO [GroupCoordinator 0]: Shutdown complete. (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:34:15,444] INFO [ReplicaManager broker=0] Shutting down (kafka.server.ReplicaManager)
+[2022-12-15 00:34:15,445] INFO [LogDirFailureHandler]: Shutting down (kafka.server.ReplicaManager$LogDirFailureHandler)
+[2022-12-15 00:34:15,445] INFO [LogDirFailureHandler]: Shutdown completed (kafka.server.ReplicaManager$LogDirFailureHandler)
+[2022-12-15 00:34:15,445] INFO [LogDirFailureHandler]: Stopped (kafka.server.ReplicaManager$LogDirFailureHandler)
+[2022-12-15 00:34:15,445] INFO [ReplicaFetcherManager on broker 0] shutting down (kafka.server.ReplicaFetcherManager)
+[2022-12-15 00:34:15,446] INFO [ReplicaFetcherManager on broker 0] shutdown completed (kafka.server.ReplicaFetcherManager)
+[2022-12-15 00:34:15,446] INFO [ReplicaAlterLogDirsManager on broker 0] shutting down (kafka.server.ReplicaAlterLogDirsManager)
+[2022-12-15 00:34:15,447] INFO [ReplicaAlterLogDirsManager on broker 0] shutdown completed (kafka.server.ReplicaAlterLogDirsManager)
+[2022-12-15 00:34:15,447] INFO [ExpirationReaper-0-Fetch]: Shutting down (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2022-12-15 00:34:15,447] INFO [ExpirationReaper-0-Fetch]: Stopped (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2022-12-15 00:34:15,447] INFO [ExpirationReaper-0-Fetch]: Shutdown completed (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2022-12-15 00:34:15,447] INFO [ExpirationReaper-0-Produce]: Shutting down (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2022-12-15 00:34:15,448] INFO [ExpirationReaper-0-Produce]: Stopped (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2022-12-15 00:34:15,448] INFO [ExpirationReaper-0-Produce]: Shutdown completed (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2022-12-15 00:34:15,448] INFO [ExpirationReaper-0-DeleteRecords]: Shutting down (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2022-12-15 00:34:15,448] INFO [ExpirationReaper-0-DeleteRecords]: Stopped (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2022-12-15 00:34:15,448] INFO [ExpirationReaper-0-DeleteRecords]: Shutdown completed (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2022-12-15 00:34:15,449] INFO [ExpirationReaper-0-ElectLeader]: Shutting down (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2022-12-15 00:34:15,449] INFO [ExpirationReaper-0-ElectLeader]: Stopped (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2022-12-15 00:34:15,449] INFO [ExpirationReaper-0-ElectLeader]: Shutdown completed (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2022-12-15 00:34:15,458] INFO [ReplicaManager broker=0] Shut down completely (kafka.server.ReplicaManager)
+[2022-12-15 00:34:15,458] INFO [BrokerToControllerChannelManager broker=0 name=alterPartition]: Shutting down (kafka.server.BrokerToControllerRequestThread)
+[2022-12-15 00:34:15,458] INFO [BrokerToControllerChannelManager broker=0 name=alterPartition]: Stopped (kafka.server.BrokerToControllerRequestThread)
+[2022-12-15 00:34:15,458] INFO [BrokerToControllerChannelManager broker=0 name=alterPartition]: Shutdown completed (kafka.server.BrokerToControllerRequestThread)
+[2022-12-15 00:34:15,460] INFO Broker to controller channel manager for alterPartition shutdown (kafka.server.BrokerToControllerChannelManagerImpl)
+[2022-12-15 00:34:15,460] INFO [BrokerToControllerChannelManager broker=0 name=forwarding]: Shutting down (kafka.server.BrokerToControllerRequestThread)
+[2022-12-15 00:34:15,461] INFO [BrokerToControllerChannelManager broker=0 name=forwarding]: Stopped (kafka.server.BrokerToControllerRequestThread)
+[2022-12-15 00:34:15,461] INFO [BrokerToControllerChannelManager broker=0 name=forwarding]: Shutdown completed (kafka.server.BrokerToControllerRequestThread)
+[2022-12-15 00:34:15,461] INFO Broker to controller channel manager for forwarding shutdown (kafka.server.BrokerToControllerChannelManagerImpl)
+[2022-12-15 00:34:15,462] INFO Shutting down. (kafka.log.LogManager)
+[2022-12-15 00:34:15,500] INFO Shutdown complete. (kafka.log.LogManager)
+[2022-12-15 00:34:15,505] INFO [feature-zk-node-event-process-thread]: Shutting down (kafka.server.FinalizedFeatureChangeListener$ChangeNotificationProcessorThread)
+[2022-12-15 00:34:15,505] INFO [feature-zk-node-event-process-thread]: Shutdown completed (kafka.server.FinalizedFeatureChangeListener$ChangeNotificationProcessorThread)
+[2022-12-15 00:34:15,505] INFO [feature-zk-node-event-process-thread]: Stopped (kafka.server.FinalizedFeatureChangeListener$ChangeNotificationProcessorThread)
+[2022-12-15 00:34:15,505] INFO [ZooKeeperClient Kafka server] Closing. (kafka.zookeeper.ZooKeeperClient)
+[2022-12-15 00:34:15,612] INFO EventThread shut down for session: 0x100000247bd0000 (org.apache.zookeeper.ClientCnxn)
+[2022-12-15 00:34:15,612] INFO Session: 0x100000247bd0000 closed (org.apache.zookeeper.ZooKeeper)
+[2022-12-15 00:34:15,614] INFO [ZooKeeperClient Kafka server] Closed. (kafka.zookeeper.ZooKeeperClient)
+[2022-12-15 00:34:15,614] INFO [ThrottledChannelReaper-Fetch]: Shutting down (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2022-12-15 00:34:15,616] INFO [ThrottledChannelReaper-Fetch]: Stopped (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2022-12-15 00:34:15,616] INFO [ThrottledChannelReaper-Fetch]: Shutdown completed (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2022-12-15 00:34:15,617] INFO [ThrottledChannelReaper-Produce]: Shutting down (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2022-12-15 00:34:15,617] INFO [ThrottledChannelReaper-Produce]: Stopped (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2022-12-15 00:34:15,617] INFO [ThrottledChannelReaper-Produce]: Shutdown completed (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2022-12-15 00:34:15,617] INFO [ThrottledChannelReaper-Request]: Shutting down (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2022-12-15 00:34:15,617] INFO [ThrottledChannelReaper-Request]: Stopped (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2022-12-15 00:34:15,617] INFO [ThrottledChannelReaper-Request]: Shutdown completed (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2022-12-15 00:34:15,618] INFO [ThrottledChannelReaper-ControllerMutation]: Shutting down (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2022-12-15 00:34:15,618] INFO [ThrottledChannelReaper-ControllerMutation]: Stopped (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2022-12-15 00:34:15,618] INFO [ThrottledChannelReaper-ControllerMutation]: Shutdown completed (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2022-12-15 00:34:15,619] INFO [SocketServer listenerType=ZK_BROKER, nodeId=0] Shutting down socket server (kafka.network.SocketServer)
+[2022-12-15 00:34:15,646] INFO [SocketServer listenerType=ZK_BROKER, nodeId=0] Shutdown completed (kafka.network.SocketServer)
+[2022-12-15 00:34:15,646] INFO Metrics scheduler closed (org.apache.kafka.common.metrics.Metrics)
+[2022-12-15 00:34:15,646] INFO Closing reporter org.apache.kafka.common.metrics.JmxReporter (org.apache.kafka.common.metrics.Metrics)
+[2022-12-15 00:34:15,646] INFO Metrics reporters closed (org.apache.kafka.common.metrics.Metrics)
+[2022-12-15 00:34:15,648] INFO Broker and topic stats closed (kafka.server.BrokerTopicStats)
+[2022-12-15 00:34:15,648] INFO App info kafka.server for 0 unregistered (org.apache.kafka.common.utils.AppInfoParser)
+[2022-12-15 00:34:15,648] INFO [KafkaServer id=0] shut down completed (kafka.server.KafkaServer)
+[2022-12-15 00:34:35,596] INFO Reading configuration from: config/zookeeper.properties (org.apache.zookeeper.server.quorum.QuorumPeerConfig)
+[2022-12-15 00:34:35,598] WARN config/zookeeper.properties is relative. Prepend ./ to indicate that you're sure! (org.apache.zookeeper.server.quorum.QuorumPeerConfig)
+[2022-12-15 00:34:35,601] INFO clientPortAddress is 0.0.0.0:2181 (org.apache.zookeeper.server.quorum.QuorumPeerConfig)
+[2022-12-15 00:34:35,601] INFO secureClientPort is not set (org.apache.zookeeper.server.quorum.QuorumPeerConfig)
+[2022-12-15 00:34:35,601] INFO observerMasterPort is not set (org.apache.zookeeper.server.quorum.QuorumPeerConfig)
+[2022-12-15 00:34:35,602] INFO metricsProvider.className is org.apache.zookeeper.metrics.impl.DefaultMetricsProvider (org.apache.zookeeper.server.quorum.QuorumPeerConfig)
+[2022-12-15 00:34:35,604] INFO autopurge.snapRetainCount set to 3 (org.apache.zookeeper.server.DatadirCleanupManager)
+[2022-12-15 00:34:35,604] INFO autopurge.purgeInterval set to 0 (org.apache.zookeeper.server.DatadirCleanupManager)
+[2022-12-15 00:34:35,604] INFO Purge task is not scheduled. (org.apache.zookeeper.server.DatadirCleanupManager)
+[2022-12-15 00:34:35,604] WARN Either no config or no quorum defined in config, running in standalone mode (org.apache.zookeeper.server.quorum.QuorumPeerMain)
+[2022-12-15 00:34:35,605] INFO Log4j 1.2 jmx support not found; jmx disabled. (org.apache.zookeeper.jmx.ManagedUtil)
+[2022-12-15 00:34:35,606] INFO Reading configuration from: config/zookeeper.properties (org.apache.zookeeper.server.quorum.QuorumPeerConfig)
+[2022-12-15 00:34:35,606] WARN config/zookeeper.properties is relative. Prepend ./ to indicate that you're sure! (org.apache.zookeeper.server.quorum.QuorumPeerConfig)
+[2022-12-15 00:34:35,607] INFO clientPortAddress is 0.0.0.0:2181 (org.apache.zookeeper.server.quorum.QuorumPeerConfig)
+[2022-12-15 00:34:35,607] INFO secureClientPort is not set (org.apache.zookeeper.server.quorum.QuorumPeerConfig)
+[2022-12-15 00:34:35,607] INFO observerMasterPort is not set (org.apache.zookeeper.server.quorum.QuorumPeerConfig)
+[2022-12-15 00:34:35,607] INFO metricsProvider.className is org.apache.zookeeper.metrics.impl.DefaultMetricsProvider (org.apache.zookeeper.server.quorum.QuorumPeerConfig)
+[2022-12-15 00:34:35,607] INFO Starting server (org.apache.zookeeper.server.ZooKeeperServerMain)
+[2022-12-15 00:34:35,619] INFO ServerMetrics initialized with provider org.apache.zookeeper.metrics.impl.DefaultMetricsProvider@53ca01a2 (org.apache.zookeeper.server.ServerMetrics)
+[2022-12-15 00:34:35,623] INFO zookeeper.snapshot.trust.empty : false (org.apache.zookeeper.server.persistence.FileTxnSnapLog)
+[2022-12-15 00:34:35,633] INFO  (org.apache.zookeeper.server.ZooKeeperServer)
+[2022-12-15 00:34:35,633] INFO   ______                  _                                           (org.apache.zookeeper.server.ZooKeeperServer)
+[2022-12-15 00:34:35,633] INFO  |___  /                 | |                                          (org.apache.zookeeper.server.ZooKeeperServer)
+[2022-12-15 00:34:35,633] INFO     / /    ___     ___   | | __   ___    ___   _ __     ___   _ __    (org.apache.zookeeper.server.ZooKeeperServer)
+[2022-12-15 00:34:35,633] INFO    / /    / _ \   / _ \  | |/ /  / _ \  / _ \ | '_ \   / _ \ | '__| (org.apache.zookeeper.server.ZooKeeperServer)
+[2022-12-15 00:34:35,633] INFO   / /__  | (_) | | (_) | |   <  |  __/ |  __/ | |_) | |  __/ | |     (org.apache.zookeeper.server.ZooKeeperServer)
+[2022-12-15 00:34:35,633] INFO  /_____|  \___/   \___/  |_|\_\  \___|  \___| | .__/   \___| |_| (org.apache.zookeeper.server.ZooKeeperServer)
+[2022-12-15 00:34:35,633] INFO                                               | |                      (org.apache.zookeeper.server.ZooKeeperServer)
+[2022-12-15 00:34:35,633] INFO                                               |_|                      (org.apache.zookeeper.server.ZooKeeperServer)
+[2022-12-15 00:34:35,633] INFO  (org.apache.zookeeper.server.ZooKeeperServer)
+[2022-12-15 00:34:35,635] INFO Server environment:zookeeper.version=3.6.3--6401e4ad2087061bc6b9f80dec2d69f2e3c8660a, built on 04/08/2021 16:35 GMT (org.apache.zookeeper.server.ZooKeeperServer)
+[2022-12-15 00:34:35,635] INFO Server environment:host.name=H110M (org.apache.zookeeper.server.ZooKeeperServer)
+[2022-12-15 00:34:35,635] INFO Server environment:java.version=11.0.17 (org.apache.zookeeper.server.ZooKeeperServer)
+[2022-12-15 00:34:35,635] INFO Server environment:java.vendor=Ubuntu (org.apache.zookeeper.server.ZooKeeperServer)
+[2022-12-15 00:34:35,635] INFO Server environment:java.home=/usr/lib/jvm/java-11-openjdk-amd64 (org.apache.zookeeper.server.ZooKeeperServer)
+[2022-12-15 00:34:35,636] INFO Server environment:java.class.path=/home/nefi/kafka/bin/../libs/activation-1.1.1.jar:/home/nefi/kafka/bin/../libs/aopalliance-repackaged-2.6.1.jar:/home/nefi/kafka/bin/../libs/argparse4j-0.7.0.jar:/home/nefi/kafka/bin/../libs/audience-annotations-0.5.0.jar:/home/nefi/kafka/bin/../libs/commons-cli-1.4.jar:/home/nefi/kafka/bin/../libs/commons-lang3-3.12.0.jar:/home/nefi/kafka/bin/../libs/commons-lang3-3.8.1.jar:/home/nefi/kafka/bin/../libs/connect-api-3.3.1.jar:/home/nefi/kafka/bin/../libs/connect-basic-auth-extension-3.3.1.jar:/home/nefi/kafka/bin/../libs/connect-json-3.3.1.jar:/home/nefi/kafka/bin/../libs/connect-mirror-3.3.1.jar:/home/nefi/kafka/bin/../libs/connect-mirror-client-3.3.1.jar:/home/nefi/kafka/bin/../libs/connect-runtime-3.3.1.jar:/home/nefi/kafka/bin/../libs/connect-transforms-3.3.1.jar:/home/nefi/kafka/bin/../libs/hk2-api-2.6.1.jar:/home/nefi/kafka/bin/../libs/hk2-locator-2.6.1.jar:/home/nefi/kafka/bin/../libs/hk2-utils-2.6.1.jar:/home/nefi/kafka/bin/../libs/jackson-annotations-2.13.3.jar:/home/nefi/kafka/bin/../libs/jackson-core-2.13.3.jar:/home/nefi/kafka/bin/../libs/jackson-databind-2.13.3.jar:/home/nefi/kafka/bin/../libs/jackson-dataformat-csv-2.13.3.jar:/home/nefi/kafka/bin/../libs/jackson-datatype-jdk8-2.13.3.jar:/home/nefi/kafka/bin/../libs/jackson-jaxrs-base-2.13.3.jar:/home/nefi/kafka/bin/../libs/jackson-jaxrs-json-provider-2.13.3.jar:/home/nefi/kafka/bin/../libs/jackson-module-jaxb-annotations-2.13.3.jar:/home/nefi/kafka/bin/../libs/jackson-module-scala_2.13-2.13.3.jar:/home/nefi/kafka/bin/../libs/jakarta.activation-api-1.2.2.jar:/home/nefi/kafka/bin/../libs/jakarta.annotation-api-1.3.5.jar:/home/nefi/kafka/bin/../libs/jakarta.inject-2.6.1.jar:/home/nefi/kafka/bin/../libs/jakarta.validation-api-2.0.2.jar:/home/nefi/kafka/bin/../libs/jakarta.ws.rs-api-2.1.6.jar:/home/nefi/kafka/bin/../libs/jakarta.xml.bind-api-2.3.3.jar:/home/nefi/kafka/bin/../libs/javassist-3.27.0-GA.jar:/home/nefi/kafka/bin/../libs/javax.servlet-api-3.1.0.jar:/home/nefi/kafka/bin/../libs/javax.ws.rs-api-2.1.1.jar:/home/nefi/kafka/bin/../libs/jaxb-api-2.3.0.jar:/home/nefi/kafka/bin/../libs/jersey-client-2.34.jar:/home/nefi/kafka/bin/../libs/jersey-common-2.34.jar:/home/nefi/kafka/bin/../libs/jersey-container-servlet-2.34.jar:/home/nefi/kafka/bin/../libs/jersey-container-servlet-core-2.34.jar:/home/nefi/kafka/bin/../libs/jersey-hk2-2.34.jar:/home/nefi/kafka/bin/../libs/jersey-server-2.34.jar:/home/nefi/kafka/bin/../libs/jetty-client-9.4.48.v20220622.jar:/home/nefi/kafka/bin/../libs/jetty-continuation-9.4.48.v20220622.jar:/home/nefi/kafka/bin/../libs/jetty-http-9.4.48.v20220622.jar:/home/nefi/kafka/bin/../libs/jetty-io-9.4.48.v20220622.jar:/home/nefi/kafka/bin/../libs/jetty-security-9.4.48.v20220622.jar:/home/nefi/kafka/bin/../libs/jetty-server-9.4.48.v20220622.jar:/home/nefi/kafka/bin/../libs/jetty-servlet-9.4.48.v20220622.jar:/home/nefi/kafka/bin/../libs/jetty-servlets-9.4.48.v20220622.jar:/home/nefi/kafka/bin/../libs/jetty-util-9.4.48.v20220622.jar:/home/nefi/kafka/bin/../libs/jetty-util-ajax-9.4.48.v20220622.jar:/home/nefi/kafka/bin/../libs/jline-3.21.0.jar:/home/nefi/kafka/bin/../libs/jopt-simple-5.0.4.jar:/home/nefi/kafka/bin/../libs/jose4j-0.7.9.jar:/home/nefi/kafka/bin/../libs/kafka_2.13-3.3.1.jar:/home/nefi/kafka/bin/../libs/kafka-clients-3.3.1.jar:/home/nefi/kafka/bin/../libs/kafka-log4j-appender-3.3.1.jar:/home/nefi/kafka/bin/../libs/kafka-metadata-3.3.1.jar:/home/nefi/kafka/bin/../libs/kafka-raft-3.3.1.jar:/home/nefi/kafka/bin/../libs/kafka-server-common-3.3.1.jar:/home/nefi/kafka/bin/../libs/kafka-shell-3.3.1.jar:/home/nefi/kafka/bin/../libs/kafka-storage-3.3.1.jar:/home/nefi/kafka/bin/../libs/kafka-storage-api-3.3.1.jar:/home/nefi/kafka/bin/../libs/kafka-streams-3.3.1.jar:/home/nefi/kafka/bin/../libs/kafka-streams-examples-3.3.1.jar:/home/nefi/kafka/bin/../libs/kafka-streams-scala_2.13-3.3.1.jar:/home/nefi/kafka/bin/../libs/kafka-streams-test-utils-3.3.1.jar:/home/nefi/kafka/bin/../libs/kafka-tools-3.3.1.jar:/home/nefi/kafka/bin/../libs/lz4-java-1.8.0.jar:/home/nefi/kafka/bin/../libs/maven-artifact-3.8.4.jar:/home/nefi/kafka/bin/../libs/metrics-core-2.2.0.jar:/home/nefi/kafka/bin/../libs/metrics-core-4.1.12.1.jar:/home/nefi/kafka/bin/../libs/netty-buffer-4.1.78.Final.jar:/home/nefi/kafka/bin/../libs/netty-codec-4.1.78.Final.jar:/home/nefi/kafka/bin/../libs/netty-common-4.1.78.Final.jar:/home/nefi/kafka/bin/../libs/netty-handler-4.1.78.Final.jar:/home/nefi/kafka/bin/../libs/netty-resolver-4.1.78.Final.jar:/home/nefi/kafka/bin/../libs/netty-transport-4.1.78.Final.jar:/home/nefi/kafka/bin/../libs/netty-transport-classes-epoll-4.1.78.Final.jar:/home/nefi/kafka/bin/../libs/netty-transport-native-epoll-4.1.78.Final.jar:/home/nefi/kafka/bin/../libs/netty-transport-native-unix-common-4.1.78.Final.jar:/home/nefi/kafka/bin/../libs/osgi-resource-locator-1.0.3.jar:/home/nefi/kafka/bin/../libs/paranamer-2.8.jar:/home/nefi/kafka/bin/../libs/plexus-utils-3.3.0.jar:/home/nefi/kafka/bin/../libs/reflections-0.9.12.jar:/home/nefi/kafka/bin/../libs/reload4j-1.2.19.jar:/home/nefi/kafka/bin/../libs/rocksdbjni-6.29.4.1.jar:/home/nefi/kafka/bin/../libs/scala-collection-compat_2.13-2.6.0.jar:/home/nefi/kafka/bin/../libs/scala-java8-compat_2.13-1.0.2.jar:/home/nefi/kafka/bin/../libs/scala-library-2.13.8.jar:/home/nefi/kafka/bin/../libs/scala-logging_2.13-3.9.4.jar:/home/nefi/kafka/bin/../libs/scala-reflect-2.13.8.jar:/home/nefi/kafka/bin/../libs/slf4j-api-1.7.36.jar:/home/nefi/kafka/bin/../libs/slf4j-reload4j-1.7.36.jar:/home/nefi/kafka/bin/../libs/snappy-java-1.1.8.4.jar:/home/nefi/kafka/bin/../libs/swagger-annotations-2.2.0.jar:/home/nefi/kafka/bin/../libs/trogdor-3.3.1.jar:/home/nefi/kafka/bin/../libs/zookeeper-3.6.3.jar:/home/nefi/kafka/bin/../libs/zookeeper-jute-3.6.3.jar:/home/nefi/kafka/bin/../libs/zstd-jni-1.5.2-1.jar (org.apache.zookeeper.server.ZooKeeperServer)
+[2022-12-15 00:34:35,636] INFO Server environment:java.library.path=/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib (org.apache.zookeeper.server.ZooKeeperServer)
+[2022-12-15 00:34:35,636] INFO Server environment:java.io.tmpdir=/tmp (org.apache.zookeeper.server.ZooKeeperServer)
+[2022-12-15 00:34:35,636] INFO Server environment:java.compiler=<NA> (org.apache.zookeeper.server.ZooKeeperServer)
+[2022-12-15 00:34:35,636] INFO Server environment:os.name=Linux (org.apache.zookeeper.server.ZooKeeperServer)
+[2022-12-15 00:34:35,636] INFO Server environment:os.arch=amd64 (org.apache.zookeeper.server.ZooKeeperServer)
+[2022-12-15 00:34:35,636] INFO Server environment:os.version=5.15.0-56-generic (org.apache.zookeeper.server.ZooKeeperServer)
+[2022-12-15 00:34:35,636] INFO Server environment:user.name=nefi (org.apache.zookeeper.server.ZooKeeperServer)
+[2022-12-15 00:34:35,636] INFO Server environment:user.home=/home/nefi (org.apache.zookeeper.server.ZooKeeperServer)
+[2022-12-15 00:34:35,636] INFO Server environment:user.dir=/home/nefi/kafka (org.apache.zookeeper.server.ZooKeeperServer)
+[2022-12-15 00:34:35,637] INFO Server environment:os.memory.free=489MB (org.apache.zookeeper.server.ZooKeeperServer)
+[2022-12-15 00:34:35,637] INFO Server environment:os.memory.max=512MB (org.apache.zookeeper.server.ZooKeeperServer)
+[2022-12-15 00:34:35,637] INFO Server environment:os.memory.total=512MB (org.apache.zookeeper.server.ZooKeeperServer)
+[2022-12-15 00:34:35,637] INFO zookeeper.enableEagerACLCheck = false (org.apache.zookeeper.server.ZooKeeperServer)
+[2022-12-15 00:34:35,637] INFO zookeeper.digest.enabled = true (org.apache.zookeeper.server.ZooKeeperServer)
+[2022-12-15 00:34:35,637] INFO zookeeper.closeSessionTxn.enabled = true (org.apache.zookeeper.server.ZooKeeperServer)
+[2022-12-15 00:34:35,637] INFO zookeeper.flushDelay=0 (org.apache.zookeeper.server.ZooKeeperServer)
+[2022-12-15 00:34:35,637] INFO zookeeper.maxWriteQueuePollTime=0 (org.apache.zookeeper.server.ZooKeeperServer)
+[2022-12-15 00:34:35,637] INFO zookeeper.maxBatchSize=1000 (org.apache.zookeeper.server.ZooKeeperServer)
+[2022-12-15 00:34:35,637] INFO zookeeper.intBufferStartingSizeBytes = 1024 (org.apache.zookeeper.server.ZooKeeperServer)
+[2022-12-15 00:34:35,639] INFO Weighed connection throttling is disabled (org.apache.zookeeper.server.BlueThrottle)
+[2022-12-15 00:34:35,640] INFO minSessionTimeout set to 6000 (org.apache.zookeeper.server.ZooKeeperServer)
+[2022-12-15 00:34:35,640] INFO maxSessionTimeout set to 60000 (org.apache.zookeeper.server.ZooKeeperServer)
+[2022-12-15 00:34:35,641] INFO Response cache size is initialized with value 400. (org.apache.zookeeper.server.ResponseCache)
+[2022-12-15 00:34:35,642] INFO Response cache size is initialized with value 400. (org.apache.zookeeper.server.ResponseCache)
+[2022-12-15 00:34:35,642] INFO zookeeper.pathStats.slotCapacity = 60 (org.apache.zookeeper.server.util.RequestPathMetricsCollector)
+[2022-12-15 00:34:35,643] INFO zookeeper.pathStats.slotDuration = 15 (org.apache.zookeeper.server.util.RequestPathMetricsCollector)
+[2022-12-15 00:34:35,643] INFO zookeeper.pathStats.maxDepth = 6 (org.apache.zookeeper.server.util.RequestPathMetricsCollector)
+[2022-12-15 00:34:35,643] INFO zookeeper.pathStats.initialDelay = 5 (org.apache.zookeeper.server.util.RequestPathMetricsCollector)
+[2022-12-15 00:34:35,643] INFO zookeeper.pathStats.delay = 5 (org.apache.zookeeper.server.util.RequestPathMetricsCollector)
+[2022-12-15 00:34:35,643] INFO zookeeper.pathStats.enabled = false (org.apache.zookeeper.server.util.RequestPathMetricsCollector)
+[2022-12-15 00:34:35,646] INFO The max bytes for all large requests are set to 104857600 (org.apache.zookeeper.server.ZooKeeperServer)
+[2022-12-15 00:34:35,646] INFO The large request threshold is set to -1 (org.apache.zookeeper.server.ZooKeeperServer)
+[2022-12-15 00:34:35,646] INFO Created server with tickTime 3000 minSessionTimeout 6000 maxSessionTimeout 60000 clientPortListenBacklog -1 datadir /tmp/zookeeper/version-2 snapdir /tmp/zookeeper/version-2 (org.apache.zookeeper.server.ZooKeeperServer)
+[2022-12-15 00:34:35,656] INFO Using org.apache.zookeeper.server.NIOServerCnxnFactory as server connection factory (org.apache.zookeeper.server.ServerCnxnFactory)
+[2022-12-15 00:34:35,657] WARN maxCnxns is not configured, using default value 0. (org.apache.zookeeper.server.ServerCnxnFactory)
+[2022-12-15 00:34:35,659] INFO Configuring NIO connection handler with 10s sessionless connection timeout, 1 selector thread(s), 8 worker threads, and 64 kB direct buffers. (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2022-12-15 00:34:35,663] INFO binding to port 0.0.0.0/0.0.0.0:2181 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2022-12-15 00:34:35,716] INFO Using org.apache.zookeeper.server.watch.WatchManager as watch manager (org.apache.zookeeper.server.watch.WatchManagerFactory)
+[2022-12-15 00:34:35,717] INFO Using org.apache.zookeeper.server.watch.WatchManager as watch manager (org.apache.zookeeper.server.watch.WatchManagerFactory)
+[2022-12-15 00:34:35,718] INFO zookeeper.snapshotSizeFactor = 0.33 (org.apache.zookeeper.server.ZKDatabase)
+[2022-12-15 00:34:35,718] INFO zookeeper.commitLogCount=500 (org.apache.zookeeper.server.ZKDatabase)
+[2022-12-15 00:34:35,722] INFO zookeeper.snapshot.compression.method = CHECKED (org.apache.zookeeper.server.persistence.SnapStream)
+[2022-12-15 00:34:35,728] INFO Reading snapshot /tmp/zookeeper/version-2/snapshot.0 (org.apache.zookeeper.server.persistence.FileSnap)
+[2022-12-15 00:34:35,731] INFO The digest value is empty in snapshot (org.apache.zookeeper.server.DataTree)
+[2022-12-15 00:34:35,786] INFO ZooKeeper audit is disabled. (org.apache.zookeeper.audit.ZKAuditProvider)
+[2022-12-15 00:34:35,788] INFO 36 txns loaded in 46 ms (org.apache.zookeeper.server.persistence.FileTxnSnapLog)
+[2022-12-15 00:34:35,789] INFO Snapshot loaded in 72 ms, highest zxid is 0x24, digest is 55746147126 (org.apache.zookeeper.server.ZKDatabase)
+[2022-12-15 00:34:35,791] INFO Snapshotting: 0x24 to /tmp/zookeeper/version-2/snapshot.24 (org.apache.zookeeper.server.persistence.FileTxnSnapLog)
+[2022-12-15 00:34:35,799] INFO Snapshot taken in 8 ms (org.apache.zookeeper.server.ZooKeeperServer)
+[2022-12-15 00:34:35,820] INFO zookeeper.request_throttler.shutdownTimeout = 10000 (org.apache.zookeeper.server.RequestThrottler)
+[2022-12-15 00:34:35,821] INFO PrepRequestProcessor (sid:0) started, reconfigEnabled=false (org.apache.zookeeper.server.PrepRequestProcessor)
+[2022-12-15 00:34:35,843] INFO Using checkIntervalMs=60000 maxPerMinute=10000 maxNeverUsedIntervalMs=0 (org.apache.zookeeper.server.ContainerManager)
+[2022-12-15 00:34:43,114] INFO Registered kafka:type=kafka.Log4jController MBean (kafka.utils.Log4jControllerRegistration$)
+[2022-12-15 00:34:43,358] INFO Setting -D jdk.tls.rejectClientInitiatedRenegotiation=true to disable client-initiated TLS renegotiation (org.apache.zookeeper.common.X509Util)
+[2022-12-15 00:34:43,428] INFO Registered signal handlers for TERM, INT, HUP (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2022-12-15 00:34:43,429] INFO starting (kafka.server.KafkaServer)
+[2022-12-15 00:34:43,430] INFO Connecting to zookeeper on localhost:2181 (kafka.server.KafkaServer)
+[2022-12-15 00:34:43,454] INFO [ZooKeeperClient Kafka server] Initializing a new session to localhost:2181. (kafka.zookeeper.ZooKeeperClient)
+[2022-12-15 00:34:43,458] INFO Client environment:zookeeper.version=3.6.3--6401e4ad2087061bc6b9f80dec2d69f2e3c8660a, built on 04/08/2021 16:35 GMT (org.apache.zookeeper.ZooKeeper)
+[2022-12-15 00:34:43,459] INFO Client environment:host.name=H110M (org.apache.zookeeper.ZooKeeper)
+[2022-12-15 00:34:43,459] INFO Client environment:java.version=11.0.17 (org.apache.zookeeper.ZooKeeper)
+[2022-12-15 00:34:43,459] INFO Client environment:java.vendor=Ubuntu (org.apache.zookeeper.ZooKeeper)
+[2022-12-15 00:34:43,459] INFO Client environment:java.home=/usr/lib/jvm/java-11-openjdk-amd64 (org.apache.zookeeper.ZooKeeper)
+[2022-12-15 00:34:43,459] INFO Client environment:java.class.path=/home/nefi/kafka/bin/../libs/activation-1.1.1.jar:/home/nefi/kafka/bin/../libs/aopalliance-repackaged-2.6.1.jar:/home/nefi/kafka/bin/../libs/argparse4j-0.7.0.jar:/home/nefi/kafka/bin/../libs/audience-annotations-0.5.0.jar:/home/nefi/kafka/bin/../libs/commons-cli-1.4.jar:/home/nefi/kafka/bin/../libs/commons-lang3-3.12.0.jar:/home/nefi/kafka/bin/../libs/commons-lang3-3.8.1.jar:/home/nefi/kafka/bin/../libs/connect-api-3.3.1.jar:/home/nefi/kafka/bin/../libs/connect-basic-auth-extension-3.3.1.jar:/home/nefi/kafka/bin/../libs/connect-json-3.3.1.jar:/home/nefi/kafka/bin/../libs/connect-mirror-3.3.1.jar:/home/nefi/kafka/bin/../libs/connect-mirror-client-3.3.1.jar:/home/nefi/kafka/bin/../libs/connect-runtime-3.3.1.jar:/home/nefi/kafka/bin/../libs/connect-transforms-3.3.1.jar:/home/nefi/kafka/bin/../libs/hk2-api-2.6.1.jar:/home/nefi/kafka/bin/../libs/hk2-locator-2.6.1.jar:/home/nefi/kafka/bin/../libs/hk2-utils-2.6.1.jar:/home/nefi/kafka/bin/../libs/jackson-annotations-2.13.3.jar:/home/nefi/kafka/bin/../libs/jackson-core-2.13.3.jar:/home/nefi/kafka/bin/../libs/jackson-databind-2.13.3.jar:/home/nefi/kafka/bin/../libs/jackson-dataformat-csv-2.13.3.jar:/home/nefi/kafka/bin/../libs/jackson-datatype-jdk8-2.13.3.jar:/home/nefi/kafka/bin/../libs/jackson-jaxrs-base-2.13.3.jar:/home/nefi/kafka/bin/../libs/jackson-jaxrs-json-provider-2.13.3.jar:/home/nefi/kafka/bin/../libs/jackson-module-jaxb-annotations-2.13.3.jar:/home/nefi/kafka/bin/../libs/jackson-module-scala_2.13-2.13.3.jar:/home/nefi/kafka/bin/../libs/jakarta.activation-api-1.2.2.jar:/home/nefi/kafka/bin/../libs/jakarta.annotation-api-1.3.5.jar:/home/nefi/kafka/bin/../libs/jakarta.inject-2.6.1.jar:/home/nefi/kafka/bin/../libs/jakarta.validation-api-2.0.2.jar:/home/nefi/kafka/bin/../libs/jakarta.ws.rs-api-2.1.6.jar:/home/nefi/kafka/bin/../libs/jakarta.xml.bind-api-2.3.3.jar:/home/nefi/kafka/bin/../libs/javassist-3.27.0-GA.jar:/home/nefi/kafka/bin/../libs/javax.servlet-api-3.1.0.jar:/home/nefi/kafka/bin/../libs/javax.ws.rs-api-2.1.1.jar:/home/nefi/kafka/bin/../libs/jaxb-api-2.3.0.jar:/home/nefi/kafka/bin/../libs/jersey-client-2.34.jar:/home/nefi/kafka/bin/../libs/jersey-common-2.34.jar:/home/nefi/kafka/bin/../libs/jersey-container-servlet-2.34.jar:/home/nefi/kafka/bin/../libs/jersey-container-servlet-core-2.34.jar:/home/nefi/kafka/bin/../libs/jersey-hk2-2.34.jar:/home/nefi/kafka/bin/../libs/jersey-server-2.34.jar:/home/nefi/kafka/bin/../libs/jetty-client-9.4.48.v20220622.jar:/home/nefi/kafka/bin/../libs/jetty-continuation-9.4.48.v20220622.jar:/home/nefi/kafka/bin/../libs/jetty-http-9.4.48.v20220622.jar:/home/nefi/kafka/bin/../libs/jetty-io-9.4.48.v20220622.jar:/home/nefi/kafka/bin/../libs/jetty-security-9.4.48.v20220622.jar:/home/nefi/kafka/bin/../libs/jetty-server-9.4.48.v20220622.jar:/home/nefi/kafka/bin/../libs/jetty-servlet-9.4.48.v20220622.jar:/home/nefi/kafka/bin/../libs/jetty-servlets-9.4.48.v20220622.jar:/home/nefi/kafka/bin/../libs/jetty-util-9.4.48.v20220622.jar:/home/nefi/kafka/bin/../libs/jetty-util-ajax-9.4.48.v20220622.jar:/home/nefi/kafka/bin/../libs/jline-3.21.0.jar:/home/nefi/kafka/bin/../libs/jopt-simple-5.0.4.jar:/home/nefi/kafka/bin/../libs/jose4j-0.7.9.jar:/home/nefi/kafka/bin/../libs/kafka_2.13-3.3.1.jar:/home/nefi/kafka/bin/../libs/kafka-clients-3.3.1.jar:/home/nefi/kafka/bin/../libs/kafka-log4j-appender-3.3.1.jar:/home/nefi/kafka/bin/../libs/kafka-metadata-3.3.1.jar:/home/nefi/kafka/bin/../libs/kafka-raft-3.3.1.jar:/home/nefi/kafka/bin/../libs/kafka-server-common-3.3.1.jar:/home/nefi/kafka/bin/../libs/kafka-shell-3.3.1.jar:/home/nefi/kafka/bin/../libs/kafka-storage-3.3.1.jar:/home/nefi/kafka/bin/../libs/kafka-storage-api-3.3.1.jar:/home/nefi/kafka/bin/../libs/kafka-streams-3.3.1.jar:/home/nefi/kafka/bin/../libs/kafka-streams-examples-3.3.1.jar:/home/nefi/kafka/bin/../libs/kafka-streams-scala_2.13-3.3.1.jar:/home/nefi/kafka/bin/../libs/kafka-streams-test-utils-3.3.1.jar:/home/nefi/kafka/bin/../libs/kafka-tools-3.3.1.jar:/home/nefi/kafka/bin/../libs/lz4-java-1.8.0.jar:/home/nefi/kafka/bin/../libs/maven-artifact-3.8.4.jar:/home/nefi/kafka/bin/../libs/metrics-core-2.2.0.jar:/home/nefi/kafka/bin/../libs/metrics-core-4.1.12.1.jar:/home/nefi/kafka/bin/../libs/netty-buffer-4.1.78.Final.jar:/home/nefi/kafka/bin/../libs/netty-codec-4.1.78.Final.jar:/home/nefi/kafka/bin/../libs/netty-common-4.1.78.Final.jar:/home/nefi/kafka/bin/../libs/netty-handler-4.1.78.Final.jar:/home/nefi/kafka/bin/../libs/netty-resolver-4.1.78.Final.jar:/home/nefi/kafka/bin/../libs/netty-transport-4.1.78.Final.jar:/home/nefi/kafka/bin/../libs/netty-transport-classes-epoll-4.1.78.Final.jar:/home/nefi/kafka/bin/../libs/netty-transport-native-epoll-4.1.78.Final.jar:/home/nefi/kafka/bin/../libs/netty-transport-native-unix-common-4.1.78.Final.jar:/home/nefi/kafka/bin/../libs/osgi-resource-locator-1.0.3.jar:/home/nefi/kafka/bin/../libs/paranamer-2.8.jar:/home/nefi/kafka/bin/../libs/plexus-utils-3.3.0.jar:/home/nefi/kafka/bin/../libs/reflections-0.9.12.jar:/home/nefi/kafka/bin/../libs/reload4j-1.2.19.jar:/home/nefi/kafka/bin/../libs/rocksdbjni-6.29.4.1.jar:/home/nefi/kafka/bin/../libs/scala-collection-compat_2.13-2.6.0.jar:/home/nefi/kafka/bin/../libs/scala-java8-compat_2.13-1.0.2.jar:/home/nefi/kafka/bin/../libs/scala-library-2.13.8.jar:/home/nefi/kafka/bin/../libs/scala-logging_2.13-3.9.4.jar:/home/nefi/kafka/bin/../libs/scala-reflect-2.13.8.jar:/home/nefi/kafka/bin/../libs/slf4j-api-1.7.36.jar:/home/nefi/kafka/bin/../libs/slf4j-reload4j-1.7.36.jar:/home/nefi/kafka/bin/../libs/snappy-java-1.1.8.4.jar:/home/nefi/kafka/bin/../libs/swagger-annotations-2.2.0.jar:/home/nefi/kafka/bin/../libs/trogdor-3.3.1.jar:/home/nefi/kafka/bin/../libs/zookeeper-3.6.3.jar:/home/nefi/kafka/bin/../libs/zookeeper-jute-3.6.3.jar:/home/nefi/kafka/bin/../libs/zstd-jni-1.5.2-1.jar (org.apache.zookeeper.ZooKeeper)
+[2022-12-15 00:34:43,459] INFO Client environment:java.library.path=/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib (org.apache.zookeeper.ZooKeeper)
+[2022-12-15 00:34:43,459] INFO Client environment:java.io.tmpdir=/tmp (org.apache.zookeeper.ZooKeeper)
+[2022-12-15 00:34:43,459] INFO Client environment:java.compiler=<NA> (org.apache.zookeeper.ZooKeeper)
+[2022-12-15 00:34:43,459] INFO Client environment:os.name=Linux (org.apache.zookeeper.ZooKeeper)
+[2022-12-15 00:34:43,459] INFO Client environment:os.arch=amd64 (org.apache.zookeeper.ZooKeeper)
+[2022-12-15 00:34:43,459] INFO Client environment:os.version=5.15.0-56-generic (org.apache.zookeeper.ZooKeeper)
+[2022-12-15 00:34:43,459] INFO Client environment:user.name=nefi (org.apache.zookeeper.ZooKeeper)
+[2022-12-15 00:34:43,459] INFO Client environment:user.home=/home/nefi (org.apache.zookeeper.ZooKeeper)
+[2022-12-15 00:34:43,459] INFO Client environment:user.dir=/home/nefi/kafka (org.apache.zookeeper.ZooKeeper)
+[2022-12-15 00:34:43,459] INFO Client environment:os.memory.free=1015MB (org.apache.zookeeper.ZooKeeper)
+[2022-12-15 00:34:43,459] INFO Client environment:os.memory.max=1024MB (org.apache.zookeeper.ZooKeeper)
+[2022-12-15 00:34:43,459] INFO Client environment:os.memory.total=1024MB (org.apache.zookeeper.ZooKeeper)
+[2022-12-15 00:34:43,461] INFO Initiating client connection, connectString=localhost:2181 sessionTimeout=18000 watcher=kafka.zookeeper.ZooKeeperClient$ZooKeeperClientWatcher$@4ea5b703 (org.apache.zookeeper.ZooKeeper)
+[2022-12-15 00:34:43,465] INFO jute.maxbuffer value is 4194304 Bytes (org.apache.zookeeper.ClientCnxnSocket)
+[2022-12-15 00:34:43,470] INFO zookeeper.request.timeout value is 0. feature enabled=false (org.apache.zookeeper.ClientCnxn)
+[2022-12-15 00:34:43,476] INFO [ZooKeeperClient Kafka server] Waiting until connected. (kafka.zookeeper.ZooKeeperClient)
+[2022-12-15 00:34:43,478] INFO Opening socket connection to server localhost/127.0.0.1:2181. (org.apache.zookeeper.ClientCnxn)
+[2022-12-15 00:34:43,483] INFO Socket connection established, initiating session, client: /127.0.0.1:44094, server: localhost/127.0.0.1:2181 (org.apache.zookeeper.ClientCnxn)
+[2022-12-15 00:34:43,492] INFO Creating new log file: log.25 (org.apache.zookeeper.server.persistence.FileTxnLog)
+[2022-12-15 00:34:43,506] INFO Session establishment complete on server localhost/127.0.0.1:2181, session id = 0x100000308520000, negotiated timeout = 18000 (org.apache.zookeeper.ClientCnxn)
+[2022-12-15 00:34:43,509] INFO [ZooKeeperClient Kafka server] Connected. (kafka.zookeeper.ZooKeeperClient)
+[2022-12-15 00:34:43,750] INFO Cluster ID = F1t3-IsgTN-atkjncalxTA (kafka.server.KafkaServer)
+[2022-12-15 00:34:43,807] INFO KafkaConfig values: 
+	advertised.listeners = null
+	alter.config.policy.class.name = null
+	alter.log.dirs.replication.quota.window.num = 11
+	alter.log.dirs.replication.quota.window.size.seconds = 1
+	authorizer.class.name = 
+	auto.create.topics.enable = true
+	auto.leader.rebalance.enable = true
+	background.threads = 10
+	broker.heartbeat.interval.ms = 2000
+	broker.id = 0
+	broker.id.generation.enable = true
+	broker.rack = null
+	broker.session.timeout.ms = 9000
+	client.quota.callback.class = null
+	compression.type = producer
+	connection.failed.authentication.delay.ms = 100
+	connections.max.idle.ms = 600000
+	connections.max.reauth.ms = 0
+	control.plane.listener.name = null
+	controlled.shutdown.enable = true
+	controlled.shutdown.max.retries = 3
+	controlled.shutdown.retry.backoff.ms = 5000
+	controller.listener.names = null
+	controller.quorum.append.linger.ms = 25
+	controller.quorum.election.backoff.max.ms = 1000
+	controller.quorum.election.timeout.ms = 1000
+	controller.quorum.fetch.timeout.ms = 2000
+	controller.quorum.request.timeout.ms = 2000
+	controller.quorum.retry.backoff.ms = 20
+	controller.quorum.voters = []
+	controller.quota.window.num = 11
+	controller.quota.window.size.seconds = 1
+	controller.socket.timeout.ms = 30000
+	create.topic.policy.class.name = null
+	default.replication.factor = 1
+	delegation.token.expiry.check.interval.ms = 3600000
+	delegation.token.expiry.time.ms = 86400000
+	delegation.token.master.key = null
+	delegation.token.max.lifetime.ms = 604800000
+	delegation.token.secret.key = null
+	delete.records.purgatory.purge.interval.requests = 1
+	delete.topic.enable = true
+	early.start.listeners = null
+	fetch.max.bytes = 57671680
+	fetch.purgatory.purge.interval.requests = 1000
+	group.initial.rebalance.delay.ms = 0
+	group.max.session.timeout.ms = 1800000
+	group.max.size = 2147483647
+	group.min.session.timeout.ms = 6000
+	initial.broker.registration.timeout.ms = 60000
+	inter.broker.listener.name = null
+	inter.broker.protocol.version = 3.3-IV3
+	kafka.metrics.polling.interval.secs = 10
+	kafka.metrics.reporters = []
+	leader.imbalance.check.interval.seconds = 300
+	leader.imbalance.per.broker.percentage = 10
+	listener.security.protocol.map = PLAINTEXT:PLAINTEXT,SSL:SSL,SASL_PLAINTEXT:SASL_PLAINTEXT,SASL_SSL:SASL_SSL
+	listeners = PLAINTEXT://:9092
+	log.cleaner.backoff.ms = 15000
+	log.cleaner.dedupe.buffer.size = 134217728
+	log.cleaner.delete.retention.ms = 86400000
+	log.cleaner.enable = true
+	log.cleaner.io.buffer.load.factor = 0.9
+	log.cleaner.io.buffer.size = 524288
+	log.cleaner.io.max.bytes.per.second = 1.7976931348623157E308
+	log.cleaner.max.compaction.lag.ms = 9223372036854775807
+	log.cleaner.min.cleanable.ratio = 0.5
+	log.cleaner.min.compaction.lag.ms = 0
+	log.cleaner.threads = 1
+	log.cleanup.policy = [delete]
+	log.dir = /tmp/kafka-logs
+	log.dirs = /tmp/kafka-logs
+	log.flush.interval.messages = 9223372036854775807
+	log.flush.interval.ms = null
+	log.flush.offset.checkpoint.interval.ms = 60000
+	log.flush.scheduler.interval.ms = 9223372036854775807
+	log.flush.start.offset.checkpoint.interval.ms = 60000
+	log.index.interval.bytes = 4096
+	log.index.size.max.bytes = 10485760
+	log.message.downconversion.enable = true
+	log.message.format.version = 3.0-IV1
+	log.message.timestamp.difference.max.ms = 9223372036854775807
+	log.message.timestamp.type = CreateTime
+	log.preallocate = false
+	log.retention.bytes = -1
+	log.retention.check.interval.ms = 300000
+	log.retention.hours = 168
+	log.retention.minutes = null
+	log.retention.ms = null
+	log.roll.hours = 168
+	log.roll.jitter.hours = 0
+	log.roll.jitter.ms = null
+	log.roll.ms = null
+	log.segment.bytes = 1073741824
+	log.segment.delete.delay.ms = 60000
+	max.connection.creation.rate = 2147483647
+	max.connections = 2147483647
+	max.connections.per.ip = 2147483647
+	max.connections.per.ip.overrides = 
+	max.incremental.fetch.session.cache.slots = 1000
+	message.max.bytes = 1048588
+	metadata.log.dir = null
+	metadata.log.max.record.bytes.between.snapshots = 20971520
+	metadata.log.segment.bytes = 1073741824
+	metadata.log.segment.min.bytes = 8388608
+	metadata.log.segment.ms = 604800000
+	metadata.max.idle.interval.ms = 500
+	metadata.max.retention.bytes = -1
+	metadata.max.retention.ms = 604800000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	min.insync.replicas = 1
+	node.id = 0
+	num.io.threads = 8
+	num.network.threads = 3
+	num.partitions = 1
+	num.recovery.threads.per.data.dir = 1
+	num.replica.alter.log.dirs.threads = null
+	num.replica.fetchers = 1
+	offset.metadata.max.bytes = 4096
+	offsets.commit.required.acks = -1
+	offsets.commit.timeout.ms = 5000
+	offsets.load.buffer.size = 5242880
+	offsets.retention.check.interval.ms = 600000
+	offsets.retention.minutes = 10080
+	offsets.topic.compression.codec = 0
+	offsets.topic.num.partitions = 50
+	offsets.topic.replication.factor = 1
+	offsets.topic.segment.bytes = 104857600
+	password.encoder.cipher.algorithm = AES/CBC/PKCS5Padding
+	password.encoder.iterations = 4096
+	password.encoder.key.length = 128
+	password.encoder.keyfactory.algorithm = null
+	password.encoder.old.secret = null
+	password.encoder.secret = null
+	principal.builder.class = class org.apache.kafka.common.security.authenticator.DefaultKafkaPrincipalBuilder
+	process.roles = []
+	producer.purgatory.purge.interval.requests = 1000
+	queued.max.request.bytes = -1
+	queued.max.requests = 500
+	quota.window.num = 11
+	quota.window.size.seconds = 1
+	remote.log.index.file.cache.total.size.bytes = 1073741824
+	remote.log.manager.task.interval.ms = 30000
+	remote.log.manager.task.retry.backoff.max.ms = 30000
+	remote.log.manager.task.retry.backoff.ms = 500
+	remote.log.manager.task.retry.jitter = 0.2
+	remote.log.manager.thread.pool.size = 10
+	remote.log.metadata.manager.class.name = null
+	remote.log.metadata.manager.class.path = null
+	remote.log.metadata.manager.impl.prefix = null
+	remote.log.metadata.manager.listener.name = null
+	remote.log.reader.max.pending.tasks = 100
+	remote.log.reader.threads = 10
+	remote.log.storage.manager.class.name = null
+	remote.log.storage.manager.class.path = null
+	remote.log.storage.manager.impl.prefix = null
+	remote.log.storage.system.enable = false
+	replica.fetch.backoff.ms = 1000
+	replica.fetch.max.bytes = 1048576
+	replica.fetch.min.bytes = 1
+	replica.fetch.response.max.bytes = 10485760
+	replica.fetch.wait.max.ms = 500
+	replica.high.watermark.checkpoint.interval.ms = 5000
+	replica.lag.time.max.ms = 30000
+	replica.selector.class = null
+	replica.socket.receive.buffer.bytes = 65536
+	replica.socket.timeout.ms = 30000
+	replication.quota.window.num = 11
+	replication.quota.window.size.seconds = 1
+	request.timeout.ms = 30000
+	reserved.broker.max.id = 1000
+	sasl.client.callback.handler.class = null
+	sasl.enabled.mechanisms = [GSSAPI]
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.principal.to.local.rules = [DEFAULT]
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism.controller.protocol = GSSAPI
+	sasl.mechanism.inter.broker.protocol = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	sasl.server.callback.handler.class = null
+	sasl.server.max.receive.size = 524288
+	security.inter.broker.protocol = PLAINTEXT
+	security.providers = null
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	socket.listen.backlog.size = 50
+	socket.receive.buffer.bytes = 102400
+	socket.request.max.bytes = 104857600
+	socket.send.buffer.bytes = 102400
+	ssl.cipher.suites = []
+	ssl.client.auth = none
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.principal.mapping.rules = DEFAULT
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.abort.timed.out.transaction.cleanup.interval.ms = 10000
+	transaction.max.timeout.ms = 900000
+	transaction.remove.expired.transaction.cleanup.interval.ms = 3600000
+	transaction.state.log.load.buffer.size = 5242880
+	transaction.state.log.min.isr = 1
+	transaction.state.log.num.partitions = 50
+	transaction.state.log.replication.factor = 1
+	transaction.state.log.segment.bytes = 104857600
+	transactional.id.expiration.ms = 604800000
+	unclean.leader.election.enable = false
+	zookeeper.clientCnxnSocket = null
+	zookeeper.connect = localhost:2181
+	zookeeper.connection.timeout.ms = 18000
+	zookeeper.max.in.flight.requests = 10
+	zookeeper.session.timeout.ms = 18000
+	zookeeper.set.acl = false
+	zookeeper.ssl.cipher.suites = null
+	zookeeper.ssl.client.enable = false
+	zookeeper.ssl.crl.enable = false
+	zookeeper.ssl.enabled.protocols = null
+	zookeeper.ssl.endpoint.identification.algorithm = HTTPS
+	zookeeper.ssl.keystore.location = null
+	zookeeper.ssl.keystore.password = null
+	zookeeper.ssl.keystore.type = null
+	zookeeper.ssl.ocsp.enable = false
+	zookeeper.ssl.protocol = TLSv1.2
+	zookeeper.ssl.truststore.location = null
+	zookeeper.ssl.truststore.password = null
+	zookeeper.ssl.truststore.type = null
+ (kafka.server.KafkaConfig)
+[2022-12-15 00:34:43,856] INFO [ThrottledChannelReaper-Fetch]: Starting (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2022-12-15 00:34:43,857] INFO [ThrottledChannelReaper-Request]: Starting (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2022-12-15 00:34:43,856] INFO [ThrottledChannelReaper-Produce]: Starting (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2022-12-15 00:34:43,857] INFO [ThrottledChannelReaper-ControllerMutation]: Starting (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2022-12-15 00:34:43,914] INFO Loading logs from log dirs ArraySeq(/tmp/kafka-logs) (kafka.log.LogManager)
+[2022-12-15 00:34:43,916] INFO Skipping recovery for all logs in /tmp/kafka-logs since clean shutdown file was found (kafka.log.LogManager)
+[2022-12-15 00:34:44,011] INFO [LogLoader partition=quickstart-events-0, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2022-12-15 00:34:44,039] INFO Completed load of Log(dir=/tmp/kafka-logs/quickstart-events-0, topicId=CW6KvEWOSjKVFqGOt6CAZQ, topic=quickstart-events, partition=0, highWatermark=0, lastStableOffset=0, logStartOffset=0, logEndOffset=0) with 1 segments in 94ms (1/1 completed in /tmp/kafka-logs) (kafka.log.LogManager)
+[2022-12-15 00:34:44,043] INFO Loaded 1 logs in 129ms. (kafka.log.LogManager)
+[2022-12-15 00:34:44,044] INFO Starting log cleanup with a period of 300000 ms. (kafka.log.LogManager)
+[2022-12-15 00:34:44,047] INFO Starting log flusher with a default period of 9223372036854775807 ms. (kafka.log.LogManager)
+[2022-12-15 00:34:44,155] INFO [feature-zk-node-event-process-thread]: Starting (kafka.server.FinalizedFeatureChangeListener$ChangeNotificationProcessorThread)
+[2022-12-15 00:34:44,178] INFO [MetadataCache brokerId=0] Updated cache from existing <empty> to latest FinalizedFeaturesAndEpoch(features=Map(), epoch=0). (kafka.server.metadata.ZkMetadataCache)
+[2022-12-15 00:34:44,217] INFO [BrokerToControllerChannelManager broker=0 name=forwarding]: Starting (kafka.server.BrokerToControllerRequestThread)
+[2022-12-15 00:34:44,544] INFO Updated connection-accept-rate max connection creation rate to 2147483647 (kafka.network.ConnectionQuotas)
+[2022-12-15 00:34:44,549] INFO Awaiting socket connections on 0.0.0.0:9092. (kafka.network.DataPlaneAcceptor)
+[2022-12-15 00:34:44,589] INFO [SocketServer listenerType=ZK_BROKER, nodeId=0] Created data-plane acceptor and processors for endpoint : ListenerName(PLAINTEXT) (kafka.network.SocketServer)
+[2022-12-15 00:34:44,601] INFO [BrokerToControllerChannelManager broker=0 name=alterPartition]: Starting (kafka.server.BrokerToControllerRequestThread)
+[2022-12-15 00:34:44,623] INFO [ExpirationReaper-0-Produce]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2022-12-15 00:34:44,627] INFO [ExpirationReaper-0-Fetch]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2022-12-15 00:34:44,632] INFO [ExpirationReaper-0-DeleteRecords]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2022-12-15 00:34:44,635] INFO [ExpirationReaper-0-ElectLeader]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2022-12-15 00:34:44,659] INFO [LogDirFailureHandler]: Starting (kafka.server.ReplicaManager$LogDirFailureHandler)
+[2022-12-15 00:34:44,711] INFO Creating /brokers/ids/0 (is it secure? false) (kafka.zk.KafkaZkClient)
+[2022-12-15 00:34:44,733] INFO Stat of the created znode at /brokers/ids/0 is: 52,52,1671093284726,1671093284726,1,0,0,72057607062421504,194,0,52
+ (kafka.zk.KafkaZkClient)
+[2022-12-15 00:34:44,734] INFO Registered broker 0 at path /brokers/ids/0 with addresses: PLAINTEXT://H110M:9092, czxid (broker epoch): 52 (kafka.zk.KafkaZkClient)
+[2022-12-15 00:34:44,834] INFO [ExpirationReaper-0-topic]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2022-12-15 00:34:44,835] INFO [ExpirationReaper-0-Heartbeat]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2022-12-15 00:34:44,837] INFO [ExpirationReaper-0-Rebalance]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2022-12-15 00:34:44,873] INFO [GroupCoordinator 0]: Starting up. (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:34:44,881] INFO [GroupCoordinator 0]: Startup complete. (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:34:44,907] INFO [TransactionCoordinator id=0] Starting up. (kafka.coordinator.transaction.TransactionCoordinator)
+[2022-12-15 00:34:44,923] INFO [TransactionCoordinator id=0] Startup complete. (kafka.coordinator.transaction.TransactionCoordinator)
+[2022-12-15 00:34:44,932] INFO [Transaction Marker Channel Manager 0]: Starting (kafka.coordinator.transaction.TransactionMarkerChannelManager)
+[2022-12-15 00:34:45,011] INFO [ExpirationReaper-0-AlterAcls]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2022-12-15 00:34:45,055] INFO [/config/changes-event-process-thread]: Starting (kafka.common.ZkNodeChangeNotificationListener$ChangeEventProcessThread)
+[2022-12-15 00:34:45,078] INFO [SocketServer listenerType=ZK_BROKER, nodeId=0] Enabling request processing. (kafka.network.SocketServer)
+[2022-12-15 00:34:45,091] INFO Kafka version: 3.3.1 (org.apache.kafka.common.utils.AppInfoParser)
+[2022-12-15 00:34:45,092] INFO Kafka commitId: e23c59d00e687ff5 (org.apache.kafka.common.utils.AppInfoParser)
+[2022-12-15 00:34:45,092] INFO Kafka startTimeMs: 1671093285082 (org.apache.kafka.common.utils.AppInfoParser)
+[2022-12-15 00:34:45,093] INFO [KafkaServer id=0] started (kafka.server.KafkaServer)
+[2022-12-15 00:34:45,130] INFO [BrokerToControllerChannelManager broker=0 name=forwarding]: Recorded new controller, from now on will use broker H110M:9092 (id: 0 rack: null) (kafka.server.BrokerToControllerRequestThread)
+[2022-12-15 00:34:45,164] INFO [ReplicaFetcherManager on broker 0] Removed fetcher for partitions Set(quickstart-events-0) (kafka.server.ReplicaFetcherManager)
+[2022-12-15 00:34:45,172] INFO [Partition quickstart-events-0 broker=0] Log loaded for partition quickstart-events-0 with initial high watermark 0 (kafka.cluster.Partition)
+[2022-12-15 00:34:45,210] INFO [BrokerToControllerChannelManager broker=0 name=alterPartition]: Recorded new controller, from now on will use broker H110M:9092 (id: 0 rack: null) (kafka.server.BrokerToControllerRequestThread)
+[2022-12-15 00:41:50,008] INFO Creating topic __consumer_offsets with configuration {compression.type=producer, cleanup.policy=compact, segment.bytes=104857600} and initial partition assignment HashMap(0 -> ArrayBuffer(0), 1 -> ArrayBuffer(0), 2 -> ArrayBuffer(0), 3 -> ArrayBuffer(0), 4 -> ArrayBuffer(0), 5 -> ArrayBuffer(0), 6 -> ArrayBuffer(0), 7 -> ArrayBuffer(0), 8 -> ArrayBuffer(0), 9 -> ArrayBuffer(0), 10 -> ArrayBuffer(0), 11 -> ArrayBuffer(0), 12 -> ArrayBuffer(0), 13 -> ArrayBuffer(0), 14 -> ArrayBuffer(0), 15 -> ArrayBuffer(0), 16 -> ArrayBuffer(0), 17 -> ArrayBuffer(0), 18 -> ArrayBuffer(0), 19 -> ArrayBuffer(0), 20 -> ArrayBuffer(0), 21 -> ArrayBuffer(0), 22 -> ArrayBuffer(0), 23 -> ArrayBuffer(0), 24 -> ArrayBuffer(0), 25 -> ArrayBuffer(0), 26 -> ArrayBuffer(0), 27 -> ArrayBuffer(0), 28 -> ArrayBuffer(0), 29 -> ArrayBuffer(0), 30 -> ArrayBuffer(0), 31 -> ArrayBuffer(0), 32 -> ArrayBuffer(0), 33 -> ArrayBuffer(0), 34 -> ArrayBuffer(0), 35 -> ArrayBuffer(0), 36 -> ArrayBuffer(0), 37 -> ArrayBuffer(0), 38 -> ArrayBuffer(0), 39 -> ArrayBuffer(0), 40 -> ArrayBuffer(0), 41 -> ArrayBuffer(0), 42 -> ArrayBuffer(0), 43 -> ArrayBuffer(0), 44 -> ArrayBuffer(0), 45 -> ArrayBuffer(0), 46 -> ArrayBuffer(0), 47 -> ArrayBuffer(0), 48 -> ArrayBuffer(0), 49 -> ArrayBuffer(0)) (kafka.zk.AdminZkClient)
+[2022-12-15 00:41:50,180] INFO [ReplicaFetcherManager on broker 0] Removed fetcher for partitions HashSet(__consumer_offsets-22, __consumer_offsets-30, __consumer_offsets-25, __consumer_offsets-35, __consumer_offsets-37, __consumer_offsets-38, __consumer_offsets-13, __consumer_offsets-8, __consumer_offsets-21, __consumer_offsets-4, __consumer_offsets-27, __consumer_offsets-7, __consumer_offsets-9, __consumer_offsets-46, __consumer_offsets-41, __consumer_offsets-33, __consumer_offsets-23, __consumer_offsets-49, __consumer_offsets-47, __consumer_offsets-16, __consumer_offsets-28, __consumer_offsets-31, __consumer_offsets-36, __consumer_offsets-42, __consumer_offsets-3, __consumer_offsets-18, __consumer_offsets-15, __consumer_offsets-24, __consumer_offsets-17, __consumer_offsets-48, __consumer_offsets-19, __consumer_offsets-11, __consumer_offsets-2, __consumer_offsets-43, __consumer_offsets-6, __consumer_offsets-14, __consumer_offsets-20, __consumer_offsets-0, __consumer_offsets-44, __consumer_offsets-39, __consumer_offsets-12, __consumer_offsets-45, __consumer_offsets-1, __consumer_offsets-5, __consumer_offsets-26, __consumer_offsets-29, __consumer_offsets-34, __consumer_offsets-10, __consumer_offsets-32, __consumer_offsets-40) (kafka.server.ReplicaFetcherManager)
+[2022-12-15 00:41:50,196] INFO [LogLoader partition=__consumer_offsets-3, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2022-12-15 00:41:50,204] INFO Created log for partition __consumer_offsets-3 in /tmp/kafka-logs/__consumer_offsets-3 with properties {cleanup.policy=compact, compression.type="producer", segment.bytes=104857600} (kafka.log.LogManager)
+[2022-12-15 00:41:50,206] INFO [Partition __consumer_offsets-3 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-3 (kafka.cluster.Partition)
+[2022-12-15 00:41:50,207] INFO [Partition __consumer_offsets-3 broker=0] Log loaded for partition __consumer_offsets-3 with initial high watermark 0 (kafka.cluster.Partition)
+[2022-12-15 00:41:50,221] INFO [LogLoader partition=__consumer_offsets-18, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2022-12-15 00:41:50,221] INFO Created log for partition __consumer_offsets-18 in /tmp/kafka-logs/__consumer_offsets-18 with properties {cleanup.policy=compact, compression.type="producer", segment.bytes=104857600} (kafka.log.LogManager)
+[2022-12-15 00:41:50,222] INFO [Partition __consumer_offsets-18 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-18 (kafka.cluster.Partition)
+[2022-12-15 00:41:50,222] INFO [Partition __consumer_offsets-18 broker=0] Log loaded for partition __consumer_offsets-18 with initial high watermark 0 (kafka.cluster.Partition)
+[2022-12-15 00:41:50,240] INFO [LogLoader partition=__consumer_offsets-41, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2022-12-15 00:41:50,241] INFO Created log for partition __consumer_offsets-41 in /tmp/kafka-logs/__consumer_offsets-41 with properties {cleanup.policy=compact, compression.type="producer", segment.bytes=104857600} (kafka.log.LogManager)
+[2022-12-15 00:41:50,241] INFO [Partition __consumer_offsets-41 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-41 (kafka.cluster.Partition)
+[2022-12-15 00:41:50,242] INFO [Partition __consumer_offsets-41 broker=0] Log loaded for partition __consumer_offsets-41 with initial high watermark 0 (kafka.cluster.Partition)
+[2022-12-15 00:41:50,259] INFO [LogLoader partition=__consumer_offsets-10, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2022-12-15 00:41:50,260] INFO Created log for partition __consumer_offsets-10 in /tmp/kafka-logs/__consumer_offsets-10 with properties {cleanup.policy=compact, compression.type="producer", segment.bytes=104857600} (kafka.log.LogManager)
+[2022-12-15 00:41:50,260] INFO [Partition __consumer_offsets-10 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-10 (kafka.cluster.Partition)
+[2022-12-15 00:41:50,260] INFO [Partition __consumer_offsets-10 broker=0] Log loaded for partition __consumer_offsets-10 with initial high watermark 0 (kafka.cluster.Partition)
+[2022-12-15 00:41:50,278] INFO [LogLoader partition=__consumer_offsets-33, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2022-12-15 00:41:50,279] INFO Created log for partition __consumer_offsets-33 in /tmp/kafka-logs/__consumer_offsets-33 with properties {cleanup.policy=compact, compression.type="producer", segment.bytes=104857600} (kafka.log.LogManager)
+[2022-12-15 00:41:50,279] INFO [Partition __consumer_offsets-33 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-33 (kafka.cluster.Partition)
+[2022-12-15 00:41:50,280] INFO [Partition __consumer_offsets-33 broker=0] Log loaded for partition __consumer_offsets-33 with initial high watermark 0 (kafka.cluster.Partition)
+[2022-12-15 00:41:50,298] INFO [LogLoader partition=__consumer_offsets-48, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2022-12-15 00:41:50,301] INFO Created log for partition __consumer_offsets-48 in /tmp/kafka-logs/__consumer_offsets-48 with properties {cleanup.policy=compact, compression.type="producer", segment.bytes=104857600} (kafka.log.LogManager)
+[2022-12-15 00:41:50,301] INFO [Partition __consumer_offsets-48 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-48 (kafka.cluster.Partition)
+[2022-12-15 00:41:50,301] INFO [Partition __consumer_offsets-48 broker=0] Log loaded for partition __consumer_offsets-48 with initial high watermark 0 (kafka.cluster.Partition)
+[2022-12-15 00:41:50,320] INFO [LogLoader partition=__consumer_offsets-19, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2022-12-15 00:41:50,320] INFO Created log for partition __consumer_offsets-19 in /tmp/kafka-logs/__consumer_offsets-19 with properties {cleanup.policy=compact, compression.type="producer", segment.bytes=104857600} (kafka.log.LogManager)
+[2022-12-15 00:41:50,320] INFO [Partition __consumer_offsets-19 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-19 (kafka.cluster.Partition)
+[2022-12-15 00:41:50,320] INFO [Partition __consumer_offsets-19 broker=0] Log loaded for partition __consumer_offsets-19 with initial high watermark 0 (kafka.cluster.Partition)
+[2022-12-15 00:41:50,338] INFO [LogLoader partition=__consumer_offsets-34, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2022-12-15 00:41:50,341] INFO Created log for partition __consumer_offsets-34 in /tmp/kafka-logs/__consumer_offsets-34 with properties {cleanup.policy=compact, compression.type="producer", segment.bytes=104857600} (kafka.log.LogManager)
+[2022-12-15 00:41:50,342] INFO [Partition __consumer_offsets-34 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-34 (kafka.cluster.Partition)
+[2022-12-15 00:41:50,342] INFO [Partition __consumer_offsets-34 broker=0] Log loaded for partition __consumer_offsets-34 with initial high watermark 0 (kafka.cluster.Partition)
+[2022-12-15 00:41:50,358] INFO [LogLoader partition=__consumer_offsets-4, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2022-12-15 00:41:50,360] INFO Created log for partition __consumer_offsets-4 in /tmp/kafka-logs/__consumer_offsets-4 with properties {cleanup.policy=compact, compression.type="producer", segment.bytes=104857600} (kafka.log.LogManager)
+[2022-12-15 00:41:50,361] INFO [Partition __consumer_offsets-4 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-4 (kafka.cluster.Partition)
+[2022-12-15 00:41:50,362] INFO [Partition __consumer_offsets-4 broker=0] Log loaded for partition __consumer_offsets-4 with initial high watermark 0 (kafka.cluster.Partition)
+[2022-12-15 00:41:50,379] INFO [LogLoader partition=__consumer_offsets-11, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2022-12-15 00:41:50,380] INFO Created log for partition __consumer_offsets-11 in /tmp/kafka-logs/__consumer_offsets-11 with properties {cleanup.policy=compact, compression.type="producer", segment.bytes=104857600} (kafka.log.LogManager)
+[2022-12-15 00:41:50,380] INFO [Partition __consumer_offsets-11 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-11 (kafka.cluster.Partition)
+[2022-12-15 00:41:50,380] INFO [Partition __consumer_offsets-11 broker=0] Log loaded for partition __consumer_offsets-11 with initial high watermark 0 (kafka.cluster.Partition)
+[2022-12-15 00:41:50,400] INFO [LogLoader partition=__consumer_offsets-26, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2022-12-15 00:41:50,400] INFO Created log for partition __consumer_offsets-26 in /tmp/kafka-logs/__consumer_offsets-26 with properties {cleanup.policy=compact, compression.type="producer", segment.bytes=104857600} (kafka.log.LogManager)
+[2022-12-15 00:41:50,401] INFO [Partition __consumer_offsets-26 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-26 (kafka.cluster.Partition)
+[2022-12-15 00:41:50,401] INFO [Partition __consumer_offsets-26 broker=0] Log loaded for partition __consumer_offsets-26 with initial high watermark 0 (kafka.cluster.Partition)
+[2022-12-15 00:41:50,418] INFO [LogLoader partition=__consumer_offsets-49, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2022-12-15 00:41:50,419] INFO Created log for partition __consumer_offsets-49 in /tmp/kafka-logs/__consumer_offsets-49 with properties {cleanup.policy=compact, compression.type="producer", segment.bytes=104857600} (kafka.log.LogManager)
+[2022-12-15 00:41:50,419] INFO [Partition __consumer_offsets-49 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-49 (kafka.cluster.Partition)
+[2022-12-15 00:41:50,419] INFO [Partition __consumer_offsets-49 broker=0] Log loaded for partition __consumer_offsets-49 with initial high watermark 0 (kafka.cluster.Partition)
+[2022-12-15 00:41:50,438] INFO [LogLoader partition=__consumer_offsets-39, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2022-12-15 00:41:50,440] INFO Created log for partition __consumer_offsets-39 in /tmp/kafka-logs/__consumer_offsets-39 with properties {cleanup.policy=compact, compression.type="producer", segment.bytes=104857600} (kafka.log.LogManager)
+[2022-12-15 00:41:50,441] INFO [Partition __consumer_offsets-39 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-39 (kafka.cluster.Partition)
+[2022-12-15 00:41:50,441] INFO [Partition __consumer_offsets-39 broker=0] Log loaded for partition __consumer_offsets-39 with initial high watermark 0 (kafka.cluster.Partition)
+[2022-12-15 00:41:50,454] INFO [LogLoader partition=__consumer_offsets-9, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2022-12-15 00:41:50,459] INFO Created log for partition __consumer_offsets-9 in /tmp/kafka-logs/__consumer_offsets-9 with properties {cleanup.policy=compact, compression.type="producer", segment.bytes=104857600} (kafka.log.LogManager)
+[2022-12-15 00:41:50,459] INFO [Partition __consumer_offsets-9 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-9 (kafka.cluster.Partition)
+[2022-12-15 00:41:50,459] INFO [Partition __consumer_offsets-9 broker=0] Log loaded for partition __consumer_offsets-9 with initial high watermark 0 (kafka.cluster.Partition)
+[2022-12-15 00:41:50,473] INFO [LogLoader partition=__consumer_offsets-24, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2022-12-15 00:41:50,474] INFO Created log for partition __consumer_offsets-24 in /tmp/kafka-logs/__consumer_offsets-24 with properties {cleanup.policy=compact, compression.type="producer", segment.bytes=104857600} (kafka.log.LogManager)
+[2022-12-15 00:41:50,474] INFO [Partition __consumer_offsets-24 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-24 (kafka.cluster.Partition)
+[2022-12-15 00:41:50,475] INFO [Partition __consumer_offsets-24 broker=0] Log loaded for partition __consumer_offsets-24 with initial high watermark 0 (kafka.cluster.Partition)
+[2022-12-15 00:41:50,492] INFO [LogLoader partition=__consumer_offsets-31, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2022-12-15 00:41:50,512] INFO Created log for partition __consumer_offsets-31 in /tmp/kafka-logs/__consumer_offsets-31 with properties {cleanup.policy=compact, compression.type="producer", segment.bytes=104857600} (kafka.log.LogManager)
+[2022-12-15 00:41:50,515] INFO [Partition __consumer_offsets-31 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-31 (kafka.cluster.Partition)
+[2022-12-15 00:41:50,516] INFO [Partition __consumer_offsets-31 broker=0] Log loaded for partition __consumer_offsets-31 with initial high watermark 0 (kafka.cluster.Partition)
+[2022-12-15 00:41:50,528] INFO [LogLoader partition=__consumer_offsets-46, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2022-12-15 00:41:50,528] INFO Created log for partition __consumer_offsets-46 in /tmp/kafka-logs/__consumer_offsets-46 with properties {cleanup.policy=compact, compression.type="producer", segment.bytes=104857600} (kafka.log.LogManager)
+[2022-12-15 00:41:50,529] INFO [Partition __consumer_offsets-46 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-46 (kafka.cluster.Partition)
+[2022-12-15 00:41:50,529] INFO [Partition __consumer_offsets-46 broker=0] Log loaded for partition __consumer_offsets-46 with initial high watermark 0 (kafka.cluster.Partition)
+[2022-12-15 00:41:50,546] INFO [LogLoader partition=__consumer_offsets-1, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2022-12-15 00:41:50,548] INFO Created log for partition __consumer_offsets-1 in /tmp/kafka-logs/__consumer_offsets-1 with properties {cleanup.policy=compact, compression.type="producer", segment.bytes=104857600} (kafka.log.LogManager)
+[2022-12-15 00:41:50,548] INFO [Partition __consumer_offsets-1 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-1 (kafka.cluster.Partition)
+[2022-12-15 00:41:50,548] INFO [Partition __consumer_offsets-1 broker=0] Log loaded for partition __consumer_offsets-1 with initial high watermark 0 (kafka.cluster.Partition)
+[2022-12-15 00:41:50,566] INFO [LogLoader partition=__consumer_offsets-16, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2022-12-15 00:41:50,568] INFO Created log for partition __consumer_offsets-16 in /tmp/kafka-logs/__consumer_offsets-16 with properties {cleanup.policy=compact, compression.type="producer", segment.bytes=104857600} (kafka.log.LogManager)
+[2022-12-15 00:41:50,569] INFO [Partition __consumer_offsets-16 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-16 (kafka.cluster.Partition)
+[2022-12-15 00:41:50,570] INFO [Partition __consumer_offsets-16 broker=0] Log loaded for partition __consumer_offsets-16 with initial high watermark 0 (kafka.cluster.Partition)
+[2022-12-15 00:41:50,586] INFO [LogLoader partition=__consumer_offsets-2, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2022-12-15 00:41:50,591] INFO Created log for partition __consumer_offsets-2 in /tmp/kafka-logs/__consumer_offsets-2 with properties {cleanup.policy=compact, compression.type="producer", segment.bytes=104857600} (kafka.log.LogManager)
+[2022-12-15 00:41:50,591] INFO [Partition __consumer_offsets-2 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-2 (kafka.cluster.Partition)
+[2022-12-15 00:41:50,592] INFO [Partition __consumer_offsets-2 broker=0] Log loaded for partition __consumer_offsets-2 with initial high watermark 0 (kafka.cluster.Partition)
+[2022-12-15 00:41:50,609] INFO [LogLoader partition=__consumer_offsets-25, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2022-12-15 00:41:50,610] INFO Created log for partition __consumer_offsets-25 in /tmp/kafka-logs/__consumer_offsets-25 with properties {cleanup.policy=compact, compression.type="producer", segment.bytes=104857600} (kafka.log.LogManager)
+[2022-12-15 00:41:50,610] INFO [Partition __consumer_offsets-25 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-25 (kafka.cluster.Partition)
+[2022-12-15 00:41:50,610] INFO [Partition __consumer_offsets-25 broker=0] Log loaded for partition __consumer_offsets-25 with initial high watermark 0 (kafka.cluster.Partition)
+[2022-12-15 00:41:50,628] INFO [LogLoader partition=__consumer_offsets-40, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2022-12-15 00:41:50,629] INFO Created log for partition __consumer_offsets-40 in /tmp/kafka-logs/__consumer_offsets-40 with properties {cleanup.policy=compact, compression.type="producer", segment.bytes=104857600} (kafka.log.LogManager)
+[2022-12-15 00:41:50,629] INFO [Partition __consumer_offsets-40 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-40 (kafka.cluster.Partition)
+[2022-12-15 00:41:50,629] INFO [Partition __consumer_offsets-40 broker=0] Log loaded for partition __consumer_offsets-40 with initial high watermark 0 (kafka.cluster.Partition)
+[2022-12-15 00:41:50,649] INFO [LogLoader partition=__consumer_offsets-47, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2022-12-15 00:41:50,650] INFO Created log for partition __consumer_offsets-47 in /tmp/kafka-logs/__consumer_offsets-47 with properties {cleanup.policy=compact, compression.type="producer", segment.bytes=104857600} (kafka.log.LogManager)
+[2022-12-15 00:41:50,650] INFO [Partition __consumer_offsets-47 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-47 (kafka.cluster.Partition)
+[2022-12-15 00:41:50,651] INFO [Partition __consumer_offsets-47 broker=0] Log loaded for partition __consumer_offsets-47 with initial high watermark 0 (kafka.cluster.Partition)
+[2022-12-15 00:41:50,665] INFO [LogLoader partition=__consumer_offsets-17, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2022-12-15 00:41:50,666] INFO Created log for partition __consumer_offsets-17 in /tmp/kafka-logs/__consumer_offsets-17 with properties {cleanup.policy=compact, compression.type="producer", segment.bytes=104857600} (kafka.log.LogManager)
+[2022-12-15 00:41:50,667] INFO [Partition __consumer_offsets-17 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-17 (kafka.cluster.Partition)
+[2022-12-15 00:41:50,667] INFO [Partition __consumer_offsets-17 broker=0] Log loaded for partition __consumer_offsets-17 with initial high watermark 0 (kafka.cluster.Partition)
+[2022-12-15 00:41:50,684] INFO [LogLoader partition=__consumer_offsets-32, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2022-12-15 00:41:50,684] INFO Created log for partition __consumer_offsets-32 in /tmp/kafka-logs/__consumer_offsets-32 with properties {cleanup.policy=compact, compression.type="producer", segment.bytes=104857600} (kafka.log.LogManager)
+[2022-12-15 00:41:50,684] INFO [Partition __consumer_offsets-32 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-32 (kafka.cluster.Partition)
+[2022-12-15 00:41:50,684] INFO [Partition __consumer_offsets-32 broker=0] Log loaded for partition __consumer_offsets-32 with initial high watermark 0 (kafka.cluster.Partition)
+[2022-12-15 00:41:50,702] INFO [LogLoader partition=__consumer_offsets-37, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2022-12-15 00:41:50,702] INFO Created log for partition __consumer_offsets-37 in /tmp/kafka-logs/__consumer_offsets-37 with properties {cleanup.policy=compact, compression.type="producer", segment.bytes=104857600} (kafka.log.LogManager)
+[2022-12-15 00:41:50,703] INFO [Partition __consumer_offsets-37 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-37 (kafka.cluster.Partition)
+[2022-12-15 00:41:50,703] INFO [Partition __consumer_offsets-37 broker=0] Log loaded for partition __consumer_offsets-37 with initial high watermark 0 (kafka.cluster.Partition)
+[2022-12-15 00:41:50,720] INFO [LogLoader partition=__consumer_offsets-7, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2022-12-15 00:41:50,721] INFO Created log for partition __consumer_offsets-7 in /tmp/kafka-logs/__consumer_offsets-7 with properties {cleanup.policy=compact, compression.type="producer", segment.bytes=104857600} (kafka.log.LogManager)
+[2022-12-15 00:41:50,721] INFO [Partition __consumer_offsets-7 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-7 (kafka.cluster.Partition)
+[2022-12-15 00:41:50,721] INFO [Partition __consumer_offsets-7 broker=0] Log loaded for partition __consumer_offsets-7 with initial high watermark 0 (kafka.cluster.Partition)
+[2022-12-15 00:41:50,738] INFO [LogLoader partition=__consumer_offsets-22, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2022-12-15 00:41:50,740] INFO Created log for partition __consumer_offsets-22 in /tmp/kafka-logs/__consumer_offsets-22 with properties {cleanup.policy=compact, compression.type="producer", segment.bytes=104857600} (kafka.log.LogManager)
+[2022-12-15 00:41:50,740] INFO [Partition __consumer_offsets-22 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-22 (kafka.cluster.Partition)
+[2022-12-15 00:41:50,740] INFO [Partition __consumer_offsets-22 broker=0] Log loaded for partition __consumer_offsets-22 with initial high watermark 0 (kafka.cluster.Partition)
+[2022-12-15 00:41:50,758] INFO [LogLoader partition=__consumer_offsets-29, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2022-12-15 00:41:50,759] INFO Created log for partition __consumer_offsets-29 in /tmp/kafka-logs/__consumer_offsets-29 with properties {cleanup.policy=compact, compression.type="producer", segment.bytes=104857600} (kafka.log.LogManager)
+[2022-12-15 00:41:50,759] INFO [Partition __consumer_offsets-29 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-29 (kafka.cluster.Partition)
+[2022-12-15 00:41:50,760] INFO [Partition __consumer_offsets-29 broker=0] Log loaded for partition __consumer_offsets-29 with initial high watermark 0 (kafka.cluster.Partition)
+[2022-12-15 00:41:50,772] INFO [LogLoader partition=__consumer_offsets-44, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2022-12-15 00:41:50,773] INFO Created log for partition __consumer_offsets-44 in /tmp/kafka-logs/__consumer_offsets-44 with properties {cleanup.policy=compact, compression.type="producer", segment.bytes=104857600} (kafka.log.LogManager)
+[2022-12-15 00:41:50,773] INFO [Partition __consumer_offsets-44 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-44 (kafka.cluster.Partition)
+[2022-12-15 00:41:50,775] INFO [Partition __consumer_offsets-44 broker=0] Log loaded for partition __consumer_offsets-44 with initial high watermark 0 (kafka.cluster.Partition)
+[2022-12-15 00:41:50,795] INFO [LogLoader partition=__consumer_offsets-14, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2022-12-15 00:41:50,797] INFO Created log for partition __consumer_offsets-14 in /tmp/kafka-logs/__consumer_offsets-14 with properties {cleanup.policy=compact, compression.type="producer", segment.bytes=104857600} (kafka.log.LogManager)
+[2022-12-15 00:41:50,798] INFO [Partition __consumer_offsets-14 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-14 (kafka.cluster.Partition)
+[2022-12-15 00:41:50,798] INFO [Partition __consumer_offsets-14 broker=0] Log loaded for partition __consumer_offsets-14 with initial high watermark 0 (kafka.cluster.Partition)
+[2022-12-15 00:41:50,814] INFO [LogLoader partition=__consumer_offsets-23, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2022-12-15 00:41:50,816] INFO Created log for partition __consumer_offsets-23 in /tmp/kafka-logs/__consumer_offsets-23 with properties {cleanup.policy=compact, compression.type="producer", segment.bytes=104857600} (kafka.log.LogManager)
+[2022-12-15 00:41:50,816] INFO [Partition __consumer_offsets-23 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-23 (kafka.cluster.Partition)
+[2022-12-15 00:41:50,816] INFO [Partition __consumer_offsets-23 broker=0] Log loaded for partition __consumer_offsets-23 with initial high watermark 0 (kafka.cluster.Partition)
+[2022-12-15 00:41:50,833] INFO [LogLoader partition=__consumer_offsets-38, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2022-12-15 00:41:50,834] INFO Created log for partition __consumer_offsets-38 in /tmp/kafka-logs/__consumer_offsets-38 with properties {cleanup.policy=compact, compression.type="producer", segment.bytes=104857600} (kafka.log.LogManager)
+[2022-12-15 00:41:50,834] INFO [Partition __consumer_offsets-38 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-38 (kafka.cluster.Partition)
+[2022-12-15 00:41:50,835] INFO [Partition __consumer_offsets-38 broker=0] Log loaded for partition __consumer_offsets-38 with initial high watermark 0 (kafka.cluster.Partition)
+[2022-12-15 00:41:50,851] INFO [LogLoader partition=__consumer_offsets-8, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2022-12-15 00:41:50,851] INFO Created log for partition __consumer_offsets-8 in /tmp/kafka-logs/__consumer_offsets-8 with properties {cleanup.policy=compact, compression.type="producer", segment.bytes=104857600} (kafka.log.LogManager)
+[2022-12-15 00:41:50,852] INFO [Partition __consumer_offsets-8 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-8 (kafka.cluster.Partition)
+[2022-12-15 00:41:50,852] INFO [Partition __consumer_offsets-8 broker=0] Log loaded for partition __consumer_offsets-8 with initial high watermark 0 (kafka.cluster.Partition)
+[2022-12-15 00:41:50,869] INFO [LogLoader partition=__consumer_offsets-45, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2022-12-15 00:41:50,869] INFO Created log for partition __consumer_offsets-45 in /tmp/kafka-logs/__consumer_offsets-45 with properties {cleanup.policy=compact, compression.type="producer", segment.bytes=104857600} (kafka.log.LogManager)
+[2022-12-15 00:41:50,869] INFO [Partition __consumer_offsets-45 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-45 (kafka.cluster.Partition)
+[2022-12-15 00:41:50,870] INFO [Partition __consumer_offsets-45 broker=0] Log loaded for partition __consumer_offsets-45 with initial high watermark 0 (kafka.cluster.Partition)
+[2022-12-15 00:41:50,887] INFO [LogLoader partition=__consumer_offsets-15, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2022-12-15 00:41:50,887] INFO Created log for partition __consumer_offsets-15 in /tmp/kafka-logs/__consumer_offsets-15 with properties {cleanup.policy=compact, compression.type="producer", segment.bytes=104857600} (kafka.log.LogManager)
+[2022-12-15 00:41:50,887] INFO [Partition __consumer_offsets-15 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-15 (kafka.cluster.Partition)
+[2022-12-15 00:41:50,887] INFO [Partition __consumer_offsets-15 broker=0] Log loaded for partition __consumer_offsets-15 with initial high watermark 0 (kafka.cluster.Partition)
+[2022-12-15 00:41:50,905] INFO [LogLoader partition=__consumer_offsets-30, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2022-12-15 00:41:50,906] INFO Created log for partition __consumer_offsets-30 in /tmp/kafka-logs/__consumer_offsets-30 with properties {cleanup.policy=compact, compression.type="producer", segment.bytes=104857600} (kafka.log.LogManager)
+[2022-12-15 00:41:50,907] INFO [Partition __consumer_offsets-30 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-30 (kafka.cluster.Partition)
+[2022-12-15 00:41:50,908] INFO [Partition __consumer_offsets-30 broker=0] Log loaded for partition __consumer_offsets-30 with initial high watermark 0 (kafka.cluster.Partition)
+[2022-12-15 00:41:50,921] INFO [LogLoader partition=__consumer_offsets-0, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2022-12-15 00:41:50,921] INFO Created log for partition __consumer_offsets-0 in /tmp/kafka-logs/__consumer_offsets-0 with properties {cleanup.policy=compact, compression.type="producer", segment.bytes=104857600} (kafka.log.LogManager)
+[2022-12-15 00:41:50,922] INFO [Partition __consumer_offsets-0 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-0 (kafka.cluster.Partition)
+[2022-12-15 00:41:50,922] INFO [Partition __consumer_offsets-0 broker=0] Log loaded for partition __consumer_offsets-0 with initial high watermark 0 (kafka.cluster.Partition)
+[2022-12-15 00:41:50,940] INFO [LogLoader partition=__consumer_offsets-35, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2022-12-15 00:41:50,944] INFO Created log for partition __consumer_offsets-35 in /tmp/kafka-logs/__consumer_offsets-35 with properties {cleanup.policy=compact, compression.type="producer", segment.bytes=104857600} (kafka.log.LogManager)
+[2022-12-15 00:41:50,945] INFO [Partition __consumer_offsets-35 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-35 (kafka.cluster.Partition)
+[2022-12-15 00:41:50,946] INFO [Partition __consumer_offsets-35 broker=0] Log loaded for partition __consumer_offsets-35 with initial high watermark 0 (kafka.cluster.Partition)
+[2022-12-15 00:41:50,962] INFO [LogLoader partition=__consumer_offsets-5, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2022-12-15 00:41:50,963] INFO Created log for partition __consumer_offsets-5 in /tmp/kafka-logs/__consumer_offsets-5 with properties {cleanup.policy=compact, compression.type="producer", segment.bytes=104857600} (kafka.log.LogManager)
+[2022-12-15 00:41:50,963] INFO [Partition __consumer_offsets-5 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-5 (kafka.cluster.Partition)
+[2022-12-15 00:41:50,963] INFO [Partition __consumer_offsets-5 broker=0] Log loaded for partition __consumer_offsets-5 with initial high watermark 0 (kafka.cluster.Partition)
+[2022-12-15 00:41:50,980] INFO [LogLoader partition=__consumer_offsets-20, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2022-12-15 00:41:50,980] INFO Created log for partition __consumer_offsets-20 in /tmp/kafka-logs/__consumer_offsets-20 with properties {cleanup.policy=compact, compression.type="producer", segment.bytes=104857600} (kafka.log.LogManager)
+[2022-12-15 00:41:50,980] INFO [Partition __consumer_offsets-20 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-20 (kafka.cluster.Partition)
+[2022-12-15 00:41:50,981] INFO [Partition __consumer_offsets-20 broker=0] Log loaded for partition __consumer_offsets-20 with initial high watermark 0 (kafka.cluster.Partition)
+[2022-12-15 00:41:50,998] INFO [LogLoader partition=__consumer_offsets-27, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2022-12-15 00:41:50,999] INFO Created log for partition __consumer_offsets-27 in /tmp/kafka-logs/__consumer_offsets-27 with properties {cleanup.policy=compact, compression.type="producer", segment.bytes=104857600} (kafka.log.LogManager)
+[2022-12-15 00:41:50,999] INFO [Partition __consumer_offsets-27 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-27 (kafka.cluster.Partition)
+[2022-12-15 00:41:50,999] INFO [Partition __consumer_offsets-27 broker=0] Log loaded for partition __consumer_offsets-27 with initial high watermark 0 (kafka.cluster.Partition)
+[2022-12-15 00:41:51,020] INFO [LogLoader partition=__consumer_offsets-42, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2022-12-15 00:41:51,021] INFO Created log for partition __consumer_offsets-42 in /tmp/kafka-logs/__consumer_offsets-42 with properties {cleanup.policy=compact, compression.type="producer", segment.bytes=104857600} (kafka.log.LogManager)
+[2022-12-15 00:41:51,021] INFO [Partition __consumer_offsets-42 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-42 (kafka.cluster.Partition)
+[2022-12-15 00:41:51,022] INFO [Partition __consumer_offsets-42 broker=0] Log loaded for partition __consumer_offsets-42 with initial high watermark 0 (kafka.cluster.Partition)
+[2022-12-15 00:41:51,038] INFO [LogLoader partition=__consumer_offsets-12, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2022-12-15 00:41:51,039] INFO Created log for partition __consumer_offsets-12 in /tmp/kafka-logs/__consumer_offsets-12 with properties {cleanup.policy=compact, compression.type="producer", segment.bytes=104857600} (kafka.log.LogManager)
+[2022-12-15 00:41:51,039] INFO [Partition __consumer_offsets-12 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-12 (kafka.cluster.Partition)
+[2022-12-15 00:41:51,039] INFO [Partition __consumer_offsets-12 broker=0] Log loaded for partition __consumer_offsets-12 with initial high watermark 0 (kafka.cluster.Partition)
+[2022-12-15 00:41:51,057] INFO [LogLoader partition=__consumer_offsets-21, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2022-12-15 00:41:51,058] INFO Created log for partition __consumer_offsets-21 in /tmp/kafka-logs/__consumer_offsets-21 with properties {cleanup.policy=compact, compression.type="producer", segment.bytes=104857600} (kafka.log.LogManager)
+[2022-12-15 00:41:51,058] INFO [Partition __consumer_offsets-21 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-21 (kafka.cluster.Partition)
+[2022-12-15 00:41:51,058] INFO [Partition __consumer_offsets-21 broker=0] Log loaded for partition __consumer_offsets-21 with initial high watermark 0 (kafka.cluster.Partition)
+[2022-12-15 00:41:51,076] INFO [LogLoader partition=__consumer_offsets-36, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2022-12-15 00:41:51,076] INFO Created log for partition __consumer_offsets-36 in /tmp/kafka-logs/__consumer_offsets-36 with properties {cleanup.policy=compact, compression.type="producer", segment.bytes=104857600} (kafka.log.LogManager)
+[2022-12-15 00:41:51,077] INFO [Partition __consumer_offsets-36 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-36 (kafka.cluster.Partition)
+[2022-12-15 00:41:51,077] INFO [Partition __consumer_offsets-36 broker=0] Log loaded for partition __consumer_offsets-36 with initial high watermark 0 (kafka.cluster.Partition)
+[2022-12-15 00:41:51,095] INFO [LogLoader partition=__consumer_offsets-6, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2022-12-15 00:41:51,095] INFO Created log for partition __consumer_offsets-6 in /tmp/kafka-logs/__consumer_offsets-6 with properties {cleanup.policy=compact, compression.type="producer", segment.bytes=104857600} (kafka.log.LogManager)
+[2022-12-15 00:41:51,096] INFO [Partition __consumer_offsets-6 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-6 (kafka.cluster.Partition)
+[2022-12-15 00:41:51,096] INFO [Partition __consumer_offsets-6 broker=0] Log loaded for partition __consumer_offsets-6 with initial high watermark 0 (kafka.cluster.Partition)
+[2022-12-15 00:41:51,113] INFO [LogLoader partition=__consumer_offsets-43, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2022-12-15 00:41:51,115] INFO Created log for partition __consumer_offsets-43 in /tmp/kafka-logs/__consumer_offsets-43 with properties {cleanup.policy=compact, compression.type="producer", segment.bytes=104857600} (kafka.log.LogManager)
+[2022-12-15 00:41:51,115] INFO [Partition __consumer_offsets-43 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-43 (kafka.cluster.Partition)
+[2022-12-15 00:41:51,115] INFO [Partition __consumer_offsets-43 broker=0] Log loaded for partition __consumer_offsets-43 with initial high watermark 0 (kafka.cluster.Partition)
+[2022-12-15 00:41:51,131] INFO [LogLoader partition=__consumer_offsets-13, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2022-12-15 00:41:51,132] INFO Created log for partition __consumer_offsets-13 in /tmp/kafka-logs/__consumer_offsets-13 with properties {cleanup.policy=compact, compression.type="producer", segment.bytes=104857600} (kafka.log.LogManager)
+[2022-12-15 00:41:51,133] INFO [Partition __consumer_offsets-13 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-13 (kafka.cluster.Partition)
+[2022-12-15 00:41:51,133] INFO [Partition __consumer_offsets-13 broker=0] Log loaded for partition __consumer_offsets-13 with initial high watermark 0 (kafka.cluster.Partition)
+[2022-12-15 00:41:51,149] INFO [LogLoader partition=__consumer_offsets-28, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2022-12-15 00:41:51,150] INFO Created log for partition __consumer_offsets-28 in /tmp/kafka-logs/__consumer_offsets-28 with properties {cleanup.policy=compact, compression.type="producer", segment.bytes=104857600} (kafka.log.LogManager)
+[2022-12-15 00:41:51,150] INFO [Partition __consumer_offsets-28 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-28 (kafka.cluster.Partition)
+[2022-12-15 00:41:51,150] INFO [Partition __consumer_offsets-28 broker=0] Log loaded for partition __consumer_offsets-28 with initial high watermark 0 (kafka.cluster.Partition)
+[2022-12-15 00:41:51,165] INFO [GroupCoordinator 0]: Elected as the group coordinator for partition 3 in epoch 0 (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:41:51,167] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-3 for epoch 0 (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,168] INFO [GroupCoordinator 0]: Elected as the group coordinator for partition 18 in epoch 0 (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:41:51,168] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-18 for epoch 0 (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,168] INFO [GroupCoordinator 0]: Elected as the group coordinator for partition 41 in epoch 0 (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:41:51,168] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-41 for epoch 0 (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,168] INFO [GroupCoordinator 0]: Elected as the group coordinator for partition 10 in epoch 0 (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:41:51,168] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-10 for epoch 0 (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,175] INFO [GroupCoordinator 0]: Elected as the group coordinator for partition 33 in epoch 0 (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:41:51,176] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-33 for epoch 0 (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,172] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-3 in 4 milliseconds for epoch 0, of which 2 milliseconds was spent in the scheduler. (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,181] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-18 in 13 milliseconds for epoch 0, of which 12 milliseconds was spent in the scheduler. (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,181] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-41 in 13 milliseconds for epoch 0, of which 13 milliseconds was spent in the scheduler. (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,181] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-10 in 13 milliseconds for epoch 0, of which 13 milliseconds was spent in the scheduler. (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,181] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-33 in 1 milliseconds for epoch 0, of which 1 milliseconds was spent in the scheduler. (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,180] INFO [GroupCoordinator 0]: Elected as the group coordinator for partition 48 in epoch 0 (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:41:51,181] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-48 for epoch 0 (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,181] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-48 in 0 milliseconds for epoch 0, of which 0 milliseconds was spent in the scheduler. (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,181] INFO [GroupCoordinator 0]: Elected as the group coordinator for partition 19 in epoch 0 (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:41:51,181] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-19 for epoch 0 (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,181] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-19 in 0 milliseconds for epoch 0, of which 0 milliseconds was spent in the scheduler. (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,182] INFO [GroupCoordinator 0]: Elected as the group coordinator for partition 34 in epoch 0 (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:41:51,182] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-34 for epoch 0 (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,182] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-34 in 0 milliseconds for epoch 0, of which 0 milliseconds was spent in the scheduler. (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,182] INFO [GroupCoordinator 0]: Elected as the group coordinator for partition 4 in epoch 0 (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:41:51,182] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-4 for epoch 0 (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,182] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-4 in 0 milliseconds for epoch 0, of which 0 milliseconds was spent in the scheduler. (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,182] INFO [GroupCoordinator 0]: Elected as the group coordinator for partition 11 in epoch 0 (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:41:51,182] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-11 for epoch 0 (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,182] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-11 in 0 milliseconds for epoch 0, of which 0 milliseconds was spent in the scheduler. (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,182] INFO [GroupCoordinator 0]: Elected as the group coordinator for partition 26 in epoch 0 (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:41:51,182] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-26 for epoch 0 (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,182] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-26 in 0 milliseconds for epoch 0, of which 0 milliseconds was spent in the scheduler. (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,182] INFO [GroupCoordinator 0]: Elected as the group coordinator for partition 49 in epoch 0 (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:41:51,183] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-49 for epoch 0 (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,183] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-49 in 0 milliseconds for epoch 0, of which 0 milliseconds was spent in the scheduler. (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,183] INFO [GroupCoordinator 0]: Elected as the group coordinator for partition 39 in epoch 0 (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:41:51,183] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-39 for epoch 0 (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,183] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-39 in 0 milliseconds for epoch 0, of which 0 milliseconds was spent in the scheduler. (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,183] INFO [GroupCoordinator 0]: Elected as the group coordinator for partition 9 in epoch 0 (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:41:51,183] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-9 for epoch 0 (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,183] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-9 in 0 milliseconds for epoch 0, of which 0 milliseconds was spent in the scheduler. (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,183] INFO [GroupCoordinator 0]: Elected as the group coordinator for partition 24 in epoch 0 (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:41:51,183] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-24 for epoch 0 (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,183] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-24 in 0 milliseconds for epoch 0, of which 0 milliseconds was spent in the scheduler. (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,183] INFO [GroupCoordinator 0]: Elected as the group coordinator for partition 31 in epoch 0 (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:41:51,183] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-31 for epoch 0 (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,184] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-31 in 1 milliseconds for epoch 0, of which 1 milliseconds was spent in the scheduler. (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,184] INFO [GroupCoordinator 0]: Elected as the group coordinator for partition 46 in epoch 0 (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:41:51,184] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-46 for epoch 0 (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,184] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-46 in 0 milliseconds for epoch 0, of which 0 milliseconds was spent in the scheduler. (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,184] INFO [GroupCoordinator 0]: Elected as the group coordinator for partition 1 in epoch 0 (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:41:51,184] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-1 for epoch 0 (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,184] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-1 in 0 milliseconds for epoch 0, of which 0 milliseconds was spent in the scheduler. (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,184] INFO [GroupCoordinator 0]: Elected as the group coordinator for partition 16 in epoch 0 (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:41:51,184] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-16 for epoch 0 (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,184] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-16 in 0 milliseconds for epoch 0, of which 0 milliseconds was spent in the scheduler. (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,185] INFO [GroupCoordinator 0]: Elected as the group coordinator for partition 2 in epoch 0 (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:41:51,185] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-2 for epoch 0 (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,185] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-2 in 0 milliseconds for epoch 0, of which 0 milliseconds was spent in the scheduler. (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,185] INFO [GroupCoordinator 0]: Elected as the group coordinator for partition 25 in epoch 0 (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:41:51,185] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-25 for epoch 0 (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,185] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-25 in 0 milliseconds for epoch 0, of which 0 milliseconds was spent in the scheduler. (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,185] INFO [GroupCoordinator 0]: Elected as the group coordinator for partition 40 in epoch 0 (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:41:51,185] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-40 for epoch 0 (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,185] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-40 in 0 milliseconds for epoch 0, of which 0 milliseconds was spent in the scheduler. (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,185] INFO [GroupCoordinator 0]: Elected as the group coordinator for partition 47 in epoch 0 (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:41:51,185] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-47 for epoch 0 (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,185] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-47 in 0 milliseconds for epoch 0, of which 0 milliseconds was spent in the scheduler. (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,185] INFO [GroupCoordinator 0]: Elected as the group coordinator for partition 17 in epoch 0 (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:41:51,186] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-17 for epoch 0 (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,186] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-17 in 0 milliseconds for epoch 0, of which 0 milliseconds was spent in the scheduler. (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,186] INFO [GroupCoordinator 0]: Elected as the group coordinator for partition 32 in epoch 0 (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:41:51,186] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-32 for epoch 0 (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,186] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-32 in 0 milliseconds for epoch 0, of which 0 milliseconds was spent in the scheduler. (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,186] INFO [GroupCoordinator 0]: Elected as the group coordinator for partition 37 in epoch 0 (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:41:51,186] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-37 for epoch 0 (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,186] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-37 in 0 milliseconds for epoch 0, of which 0 milliseconds was spent in the scheduler. (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,186] INFO [GroupCoordinator 0]: Elected as the group coordinator for partition 7 in epoch 0 (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:41:51,186] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-7 for epoch 0 (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,187] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-7 in 1 milliseconds for epoch 0, of which 0 milliseconds was spent in the scheduler. (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,187] INFO [GroupCoordinator 0]: Elected as the group coordinator for partition 22 in epoch 0 (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:41:51,187] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-22 for epoch 0 (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,187] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-22 in 0 milliseconds for epoch 0, of which 0 milliseconds was spent in the scheduler. (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,187] INFO [GroupCoordinator 0]: Elected as the group coordinator for partition 29 in epoch 0 (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:41:51,187] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-29 for epoch 0 (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,187] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-29 in 0 milliseconds for epoch 0, of which 0 milliseconds was spent in the scheduler. (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,187] INFO [GroupCoordinator 0]: Elected as the group coordinator for partition 44 in epoch 0 (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:41:51,187] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-44 for epoch 0 (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,187] INFO [GroupCoordinator 0]: Elected as the group coordinator for partition 14 in epoch 0 (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:41:51,187] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-14 for epoch 0 (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,187] INFO [GroupCoordinator 0]: Elected as the group coordinator for partition 23 in epoch 0 (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:41:51,187] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-23 for epoch 0 (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,187] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-44 in 0 milliseconds for epoch 0, of which 0 milliseconds was spent in the scheduler. (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,188] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-14 in 0 milliseconds for epoch 0, of which 0 milliseconds was spent in the scheduler. (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,188] INFO [GroupCoordinator 0]: Elected as the group coordinator for partition 38 in epoch 0 (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:41:51,188] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-38 for epoch 0 (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,188] INFO [GroupCoordinator 0]: Elected as the group coordinator for partition 8 in epoch 0 (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:41:51,188] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-8 for epoch 0 (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,188] INFO [GroupCoordinator 0]: Elected as the group coordinator for partition 45 in epoch 0 (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:41:51,188] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-45 for epoch 0 (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,188] INFO [GroupCoordinator 0]: Elected as the group coordinator for partition 15 in epoch 0 (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:41:51,188] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-15 for epoch 0 (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,188] INFO [GroupCoordinator 0]: Elected as the group coordinator for partition 30 in epoch 0 (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:41:51,188] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-23 in 0 milliseconds for epoch 0, of which 0 milliseconds was spent in the scheduler. (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,188] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-38 in 0 milliseconds for epoch 0, of which 0 milliseconds was spent in the scheduler. (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,188] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-8 in 0 milliseconds for epoch 0, of which 0 milliseconds was spent in the scheduler. (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,189] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-45 in 1 milliseconds for epoch 0, of which 1 milliseconds was spent in the scheduler. (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,189] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-15 in 1 milliseconds for epoch 0, of which 1 milliseconds was spent in the scheduler. (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,189] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-30 for epoch 0 (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,189] INFO [GroupCoordinator 0]: Elected as the group coordinator for partition 0 in epoch 0 (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:41:51,189] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-0 for epoch 0 (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,189] INFO [GroupCoordinator 0]: Elected as the group coordinator for partition 35 in epoch 0 (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:41:51,189] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-35 for epoch 0 (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,189] INFO [GroupCoordinator 0]: Elected as the group coordinator for partition 5 in epoch 0 (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:41:51,189] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-5 for epoch 0 (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,189] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-30 in 0 milliseconds for epoch 0, of which 0 milliseconds was spent in the scheduler. (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,189] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-0 in 0 milliseconds for epoch 0, of which 0 milliseconds was spent in the scheduler. (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,191] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-35 in 2 milliseconds for epoch 0, of which 1 milliseconds was spent in the scheduler. (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,191] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-5 in 2 milliseconds for epoch 0, of which 2 milliseconds was spent in the scheduler. (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,191] INFO [GroupCoordinator 0]: Elected as the group coordinator for partition 20 in epoch 0 (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:41:51,191] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-20 for epoch 0 (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,191] INFO [GroupCoordinator 0]: Elected as the group coordinator for partition 27 in epoch 0 (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:41:51,191] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-27 for epoch 0 (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,191] INFO [GroupCoordinator 0]: Elected as the group coordinator for partition 42 in epoch 0 (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:41:51,191] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-42 for epoch 0 (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,191] INFO [GroupCoordinator 0]: Elected as the group coordinator for partition 12 in epoch 0 (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:41:51,191] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-12 for epoch 0 (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,191] INFO [GroupCoordinator 0]: Elected as the group coordinator for partition 21 in epoch 0 (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:41:51,191] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-21 for epoch 0 (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,192] INFO [GroupCoordinator 0]: Elected as the group coordinator for partition 36 in epoch 0 (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:41:51,192] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-36 for epoch 0 (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,192] INFO [GroupCoordinator 0]: Elected as the group coordinator for partition 6 in epoch 0 (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:41:51,192] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-6 for epoch 0 (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,192] INFO [GroupCoordinator 0]: Elected as the group coordinator for partition 43 in epoch 0 (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:41:51,192] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-43 for epoch 0 (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,192] INFO [GroupCoordinator 0]: Elected as the group coordinator for partition 13 in epoch 0 (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:41:51,192] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-13 for epoch 0 (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,192] INFO [GroupCoordinator 0]: Elected as the group coordinator for partition 28 in epoch 0 (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:41:51,192] INFO [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-28 for epoch 0 (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,192] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-20 in 1 milliseconds for epoch 0, of which 1 milliseconds was spent in the scheduler. (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,192] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-27 in 1 milliseconds for epoch 0, of which 1 milliseconds was spent in the scheduler. (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,193] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-42 in 2 milliseconds for epoch 0, of which 1 milliseconds was spent in the scheduler. (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,193] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-12 in 2 milliseconds for epoch 0, of which 2 milliseconds was spent in the scheduler. (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,193] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-21 in 1 milliseconds for epoch 0, of which 1 milliseconds was spent in the scheduler. (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,194] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-36 in 2 milliseconds for epoch 0, of which 2 milliseconds was spent in the scheduler. (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,195] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-6 in 3 milliseconds for epoch 0, of which 2 milliseconds was spent in the scheduler. (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,195] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-43 in 3 milliseconds for epoch 0, of which 3 milliseconds was spent in the scheduler. (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,195] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-13 in 3 milliseconds for epoch 0, of which 3 milliseconds was spent in the scheduler. (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,195] INFO [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-28 in 3 milliseconds for epoch 0, of which 3 milliseconds was spent in the scheduler. (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:41:51,251] INFO [GroupCoordinator 0]: Dynamic member with unknown member id joins group console-consumer-15672 in Empty state. Created a new member id console-consumer-c700b1ee-566f-43e2-a273-1d2a9331bf1a and request the member to rejoin with this id. (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:41:51,261] INFO [GroupCoordinator 0]: Preparing to rebalance group console-consumer-15672 in state PreparingRebalance with old generation 0 (__consumer_offsets-2) (reason: Adding new member console-consumer-c700b1ee-566f-43e2-a273-1d2a9331bf1a with group instance id None; client reason: rebalance failed due to MemberIdRequiredException) (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:41:51,269] INFO [GroupCoordinator 0]: Stabilized group console-consumer-15672 generation 1 (__consumer_offsets-2) with 1 members (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:41:51,281] INFO [GroupCoordinator 0]: Assignment received from leader console-consumer-c700b1ee-566f-43e2-a273-1d2a9331bf1a for group console-consumer-15672 for generation 1. The group has 1 members, 0 of which are static. (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:41:58,085] INFO [GroupCoordinator 0]: Preparing to rebalance group console-consumer-15672 in state PreparingRebalance with old generation 1 (__consumer_offsets-2) (reason: Removing member console-consumer-c700b1ee-566f-43e2-a273-1d2a9331bf1a on LeaveGroup; client reason: the consumer is being closed) (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:41:58,088] INFO [GroupCoordinator 0]: Group console-consumer-15672 with generation 2 is now empty (__consumer_offsets-2) (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:41:58,098] INFO [GroupCoordinator 0]: Member MemberMetadata(memberId=console-consumer-c700b1ee-566f-43e2-a273-1d2a9331bf1a, groupInstanceId=None, clientId=console-consumer, clientHost=/127.0.0.1, sessionTimeoutMs=45000, rebalanceTimeoutMs=300000, supportedProtocols=List(range, cooperative-sticky)) has left group console-consumer-15672 through explicit `LeaveGroup`; client reason: the consumer is being closed (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:42:10,909] INFO Creating topic connect-test with configuration {} and initial partition assignment HashMap(0 -> ArrayBuffer(0)) (kafka.zk.AdminZkClient)
+[2022-12-15 00:42:10,946] INFO [ReplicaFetcherManager on broker 0] Removed fetcher for partitions Set(connect-test-0) (kafka.server.ReplicaFetcherManager)
+[2022-12-15 00:42:10,949] INFO [LogLoader partition=connect-test-0, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2022-12-15 00:42:10,950] INFO Created log for partition connect-test-0 in /tmp/kafka-logs/connect-test-0 with properties {} (kafka.log.LogManager)
+[2022-12-15 00:42:10,950] INFO [Partition connect-test-0 broker=0] No checkpointed highwatermark is found for partition connect-test-0 (kafka.cluster.Partition)
+[2022-12-15 00:42:10,954] INFO [Partition connect-test-0 broker=0] Log loaded for partition connect-test-0 with initial high watermark 0 (kafka.cluster.Partition)
+[2022-12-15 00:42:10,997] INFO [GroupCoordinator 0]: Dynamic member with unknown member id joins group connect-local-file-sink in Empty state. Created a new member id connector-consumer-local-file-sink-0-09e7416f-54d4-471f-b164-72d0d884d770 and request the member to rejoin with this id. (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:42:11,001] INFO [GroupCoordinator 0]: Preparing to rebalance group connect-local-file-sink in state PreparingRebalance with old generation 0 (__consumer_offsets-7) (reason: Adding new member connector-consumer-local-file-sink-0-09e7416f-54d4-471f-b164-72d0d884d770 with group instance id None; client reason: rebalance failed due to MemberIdRequiredException) (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:42:11,001] INFO [GroupCoordinator 0]: Stabilized group connect-local-file-sink generation 1 (__consumer_offsets-7) with 1 members (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:42:11,009] INFO [GroupCoordinator 0]: Assignment received from leader connector-consumer-local-file-sink-0-09e7416f-54d4-471f-b164-72d0d884d770 for group connect-local-file-sink for generation 1. The group has 1 members, 0 of which are static. (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:42:19,092] INFO [GroupCoordinator 0]: Preparing to rebalance group connect-local-file-sink in state PreparingRebalance with old generation 1 (__consumer_offsets-7) (reason: Removing member connector-consumer-local-file-sink-0-09e7416f-54d4-471f-b164-72d0d884d770 on LeaveGroup; client reason: the consumer is being closed) (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:42:19,093] INFO [GroupCoordinator 0]: Group connect-local-file-sink with generation 2 is now empty (__consumer_offsets-7) (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:42:19,094] INFO [GroupCoordinator 0]: Member MemberMetadata(memberId=connector-consumer-local-file-sink-0-09e7416f-54d4-471f-b164-72d0d884d770, groupInstanceId=None, clientId=connector-consumer-local-file-sink-0, clientHost=/127.0.0.1, sessionTimeoutMs=45000, rebalanceTimeoutMs=300000, supportedProtocols=List(range, cooperative-sticky)) has left group connect-local-file-sink through explicit `LeaveGroup`; client reason: the consumer is being closed (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:42:39,417] INFO Creating topic fulfillment.inventory.customers with configuration {} and initial partition assignment HashMap(0 -> ArrayBuffer(0)) (kafka.zk.AdminZkClient)
+[2022-12-15 00:42:39,470] INFO [ReplicaFetcherManager on broker 0] Removed fetcher for partitions Set(fulfillment.inventory.customers-0) (kafka.server.ReplicaFetcherManager)
+[2022-12-15 00:42:39,478] INFO [LogLoader partition=fulfillment.inventory.customers-0, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2022-12-15 00:42:39,480] INFO Created log for partition fulfillment.inventory.customers-0 in /tmp/kafka-logs/fulfillment.inventory.customers-0 with properties {} (kafka.log.LogManager)
+[2022-12-15 00:42:39,482] INFO [Partition fulfillment.inventory.customers-0 broker=0] No checkpointed highwatermark is found for partition fulfillment.inventory.customers-0 (kafka.cluster.Partition)
+[2022-12-15 00:42:39,482] INFO [Partition fulfillment.inventory.customers-0 broker=0] Log loaded for partition fulfillment.inventory.customers-0 with initial high watermark 0 (kafka.cluster.Partition)
+[2022-12-15 00:44:44,892] INFO [GroupMetadataManager brokerId=0] Group console-consumer-15672 transitioned to Dead in generation 2 (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-15 00:45:20,145] INFO [GroupCoordinator 0]: Dynamic member with unknown member id joins group test-group in Empty state. Created a new member id kafka-scripting-0e3a2323-d6d3-4ec8-89c1-c89209cf7794 and request the member to rejoin with this id. (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:45:20,152] INFO [GroupCoordinator 0]: Preparing to rebalance group test-group in state PreparingRebalance with old generation 0 (__consumer_offsets-12) (reason: Adding new member kafka-scripting-0e3a2323-d6d3-4ec8-89c1-c89209cf7794 with group instance id None; client reason: not provided) (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:45:20,153] INFO [GroupCoordinator 0]: Stabilized group test-group generation 1 (__consumer_offsets-12) with 1 members (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:45:20,161] INFO [GroupCoordinator 0]: Assignment received from leader kafka-scripting-0e3a2323-d6d3-4ec8-89c1-c89209cf7794 for group test-group for generation 1. The group has 1 members, 0 of which are static. (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:47:56,652] INFO [GroupCoordinator 0]: Dynamic member with unknown member id joins group test-group in Stable state. Created a new member id kafka-scripting-1c22cea9-1b91-428f-9948-ecda7143cf61 and request the member to rejoin with this id. (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:47:56,655] INFO [GroupCoordinator 0]: Preparing to rebalance group test-group in state PreparingRebalance with old generation 1 (__consumer_offsets-12) (reason: Adding new member kafka-scripting-1c22cea9-1b91-428f-9948-ecda7143cf61 with group instance id None; client reason: not provided) (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:48:24,134] INFO [GroupCoordinator 0]: Dynamic member with unknown member id joins group test-group in PreparingRebalance state. Created a new member id kafka-scripting-c9f67a64-1440-4608-9a4a-b27d64444aca and request the member to rejoin with this id. (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:48:25,721] INFO [GroupCoordinator 0]: Member kafka-scripting-0e3a2323-d6d3-4ec8-89c1-c89209cf7794 in group test-group has failed, removing it from the group (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:48:25,723] INFO [GroupCoordinator 0]: Stabilized group test-group generation 2 (__consumer_offsets-12) with 2 members (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:48:55,728] INFO [GroupCoordinator 0]: Member kafka-scripting-1c22cea9-1b91-428f-9948-ecda7143cf61 in group test-group has failed, removing it from the group (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:48:55,731] INFO [GroupCoordinator 0]: Preparing to rebalance group test-group in state PreparingRebalance with old generation 2 (__consumer_offsets-12) (reason: removing member kafka-scripting-1c22cea9-1b91-428f-9948-ecda7143cf61 on heartbeat expiration) (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:48:56,077] INFO [GroupCoordinator 0]: Stabilized group test-group generation 3 (__consumer_offsets-12) with 1 members (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:48:56,088] INFO [GroupCoordinator 0]: Assignment received from leader kafka-scripting-c9f67a64-1440-4608-9a4a-b27d64444aca for group test-group for generation 3. The group has 1 members, 0 of which are static. (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:49:39,350] INFO [GroupCoordinator 0]: Dynamic member with unknown member id joins group test-group in Stable state. Created a new member id kafka-scripting-a5359649-1d8d-4bb8-89ea-995db2f16928 and request the member to rejoin with this id. (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:49:39,352] INFO [GroupCoordinator 0]: Preparing to rebalance group test-group in state PreparingRebalance with old generation 3 (__consumer_offsets-12) (reason: Adding new member kafka-scripting-a5359649-1d8d-4bb8-89ea-995db2f16928 with group instance id None; client reason: not provided) (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:50:06,197] INFO [GroupCoordinator 0]: Member kafka-scripting-c9f67a64-1440-4608-9a4a-b27d64444aca in group test-group has failed, removing it from the group (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:50:06,198] INFO [GroupCoordinator 0]: Stabilized group test-group generation 4 (__consumer_offsets-12) with 1 members (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:50:06,218] INFO [GroupCoordinator 0]: Assignment received from leader kafka-scripting-a5359649-1d8d-4bb8-89ea-995db2f16928 for group test-group for generation 4. The group has 1 members, 0 of which are static. (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:51:31,615] INFO [BrokerToControllerChannelManager broker=0 name=forwarding] Node 0 disconnected. (org.apache.kafka.clients.NetworkClient)
+[2022-12-15 00:51:58,810] INFO [GroupCoordinator 0]: Dynamic member with unknown member id joins group test-group in Stable state. Created a new member id kafka-scripting-61dcb872-1413-4cea-8a5b-27fd3cd41d20 and request the member to rejoin with this id. (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:51:58,814] INFO [GroupCoordinator 0]: Preparing to rebalance group test-group in state PreparingRebalance with old generation 4 (__consumer_offsets-12) (reason: Adding new member kafka-scripting-61dcb872-1413-4cea-8a5b-27fd3cd41d20 with group instance id None; client reason: not provided) (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:52:23,643] INFO [GroupCoordinator 0]: Member kafka-scripting-a5359649-1d8d-4bb8-89ea-995db2f16928 in group test-group has failed, removing it from the group (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:52:23,645] INFO [GroupCoordinator 0]: Stabilized group test-group generation 5 (__consumer_offsets-12) with 1 members (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:52:23,652] INFO [GroupCoordinator 0]: Assignment received from leader kafka-scripting-61dcb872-1413-4cea-8a5b-27fd3cd41d20 for group test-group for generation 5. The group has 1 members, 0 of which are static. (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:52:23,713] INFO [GroupCoordinator 0]: Preparing to rebalance group test-group in state PreparingRebalance with old generation 5 (__consumer_offsets-12) (reason: Removing member kafka-scripting-61dcb872-1413-4cea-8a5b-27fd3cd41d20 on LeaveGroup; client reason: not provided) (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:52:23,713] INFO [GroupCoordinator 0]: Group test-group with generation 6 is now empty (__consumer_offsets-12) (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:52:23,714] INFO [GroupCoordinator 0]: Member MemberMetadata(memberId=kafka-scripting-61dcb872-1413-4cea-8a5b-27fd3cd41d20, groupInstanceId=None, clientId=kafka-scripting, clientHost=/127.0.0.1, sessionTimeoutMs=30000, rebalanceTimeoutMs=60000, supportedProtocols=List(RoundRobinAssigner)) has left group test-group through explicit `LeaveGroup`; client reason: not provided (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:52:50,917] INFO [GroupCoordinator 0]: Dynamic member with unknown member id joins group test-group in Empty state. Created a new member id kafka-scripting-629790fe-fbe3-4e51-86ac-5afb1ce30fdb and request the member to rejoin with this id. (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:52:50,919] INFO [GroupCoordinator 0]: Preparing to rebalance group test-group in state PreparingRebalance with old generation 6 (__consumer_offsets-12) (reason: Adding new member kafka-scripting-629790fe-fbe3-4e51-86ac-5afb1ce30fdb with group instance id None; client reason: not provided) (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:52:50,920] INFO [GroupCoordinator 0]: Stabilized group test-group generation 7 (__consumer_offsets-12) with 1 members (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:52:50,927] INFO [GroupCoordinator 0]: Assignment received from leader kafka-scripting-629790fe-fbe3-4e51-86ac-5afb1ce30fdb for group test-group for generation 7. The group has 1 members, 0 of which are static. (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:53:34,023] INFO [GroupCoordinator 0]: Dynamic member with unknown member id joins group test-group in Stable state. Created a new member id kafka-scripting-9627d223-d93e-4b3b-ab7b-548a7c02a27f and request the member to rejoin with this id. (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:53:34,025] INFO [GroupCoordinator 0]: Preparing to rebalance group test-group in state PreparingRebalance with old generation 7 (__consumer_offsets-12) (reason: Adding new member kafka-scripting-9627d223-d93e-4b3b-ab7b-548a7c02a27f with group instance id None; client reason: not provided) (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:53:58,426] INFO [GroupCoordinator 0]: Member kafka-scripting-629790fe-fbe3-4e51-86ac-5afb1ce30fdb in group test-group has failed, removing it from the group (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:53:58,428] INFO [GroupCoordinator 0]: Stabilized group test-group generation 8 (__consumer_offsets-12) with 1 members (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:53:58,452] INFO [GroupCoordinator 0]: Assignment received from leader kafka-scripting-9627d223-d93e-4b3b-ab7b-548a7c02a27f for group test-group for generation 8. The group has 1 members, 0 of which are static. (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:55:31,866] INFO [GroupCoordinator 0]: Dynamic member with unknown member id joins group test-group in Stable state. Created a new member id kafka-scripting-ce0492cf-c0e0-48e4-89bc-5e1c4a83199b and request the member to rejoin with this id. (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:55:31,869] INFO [GroupCoordinator 0]: Preparing to rebalance group test-group in state PreparingRebalance with old generation 8 (__consumer_offsets-12) (reason: Adding new member kafka-scripting-ce0492cf-c0e0-48e4-89bc-5e1c4a83199b with group instance id None; client reason: not provided) (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:55:51,140] INFO [GroupCoordinator 0]: Member kafka-scripting-9627d223-d93e-4b3b-ab7b-548a7c02a27f in group test-group has failed, removing it from the group (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:55:51,141] INFO [GroupCoordinator 0]: Stabilized group test-group generation 9 (__consumer_offsets-12) with 1 members (kafka.coordinator.group.GroupCoordinator)
+[2022-12-15 00:55:51,160] INFO [GroupCoordinator 0]: Assignment received from leader kafka-scripting-ce0492cf-c0e0-48e4-89bc-5e1c4a83199b for group test-group for generation 9. The group has 1 members, 0 of which are static. (kafka.coordinator.group.GroupCoordinator)

@@ -1,0 +1,4 @@
+[2022-12-25 16:02:47,054] INFO [GroupCoordinator 0]: Member COMMUNICATION-client-0ba2ce17-96e3-436b-8bf3-41fb8381d584 in group communication-consumer-client has failed, removing it from the group (kafka.coordinator.group.GroupCoordinator)
+[2022-12-25 16:02:47,056] INFO [GroupCoordinator 0]: Preparing to rebalance group communication-consumer-client in state PreparingRebalance with old generation 1 (__consumer_offsets-45) (reason: removing member COMMUNICATION-client-0ba2ce17-96e3-436b-8bf3-41fb8381d584 on heartbeat expiration) (kafka.coordinator.group.GroupCoordinator)
+[2022-12-25 16:02:47,057] INFO [GroupCoordinator 0]: Group communication-consumer-client with generation 2 is now empty (__consumer_offsets-45) (kafka.coordinator.group.GroupCoordinator)
+[2022-12-25 16:10:25,456] INFO [GroupMetadataManager brokerId=0] Group communication-consumer-client transitioned to Dead in generation 2 (kafka.coordinator.group.GroupMetadataManager)

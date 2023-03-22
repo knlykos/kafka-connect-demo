@@ -1,0 +1,1264 @@
+[2022-12-19 05:51:44,291] INFO Kafka Connect standalone worker initializing ... (org.apache.kafka.connect.cli.ConnectStandalone:68)
+[2022-12-19 05:51:44,300] INFO WorkerInfo values: 
+	jvm.args = -Xms256M, -Xmx2G, -XX:+UseG1GC, -XX:MaxGCPauseMillis=20, -XX:InitiatingHeapOccupancyPercent=35, -XX:+ExplicitGCInvokesConcurrent, -XX:MaxInlineLevel=15, -Djava.awt.headless=true, -Dcom.sun.management.jmxremote, -Dcom.sun.management.jmxremote.authenticate=false, -Dcom.sun.management.jmxremote.ssl=false, -Dkafka.logs.dir=/home/nefi/kafka/bin/../logs, -Dlog4j.configuration=file:bin/../config/connect-log4j.properties
+	jvm.spec = Ubuntu, OpenJDK 64-Bit Server VM, 11.0.17, 11.0.17+8-post-Ubuntu-1ubuntu222.04
+	jvm.classpath = /home/nefi/kafka/bin/../libs/activation-1.1.1.jar:/home/nefi/kafka/bin/../libs/aopalliance-repackaged-2.6.1.jar:/home/nefi/kafka/bin/../libs/argparse4j-0.7.0.jar:/home/nefi/kafka/bin/../libs/audience-annotations-0.5.0.jar:/home/nefi/kafka/bin/../libs/commons-cli-1.4.jar:/home/nefi/kafka/bin/../libs/commons-lang3-3.12.0.jar:/home/nefi/kafka/bin/../libs/commons-lang3-3.8.1.jar:/home/nefi/kafka/bin/../libs/connect-api-3.3.1.jar:/home/nefi/kafka/bin/../libs/connect-basic-auth-extension-3.3.1.jar:/home/nefi/kafka/bin/../libs/connect-json-3.3.1.jar:/home/nefi/kafka/bin/../libs/connect-mirror-3.3.1.jar:/home/nefi/kafka/bin/../libs/connect-mirror-client-3.3.1.jar:/home/nefi/kafka/bin/../libs/connect-runtime-3.3.1.jar:/home/nefi/kafka/bin/../libs/connect-transforms-3.3.1.jar:/home/nefi/kafka/bin/../libs/debezium-connector-postgres:/home/nefi/kafka/bin/../libs/hk2-api-2.6.1.jar:/home/nefi/kafka/bin/../libs/hk2-locator-2.6.1.jar:/home/nefi/kafka/bin/../libs/hk2-utils-2.6.1.jar:/home/nefi/kafka/bin/../libs/jackson-annotations-2.13.3.jar:/home/nefi/kafka/bin/../libs/jackson-core-2.13.3.jar:/home/nefi/kafka/bin/../libs/jackson-databind-2.13.3.jar:/home/nefi/kafka/bin/../libs/jackson-dataformat-csv-2.13.3.jar:/home/nefi/kafka/bin/../libs/jackson-datatype-jdk8-2.13.3.jar:/home/nefi/kafka/bin/../libs/jackson-jaxrs-base-2.13.3.jar:/home/nefi/kafka/bin/../libs/jackson-jaxrs-json-provider-2.13.3.jar:/home/nefi/kafka/bin/../libs/jackson-module-jaxb-annotations-2.13.3.jar:/home/nefi/kafka/bin/../libs/jackson-module-scala_2.13-2.13.3.jar:/home/nefi/kafka/bin/../libs/jakarta.activation-api-1.2.2.jar:/home/nefi/kafka/bin/../libs/jakarta.annotation-api-1.3.5.jar:/home/nefi/kafka/bin/../libs/jakarta.inject-2.6.1.jar:/home/nefi/kafka/bin/../libs/jakarta.validation-api-2.0.2.jar:/home/nefi/kafka/bin/../libs/jakarta.ws.rs-api-2.1.6.jar:/home/nefi/kafka/bin/../libs/jakarta.xml.bind-api-2.3.3.jar:/home/nefi/kafka/bin/../libs/javassist-3.27.0-GA.jar:/home/nefi/kafka/bin/../libs/javax.servlet-api-3.1.0.jar:/home/nefi/kafka/bin/../libs/javax.ws.rs-api-2.1.1.jar:/home/nefi/kafka/bin/../libs/jaxb-api-2.3.0.jar:/home/nefi/kafka/bin/../libs/jersey-client-2.34.jar:/home/nefi/kafka/bin/../libs/jersey-common-2.34.jar:/home/nefi/kafka/bin/../libs/jersey-container-servlet-2.34.jar:/home/nefi/kafka/bin/../libs/jersey-container-servlet-core-2.34.jar:/home/nefi/kafka/bin/../libs/jersey-hk2-2.34.jar:/home/nefi/kafka/bin/../libs/jersey-server-2.34.jar:/home/nefi/kafka/bin/../libs/jetty-client-9.4.48.v20220622.jar:/home/nefi/kafka/bin/../libs/jetty-continuation-9.4.48.v20220622.jar:/home/nefi/kafka/bin/../libs/jetty-http-9.4.48.v20220622.jar:/home/nefi/kafka/bin/../libs/jetty-io-9.4.48.v20220622.jar:/home/nefi/kafka/bin/../libs/jetty-security-9.4.48.v20220622.jar:/home/nefi/kafka/bin/../libs/jetty-server-9.4.48.v20220622.jar:/home/nefi/kafka/bin/../libs/jetty-servlet-9.4.48.v20220622.jar:/home/nefi/kafka/bin/../libs/jetty-servlets-9.4.48.v20220622.jar:/home/nefi/kafka/bin/../libs/jetty-util-9.4.48.v20220622.jar:/home/nefi/kafka/bin/../libs/jetty-util-ajax-9.4.48.v20220622.jar:/home/nefi/kafka/bin/../libs/jline-3.21.0.jar:/home/nefi/kafka/bin/../libs/jopt-simple-5.0.4.jar:/home/nefi/kafka/bin/../libs/jose4j-0.7.9.jar:/home/nefi/kafka/bin/../libs/kafka_2.13-3.3.1.jar:/home/nefi/kafka/bin/../libs/kafka-clients-3.3.1.jar:/home/nefi/kafka/bin/../libs/kafka-log4j-appender-3.3.1.jar:/home/nefi/kafka/bin/../libs/kafka-metadata-3.3.1.jar:/home/nefi/kafka/bin/../libs/kafka-raft-3.3.1.jar:/home/nefi/kafka/bin/../libs/kafka-server-common-3.3.1.jar:/home/nefi/kafka/bin/../libs/kafka-shell-3.3.1.jar:/home/nefi/kafka/bin/../libs/kafka-storage-3.3.1.jar:/home/nefi/kafka/bin/../libs/kafka-storage-api-3.3.1.jar:/home/nefi/kafka/bin/../libs/kafka-streams-3.3.1.jar:/home/nefi/kafka/bin/../libs/kafka-streams-examples-3.3.1.jar:/home/nefi/kafka/bin/../libs/kafka-streams-scala_2.13-3.3.1.jar:/home/nefi/kafka/bin/../libs/kafka-streams-test-utils-3.3.1.jar:/home/nefi/kafka/bin/../libs/kafka-tools-3.3.1.jar:/home/nefi/kafka/bin/../libs/lz4-java-1.8.0.jar:/home/nefi/kafka/bin/../libs/maven-artifact-3.8.4.jar:/home/nefi/kafka/bin/../libs/metrics-core-2.2.0.jar:/home/nefi/kafka/bin/../libs/metrics-core-4.1.12.1.jar:/home/nefi/kafka/bin/../libs/netty-buffer-4.1.78.Final.jar:/home/nefi/kafka/bin/../libs/netty-codec-4.1.78.Final.jar:/home/nefi/kafka/bin/../libs/netty-common-4.1.78.Final.jar:/home/nefi/kafka/bin/../libs/netty-handler-4.1.78.Final.jar:/home/nefi/kafka/bin/../libs/netty-resolver-4.1.78.Final.jar:/home/nefi/kafka/bin/../libs/netty-transport-4.1.78.Final.jar:/home/nefi/kafka/bin/../libs/netty-transport-classes-epoll-4.1.78.Final.jar:/home/nefi/kafka/bin/../libs/netty-transport-native-epoll-4.1.78.Final.jar:/home/nefi/kafka/bin/../libs/netty-transport-native-unix-common-4.1.78.Final.jar:/home/nefi/kafka/bin/../libs/osgi-resource-locator-1.0.3.jar:/home/nefi/kafka/bin/../libs/paranamer-2.8.jar:/home/nefi/kafka/bin/../libs/plexus-utils-3.3.0.jar:/home/nefi/kafka/bin/../libs/reflections-0.9.12.jar:/home/nefi/kafka/bin/../libs/reload4j-1.2.19.jar:/home/nefi/kafka/bin/../libs/rocksdbjni-6.29.4.1.jar:/home/nefi/kafka/bin/../libs/scala-collection-compat_2.13-2.6.0.jar:/home/nefi/kafka/bin/../libs/scala-java8-compat_2.13-1.0.2.jar:/home/nefi/kafka/bin/../libs/scala-library-2.13.8.jar:/home/nefi/kafka/bin/../libs/scala-logging_2.13-3.9.4.jar:/home/nefi/kafka/bin/../libs/scala-reflect-2.13.8.jar:/home/nefi/kafka/bin/../libs/slf4j-api-1.7.36.jar:/home/nefi/kafka/bin/../libs/slf4j-reload4j-1.7.36.jar:/home/nefi/kafka/bin/../libs/snappy-java-1.1.8.4.jar:/home/nefi/kafka/bin/../libs/swagger-annotations-2.2.0.jar:/home/nefi/kafka/bin/../libs/trogdor-3.3.1.jar:/home/nefi/kafka/bin/../libs/zookeeper-3.6.3.jar:/home/nefi/kafka/bin/../libs/zookeeper-jute-3.6.3.jar:/home/nefi/kafka/bin/../libs/zstd-jni-1.5.2-1.jar
+	os.spec = Linux, amd64, 5.15.0-56-generic
+	os.vcpus = 4
+ (org.apache.kafka.connect.runtime.WorkerInfo:71)
+[2022-12-19 05:51:44,301] INFO Scanning for plugin classes. This might take a moment ... (org.apache.kafka.connect.cli.ConnectStandalone:77)
+[2022-12-19 05:51:44,316] INFO Loading plugin from: /home/nefi/kafka/libs/netty-resolver-4.1.78.Final.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:44,407] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/netty-resolver-4.1.78.Final.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:44,407] INFO Added plugin 'org.apache.kafka.connect.connector.policy.AllConnectorClientConfigOverridePolicy' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:51:44,407] INFO Added plugin 'org.apache.kafka.connect.connector.policy.PrincipalConnectorClientConfigOverridePolicy' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:51:44,407] INFO Added plugin 'org.apache.kafka.connect.connector.policy.NoneConnectorClientConfigOverridePolicy' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:51:44,409] INFO Loading plugin from: /home/nefi/kafka/libs/kafka-raft-3.3.1.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:44,437] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/kafka-raft-3.3.1.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:44,437] INFO Loading plugin from: /home/nefi/kafka/libs/jetty-util-ajax-9.4.48.v20220622.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:44,446] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/jetty-util-ajax-9.4.48.v20220622.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:44,446] INFO Loading plugin from: /home/nefi/kafka/libs/reload4j-1.2.19.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:44,491] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/reload4j-1.2.19.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:44,491] INFO Loading plugin from: /home/nefi/kafka/libs/jetty-client-9.4.48.v20220622.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:44,524] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/jetty-client-9.4.48.v20220622.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:44,524] INFO Loading plugin from: /home/nefi/kafka/libs/lz4-java-1.8.0.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:44,532] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/lz4-java-1.8.0.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:44,533] INFO Loading plugin from: /home/nefi/kafka/libs/connect-transforms-3.3.1.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:44,554] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/connect-transforms-3.3.1.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:44,554] INFO Added plugin 'org.apache.kafka.connect.transforms.ReplaceField$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:51:44,554] INFO Added plugin 'org.apache.kafka.connect.transforms.SetSchemaMetadata$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:51:44,554] INFO Added plugin 'org.apache.kafka.connect.transforms.ReplaceField$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:51:44,554] INFO Added plugin 'org.apache.kafka.connect.transforms.Filter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:51:44,554] INFO Added plugin 'org.apache.kafka.connect.transforms.HeaderFrom$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:51:44,554] INFO Added plugin 'org.apache.kafka.connect.transforms.InsertField$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:51:44,555] INFO Added plugin 'org.apache.kafka.connect.transforms.TimestampConverter$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:51:44,555] INFO Added plugin 'org.apache.kafka.connect.transforms.MaskField$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:51:44,555] INFO Added plugin 'org.apache.kafka.connect.transforms.TimestampRouter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:51:44,555] INFO Added plugin 'org.apache.kafka.connect.transforms.RegexRouter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:51:44,555] INFO Added plugin 'org.apache.kafka.connect.transforms.HoistField$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:51:44,555] INFO Added plugin 'org.apache.kafka.connect.transforms.ValueToKey' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:51:44,555] INFO Added plugin 'org.apache.kafka.connect.transforms.MaskField$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:51:44,555] INFO Added plugin 'org.apache.kafka.connect.transforms.DropHeaders' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:51:44,555] INFO Added plugin 'org.apache.kafka.connect.transforms.Cast$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:51:44,555] INFO Added plugin 'org.apache.kafka.connect.transforms.Cast$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:51:44,555] INFO Added plugin 'org.apache.kafka.connect.transforms.ExtractField$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:51:44,555] INFO Added plugin 'org.apache.kafka.connect.transforms.Flatten$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:51:44,555] INFO Added plugin 'org.apache.kafka.connect.transforms.InsertHeader' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:51:44,555] INFO Added plugin 'org.apache.kafka.connect.transforms.InsertField$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:51:44,556] INFO Added plugin 'org.apache.kafka.connect.transforms.Flatten$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:51:44,556] INFO Added plugin 'org.apache.kafka.connect.transforms.HeaderFrom$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:51:44,556] INFO Added plugin 'org.apache.kafka.connect.transforms.SetSchemaMetadata$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:51:44,556] INFO Added plugin 'org.apache.kafka.connect.transforms.ExtractField$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:51:44,556] INFO Added plugin 'org.apache.kafka.connect.transforms.TimestampConverter$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:51:44,556] INFO Added plugin 'org.apache.kafka.connect.transforms.HoistField$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:51:44,556] INFO Added plugin 'org.apache.kafka.connect.transforms.predicates.HasHeaderKey' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:51:44,556] INFO Added plugin 'org.apache.kafka.connect.transforms.predicates.RecordIsTombstone' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:51:44,556] INFO Added plugin 'org.apache.kafka.connect.transforms.predicates.TopicNameMatches' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:51:44,557] INFO Loading plugin from: /home/nefi/kafka/libs/jackson-core-2.13.3.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:44,579] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/jackson-core-2.13.3.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:44,579] INFO Loading plugin from: /home/nefi/kafka/libs/jersey-container-servlet-core-2.34.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:44,591] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/jersey-container-servlet-core-2.34.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:44,592] INFO Loading plugin from: /home/nefi/kafka/libs/javax.ws.rs-api-2.1.1.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:44,616] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/javax.ws.rs-api-2.1.1.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:44,616] INFO Loading plugin from: /home/nefi/kafka/libs/jersey-client-2.34.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:44,646] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/jersey-client-2.34.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:44,646] INFO Loading plugin from: /home/nefi/kafka/libs/connect-runtime-3.3.1.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:44,701] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/connect-runtime-3.3.1.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:44,701] INFO Added plugin 'org.apache.kafka.connect.tools.VerifiableSinkConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:51:44,701] INFO Added plugin 'org.apache.kafka.connect.tools.MockSinkConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:51:44,701] INFO Added plugin 'org.apache.kafka.connect.tools.VerifiableSourceConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:51:44,701] INFO Added plugin 'org.apache.kafka.connect.tools.MockSourceConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:51:44,701] INFO Added plugin 'org.apache.kafka.connect.tools.SchemaSourceConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:51:44,701] INFO Added plugin 'org.apache.kafka.connect.converters.FloatConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:51:44,701] INFO Added plugin 'org.apache.kafka.connect.converters.DoubleConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:51:44,701] INFO Added plugin 'org.apache.kafka.connect.converters.ByteArrayConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:51:44,701] INFO Added plugin 'org.apache.kafka.connect.converters.IntegerConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:51:44,701] INFO Added plugin 'org.apache.kafka.connect.converters.LongConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:51:44,701] INFO Added plugin 'org.apache.kafka.connect.converters.ShortConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:51:44,702] INFO Added plugin 'org.apache.kafka.connect.runtime.PredicatedTransformation' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:51:44,702] INFO Loading plugin from: /home/nefi/kafka/libs/netty-buffer-4.1.78.Final.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:44,719] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/netty-buffer-4.1.78.Final.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:44,719] INFO Loading plugin from: /home/nefi/kafka/libs/connect-file-3.3.1.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:44,726] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/connect-file-3.3.1.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:44,726] INFO Added plugin 'org.apache.kafka.connect.file.FileStreamSinkConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:51:44,726] INFO Added plugin 'org.apache.kafka.connect.file.FileStreamSourceConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:51:44,727] INFO Loading plugin from: /home/nefi/kafka/libs/jetty-http-9.4.48.v20220622.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:44,738] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/jetty-http-9.4.48.v20220622.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:44,739] INFO Loading plugin from: /home/nefi/kafka/libs/jackson-dataformat-csv-2.13.3.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:44,762] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/jackson-dataformat-csv-2.13.3.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:44,763] INFO Loading plugin from: /home/nefi/kafka/libs/plexus-utils-3.3.0.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:44,779] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/plexus-utils-3.3.0.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:44,780] INFO Loading plugin from: /home/nefi/kafka/libs/kafka-server-common-3.3.1.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:44,789] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/kafka-server-common-3.3.1.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:44,789] INFO Loading plugin from: /home/nefi/kafka/libs/reflections-0.9.12.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:44,796] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/reflections-0.9.12.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:44,797] INFO Loading plugin from: /home/nefi/kafka/libs/commons-lang3-3.8.1.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:44,816] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/commons-lang3-3.8.1.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:44,817] INFO Loading plugin from: /home/nefi/kafka/libs/connect-mirror-client-3.3.1.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:44,826] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/connect-mirror-client-3.3.1.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:44,827] INFO Loading plugin from: /home/nefi/kafka/libs/jakarta.annotation-api-1.3.5.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:44,832] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/jakarta.annotation-api-1.3.5.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:44,833] INFO Loading plugin from: /home/nefi/kafka/libs/zookeeper-jute-3.6.3.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:44,846] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/zookeeper-jute-3.6.3.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:44,846] INFO Loading plugin from: /home/nefi/kafka/libs/jetty-security-9.4.48.v20220622.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:44,866] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/jetty-security-9.4.48.v20220622.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:44,866] INFO Loading plugin from: /home/nefi/kafka/libs/commons-cli-1.4.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:44,870] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/commons-cli-1.4.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:44,871] INFO Loading plugin from: /home/nefi/kafka/libs/scala-library-2.13.8.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:45,115] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/scala-library-2.13.8.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:45,115] INFO Loading plugin from: /home/nefi/kafka/libs/netty-codec-4.1.78.Final.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:45,137] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/netty-codec-4.1.78.Final.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:45,137] INFO Loading plugin from: /home/nefi/kafka/libs/jakarta.validation-api-2.0.2.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:45,145] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/jakarta.validation-api-2.0.2.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:45,145] INFO Loading plugin from: /home/nefi/kafka/libs/jersey-common-2.34.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:45,209] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/jersey-common-2.34.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:45,210] INFO Loading plugin from: /home/nefi/kafka/libs/kafka-storage-api-3.3.1.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:45,213] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/kafka-storage-api-3.3.1.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:45,213] INFO Loading plugin from: /home/nefi/kafka/libs/jackson-datatype-jdk8-2.13.3.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:45,223] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/jackson-datatype-jdk8-2.13.3.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:45,223] INFO Loading plugin from: /home/nefi/kafka/libs/audience-annotations-0.5.0.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:45,225] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/audience-annotations-0.5.0.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:45,226] INFO Loading plugin from: /home/nefi/kafka/libs/scala-logging_2.13-3.9.4.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:45,237] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/scala-logging_2.13-3.9.4.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:45,238] INFO Loading plugin from: /home/nefi/kafka/libs/jackson-jaxrs-json-provider-2.13.3.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:45,245] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/jackson-jaxrs-json-provider-2.13.3.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:45,245] INFO Loading plugin from: /home/nefi/kafka/libs/jackson-module-scala_2.13-2.13.3.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:45,278] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/jackson-module-scala_2.13-2.13.3.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:45,278] INFO Loading plugin from: /home/nefi/kafka/libs/jakarta.activation-api-1.2.2.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:45,285] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/jakarta.activation-api-1.2.2.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:45,285] INFO Loading plugin from: /home/nefi/kafka/libs/rocksdbjni-6.29.4.1.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:45,303] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/rocksdbjni-6.29.4.1.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:45,304] INFO Loading plugin from: /home/nefi/kafka/libs/netty-transport-native-unix-common-4.1.78.Final.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:45,315] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/netty-transport-native-unix-common-4.1.78.Final.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:45,315] INFO Loading plugin from: /home/nefi/kafka/libs/snappy-java-1.1.8.4.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:45,321] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/snappy-java-1.1.8.4.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:45,322] INFO Loading plugin from: /home/nefi/kafka/libs/jersey-container-servlet-2.34.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:45,325] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/jersey-container-servlet-2.34.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:45,325] INFO Loading plugin from: /home/nefi/kafka/libs/jersey-hk2-2.34.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:45,335] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/jersey-hk2-2.34.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:45,335] INFO Loading plugin from: /home/nefi/kafka/libs/jakarta.ws.rs-api-2.1.6.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:45,341] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/jakarta.ws.rs-api-2.1.6.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:45,341] INFO Loading plugin from: /home/nefi/kafka/libs/swagger-annotations-2.2.0.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:45,344] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/swagger-annotations-2.2.0.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:45,344] INFO Loading plugin from: /home/nefi/kafka/libs/debezium-connector-postgres (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:45,465] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/debezium-connector-postgres/} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:45,465] INFO Added plugin 'io.debezium.connector.postgresql.PostgresConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:51:45,465] INFO Added plugin 'io.debezium.converters.ByteArrayConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:51:45,465] INFO Added plugin 'io.debezium.converters.BinaryDataConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:51:45,465] INFO Added plugin 'io.debezium.converters.CloudEventsConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:51:45,465] INFO Added plugin 'io.debezium.transforms.outbox.EventRouter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:51:45,465] INFO Added plugin 'io.debezium.transforms.ExtractNewRecordState' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:51:45,465] INFO Added plugin 'io.debezium.transforms.ByLogicalTableRouter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:51:45,466] INFO Added plugin 'io.debezium.transforms.tracing.ActivateTracingSpan' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:51:45,469] INFO Loading plugin from: /home/nefi/kafka/libs/jaxb-api-2.3.0.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:45,484] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/jaxb-api-2.3.0.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:45,484] INFO Loading plugin from: /home/nefi/kafka/libs/javassist-3.27.0-GA.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:45,511] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/javassist-3.27.0-GA.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:45,511] INFO Loading plugin from: /home/nefi/kafka/libs/jose4j-0.7.9.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:45,523] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/jose4j-0.7.9.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:45,523] INFO Loading plugin from: /home/nefi/kafka/libs/trogdor-3.3.1.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:45,536] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/trogdor-3.3.1.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:45,536] INFO Loading plugin from: /home/nefi/kafka/libs/connect-json-3.3.1.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:45,539] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/connect-json-3.3.1.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:45,539] INFO Added plugin 'org.apache.kafka.connect.json.JsonConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:51:45,539] INFO Loading plugin from: /home/nefi/kafka/libs/scala-collection-compat_2.13-2.6.0.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:45,541] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/scala-collection-compat_2.13-2.6.0.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:45,541] INFO Loading plugin from: /home/nefi/kafka/libs/slf4j-reload4j-1.7.36.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:45,544] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/slf4j-reload4j-1.7.36.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:45,544] INFO Loading plugin from: /home/nefi/kafka/libs/hk2-api-2.6.1.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:45,554] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/hk2-api-2.6.1.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:45,554] INFO Loading plugin from: /home/nefi/kafka/libs/jetty-io-9.4.48.v20220622.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:45,563] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/jetty-io-9.4.48.v20220622.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:45,563] INFO Loading plugin from: /home/nefi/kafka/libs/kafka-clients-3.3.1.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:45,732] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/kafka-clients-3.3.1.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:45,732] INFO Added plugin 'org.apache.kafka.common.config.provider.FileConfigProvider' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:51:45,732] INFO Added plugin 'org.apache.kafka.common.config.provider.DirectoryConfigProvider' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:51:45,732] INFO Loading plugin from: /home/nefi/kafka/libs/javax.servlet-api-3.1.0.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:45,736] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/javax.servlet-api-3.1.0.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:45,737] INFO Loading plugin from: /home/nefi/kafka/libs/jakarta.xml.bind-api-2.3.3.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:45,741] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/jakarta.xml.bind-api-2.3.3.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:45,742] INFO Loading plugin from: /home/nefi/kafka/libs/slf4j-api-1.7.36.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:45,745] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/slf4j-api-1.7.36.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:45,745] INFO Loading plugin from: /home/nefi/kafka/libs/kafka-metadata-3.3.1.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:45,762] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/kafka-metadata-3.3.1.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:45,763] INFO Loading plugin from: /home/nefi/kafka/libs/paranamer-2.8.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:45,766] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/paranamer-2.8.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:45,766] INFO Loading plugin from: /home/nefi/kafka/libs/jackson-module-jaxb-annotations-2.13.3.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:45,769] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/jackson-module-jaxb-annotations-2.13.3.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:45,769] INFO Loading plugin from: /home/nefi/kafka/libs/kafka-storage-3.3.1.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:45,775] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/kafka-storage-3.3.1.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:45,776] INFO Loading plugin from: /home/nefi/kafka/libs/jetty-servlets-9.4.48.v20220622.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:45,780] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/jetty-servlets-9.4.48.v20220622.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:45,781] INFO Loading plugin from: /home/nefi/kafka/libs/connect-api-3.3.1.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:45,786] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/connect-api-3.3.1.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:45,786] INFO Added plugin 'org.apache.kafka.connect.storage.StringConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:51:45,786] INFO Added plugin 'org.apache.kafka.connect.storage.SimpleHeaderConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:51:45,787] INFO Loading plugin from: /home/nefi/kafka/libs/jackson-databind-2.13.3.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:45,834] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/jackson-databind-2.13.3.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:45,834] INFO Loading plugin from: /home/nefi/kafka/libs/kafka-streams-test-utils-3.3.1.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:45,844] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/kafka-streams-test-utils-3.3.1.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:45,844] INFO Loading plugin from: /home/nefi/kafka/libs/activation-1.1.1.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:45,849] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/activation-1.1.1.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:45,849] INFO Loading plugin from: /home/nefi/kafka/libs/kafka-streams-examples-3.3.1.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:45,853] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/kafka-streams-examples-3.3.1.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:45,853] INFO Loading plugin from: /home/nefi/kafka/libs/jackson-annotations-2.13.3.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:45,858] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/jackson-annotations-2.13.3.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:45,858] INFO Loading plugin from: /home/nefi/kafka/libs/scala-java8-compat_2.13-1.0.2.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:45,886] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/scala-java8-compat_2.13-1.0.2.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:45,886] INFO Loading plugin from: /home/nefi/kafka/libs/metrics-core-4.1.12.1.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:45,893] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/metrics-core-4.1.12.1.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:45,893] INFO Loading plugin from: /home/nefi/kafka/libs/kafka-streams-scala_2.13-3.3.1.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:45,901] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/kafka-streams-scala_2.13-3.3.1.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:45,902] INFO Loading plugin from: /home/nefi/kafka/libs/metrics-core-2.2.0.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:45,907] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/metrics-core-2.2.0.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:45,908] INFO Loading plugin from: /home/nefi/kafka/libs/zstd-jni-1.5.2-1.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:45,911] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/zstd-jni-1.5.2-1.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:45,911] INFO Loading plugin from: /home/nefi/kafka/libs/kafka-shell-3.3.1.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:45,917] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/kafka-shell-3.3.1.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:45,917] INFO Loading plugin from: /home/nefi/kafka/libs/kafka-tools-3.3.1.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:45,925] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/kafka-tools-3.3.1.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:45,925] INFO Loading plugin from: /home/nefi/kafka/libs/aopalliance-repackaged-2.6.1.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:45,928] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/aopalliance-repackaged-2.6.1.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:45,928] INFO Loading plugin from: /home/nefi/kafka/libs/jopt-simple-5.0.4.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:45,933] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/jopt-simple-5.0.4.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:45,934] INFO Loading plugin from: /home/nefi/kafka/libs/jetty-continuation-9.4.48.v20220622.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:45,936] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/jetty-continuation-9.4.48.v20220622.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:45,936] INFO Loading plugin from: /home/nefi/kafka/libs/maven-artifact-3.8.4.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:45,940] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/maven-artifact-3.8.4.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:45,940] INFO Loading plugin from: /home/nefi/kafka/libs/connect-mirror-3.3.1.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:45,951] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/connect-mirror-3.3.1.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:45,952] INFO Added plugin 'org.apache.kafka.connect.mirror.MirrorSourceConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:51:45,952] INFO Added plugin 'org.apache.kafka.connect.mirror.MirrorHeartbeatConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:51:45,952] INFO Added plugin 'org.apache.kafka.connect.mirror.MirrorCheckpointConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:51:45,952] INFO Loading plugin from: /home/nefi/kafka/libs/hk2-utils-2.6.1.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:45,959] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/hk2-utils-2.6.1.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:45,960] INFO Loading plugin from: /home/nefi/kafka/libs/jetty-server-9.4.48.v20220622.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:45,995] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/jetty-server-9.4.48.v20220622.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:45,995] INFO Loading plugin from: /home/nefi/kafka/libs/zookeeper-3.6.3.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:46,044] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/zookeeper-3.6.3.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:46,044] INFO Loading plugin from: /home/nefi/kafka/libs/osgi-resource-locator-1.0.3.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:46,048] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/osgi-resource-locator-1.0.3.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:46,048] INFO Loading plugin from: /home/nefi/kafka/libs/hk2-locator-2.6.1.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:46,061] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/hk2-locator-2.6.1.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:46,061] INFO Loading plugin from: /home/nefi/kafka/libs/commons-lang3-3.12.0.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:46,084] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/commons-lang3-3.12.0.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:46,085] INFO Loading plugin from: /home/nefi/kafka/libs/jackson-jaxrs-base-2.13.3.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:46,088] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/jackson-jaxrs-base-2.13.3.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:46,088] INFO Loading plugin from: /home/nefi/kafka/libs/netty-transport-classes-epoll-4.1.78.Final.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:46,112] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/netty-transport-classes-epoll-4.1.78.Final.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:46,112] INFO Loading plugin from: /home/nefi/kafka/libs/netty-handler-4.1.78.Final.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:46,136] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/netty-handler-4.1.78.Final.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:46,136] INFO Loading plugin from: /home/nefi/kafka/libs/netty-transport-native-epoll-4.1.78.Final.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:46,137] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/netty-transport-native-epoll-4.1.78.Final.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:46,138] INFO Loading plugin from: /home/nefi/kafka/libs/netty-common-4.1.78.Final.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:46,162] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/netty-common-4.1.78.Final.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:46,162] INFO Loading plugin from: /home/nefi/kafka/libs/scala-reflect-2.13.8.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:46,337] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/scala-reflect-2.13.8.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:46,337] INFO Loading plugin from: /home/nefi/kafka/libs/jersey-server-2.34.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:46,386] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/jersey-server-2.34.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:46,386] INFO Loading plugin from: /home/nefi/kafka/libs/argparse4j-0.7.0.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:46,390] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/argparse4j-0.7.0.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:46,390] INFO Loading plugin from: /home/nefi/kafka/libs/connect-basic-auth-extension-3.3.1.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:46,394] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/connect-basic-auth-extension-3.3.1.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:46,395] INFO Added plugin 'org.apache.kafka.connect.rest.basic.auth.extension.BasicAuthSecurityRestExtension' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:51:46,395] INFO Loading plugin from: /home/nefi/kafka/libs/jline-3.21.0.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:46,423] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/jline-3.21.0.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:46,423] INFO Loading plugin from: /home/nefi/kafka/libs/kafka-streams-3.3.1.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:46,481] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/kafka-streams-3.3.1.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:46,482] INFO Loading plugin from: /home/nefi/kafka/libs/jakarta.inject-2.6.1.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:46,483] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/jakarta.inject-2.6.1.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:46,483] INFO Loading plugin from: /home/nefi/kafka/libs/jetty-servlet-9.4.48.v20220622.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:46,493] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/jetty-servlet-9.4.48.v20220622.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:46,493] INFO Loading plugin from: /home/nefi/kafka/libs/kafka-log4j-appender-3.3.1.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:46,495] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/kafka-log4j-appender-3.3.1.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:46,495] INFO Loading plugin from: /home/nefi/kafka/libs/jetty-util-9.4.48.v20220622.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:46,513] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/jetty-util-9.4.48.v20220622.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:46,513] INFO Loading plugin from: /home/nefi/kafka/libs/netty-transport-4.1.78.Final.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:46,531] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/netty-transport-4.1.78.Final.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:46,531] INFO Loading plugin from: /home/nefi/kafka/libs/kafka_2.13-3.3.1.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:51:46,677] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/kafka_2.13-3.3.1.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:47,276] INFO Registered loader: jdk.internal.loader.ClassLoaders$AppClassLoader@3d4eac69 (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:51:47,276] INFO Added aliases 'PostgresConnector' and 'Postgres' to plugin 'io.debezium.connector.postgresql.PostgresConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:476)
+[2022-12-19 05:51:47,277] INFO Added aliases 'FileStreamSinkConnector' and 'FileStreamSink' to plugin 'org.apache.kafka.connect.file.FileStreamSinkConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:476)
+[2022-12-19 05:51:47,277] INFO Added aliases 'FileStreamSourceConnector' and 'FileStreamSource' to plugin 'org.apache.kafka.connect.file.FileStreamSourceConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:476)
+[2022-12-19 05:51:47,277] INFO Added aliases 'MirrorCheckpointConnector' and 'MirrorCheckpoint' to plugin 'org.apache.kafka.connect.mirror.MirrorCheckpointConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:476)
+[2022-12-19 05:51:47,277] INFO Added aliases 'MirrorHeartbeatConnector' and 'MirrorHeartbeat' to plugin 'org.apache.kafka.connect.mirror.MirrorHeartbeatConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:476)
+[2022-12-19 05:51:47,277] INFO Added aliases 'MirrorSourceConnector' and 'MirrorSource' to plugin 'org.apache.kafka.connect.mirror.MirrorSourceConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:476)
+[2022-12-19 05:51:47,277] INFO Added aliases 'MockSinkConnector' and 'MockSink' to plugin 'org.apache.kafka.connect.tools.MockSinkConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:476)
+[2022-12-19 05:51:47,277] INFO Added aliases 'MockSourceConnector' and 'MockSource' to plugin 'org.apache.kafka.connect.tools.MockSourceConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:476)
+[2022-12-19 05:51:47,277] INFO Added aliases 'SchemaSourceConnector' and 'SchemaSource' to plugin 'org.apache.kafka.connect.tools.SchemaSourceConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:476)
+[2022-12-19 05:51:47,277] INFO Added aliases 'VerifiableSinkConnector' and 'VerifiableSink' to plugin 'org.apache.kafka.connect.tools.VerifiableSinkConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:476)
+[2022-12-19 05:51:47,277] INFO Added aliases 'VerifiableSourceConnector' and 'VerifiableSource' to plugin 'org.apache.kafka.connect.tools.VerifiableSourceConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:476)
+[2022-12-19 05:51:47,277] INFO Added aliases 'BinaryDataConverter' and 'BinaryData' to plugin 'io.debezium.converters.BinaryDataConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:476)
+[2022-12-19 05:51:47,277] INFO Added aliases 'CloudEventsConverter' and 'CloudEvents' to plugin 'io.debezium.converters.CloudEventsConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:476)
+[2022-12-19 05:51:47,277] INFO Added aliases 'DoubleConverter' and 'Double' to plugin 'org.apache.kafka.connect.converters.DoubleConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:476)
+[2022-12-19 05:51:47,278] INFO Added aliases 'FloatConverter' and 'Float' to plugin 'org.apache.kafka.connect.converters.FloatConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:476)
+[2022-12-19 05:51:47,278] INFO Added aliases 'IntegerConverter' and 'Integer' to plugin 'org.apache.kafka.connect.converters.IntegerConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:476)
+[2022-12-19 05:51:47,278] INFO Added aliases 'LongConverter' and 'Long' to plugin 'org.apache.kafka.connect.converters.LongConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:476)
+[2022-12-19 05:51:47,278] INFO Added aliases 'ShortConverter' and 'Short' to plugin 'org.apache.kafka.connect.converters.ShortConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:476)
+[2022-12-19 05:51:47,278] INFO Added aliases 'JsonConverter' and 'Json' to plugin 'org.apache.kafka.connect.json.JsonConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:476)
+[2022-12-19 05:51:47,278] INFO Added aliases 'StringConverter' and 'String' to plugin 'org.apache.kafka.connect.storage.StringConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:476)
+[2022-12-19 05:51:47,278] INFO Added aliases 'BinaryDataConverter' and 'BinaryData' to plugin 'io.debezium.converters.BinaryDataConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:476)
+[2022-12-19 05:51:47,278] INFO Added aliases 'DoubleConverter' and 'Double' to plugin 'org.apache.kafka.connect.converters.DoubleConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:476)
+[2022-12-19 05:51:47,278] INFO Added aliases 'FloatConverter' and 'Float' to plugin 'org.apache.kafka.connect.converters.FloatConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:476)
+[2022-12-19 05:51:47,278] INFO Added aliases 'IntegerConverter' and 'Integer' to plugin 'org.apache.kafka.connect.converters.IntegerConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:476)
+[2022-12-19 05:51:47,278] INFO Added aliases 'LongConverter' and 'Long' to plugin 'org.apache.kafka.connect.converters.LongConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:476)
+[2022-12-19 05:51:47,278] INFO Added aliases 'ShortConverter' and 'Short' to plugin 'org.apache.kafka.connect.converters.ShortConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:476)
+[2022-12-19 05:51:47,278] INFO Added aliases 'JsonConverter' and 'Json' to plugin 'org.apache.kafka.connect.json.JsonConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:476)
+[2022-12-19 05:51:47,278] INFO Added aliases 'SimpleHeaderConverter' and 'Simple' to plugin 'org.apache.kafka.connect.storage.SimpleHeaderConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:476)
+[2022-12-19 05:51:47,278] INFO Added aliases 'StringConverter' and 'String' to plugin 'org.apache.kafka.connect.storage.StringConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:476)
+[2022-12-19 05:51:47,278] INFO Added alias 'ByLogicalTableRouter' to plugin 'io.debezium.transforms.ByLogicalTableRouter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:473)
+[2022-12-19 05:51:47,279] INFO Added alias 'ExtractNewRecordState' to plugin 'io.debezium.transforms.ExtractNewRecordState' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:473)
+[2022-12-19 05:51:47,279] INFO Added alias 'EventRouter' to plugin 'io.debezium.transforms.outbox.EventRouter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:473)
+[2022-12-19 05:51:47,279] INFO Added alias 'ActivateTracingSpan' to plugin 'io.debezium.transforms.tracing.ActivateTracingSpan' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:473)
+[2022-12-19 05:51:47,279] INFO Added aliases 'PredicatedTransformation' and 'Predicated' to plugin 'org.apache.kafka.connect.runtime.PredicatedTransformation' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:476)
+[2022-12-19 05:51:47,279] INFO Added alias 'DropHeaders' to plugin 'org.apache.kafka.connect.transforms.DropHeaders' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:473)
+[2022-12-19 05:51:47,279] INFO Added alias 'Filter' to plugin 'org.apache.kafka.connect.transforms.Filter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:473)
+[2022-12-19 05:51:47,279] INFO Added alias 'InsertHeader' to plugin 'org.apache.kafka.connect.transforms.InsertHeader' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:473)
+[2022-12-19 05:51:47,279] INFO Added alias 'RegexRouter' to plugin 'org.apache.kafka.connect.transforms.RegexRouter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:473)
+[2022-12-19 05:51:47,279] INFO Added alias 'TimestampRouter' to plugin 'org.apache.kafka.connect.transforms.TimestampRouter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:473)
+[2022-12-19 05:51:47,279] INFO Added alias 'ValueToKey' to plugin 'org.apache.kafka.connect.transforms.ValueToKey' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:473)
+[2022-12-19 05:51:47,279] INFO Added alias 'HasHeaderKey' to plugin 'org.apache.kafka.connect.transforms.predicates.HasHeaderKey' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:473)
+[2022-12-19 05:51:47,279] INFO Added alias 'RecordIsTombstone' to plugin 'org.apache.kafka.connect.transforms.predicates.RecordIsTombstone' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:473)
+[2022-12-19 05:51:47,279] INFO Added alias 'TopicNameMatches' to plugin 'org.apache.kafka.connect.transforms.predicates.TopicNameMatches' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:473)
+[2022-12-19 05:51:47,279] INFO Added alias 'BasicAuthSecurityRestExtension' to plugin 'org.apache.kafka.connect.rest.basic.auth.extension.BasicAuthSecurityRestExtension' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:473)
+[2022-12-19 05:51:47,280] INFO Added aliases 'AllConnectorClientConfigOverridePolicy' and 'All' to plugin 'org.apache.kafka.connect.connector.policy.AllConnectorClientConfigOverridePolicy' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:476)
+[2022-12-19 05:51:47,280] INFO Added aliases 'NoneConnectorClientConfigOverridePolicy' and 'None' to plugin 'org.apache.kafka.connect.connector.policy.NoneConnectorClientConfigOverridePolicy' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:476)
+[2022-12-19 05:51:47,280] INFO Added aliases 'PrincipalConnectorClientConfigOverridePolicy' and 'Principal' to plugin 'org.apache.kafka.connect.connector.policy.PrincipalConnectorClientConfigOverridePolicy' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:476)
+[2022-12-19 05:51:47,296] INFO StandaloneConfig values: 
+	access.control.allow.methods = 
+	access.control.allow.origin = 
+	admin.listeners = null
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = use_all_dns_ips
+	config.providers = []
+	connector.client.config.override.policy = All
+	header.converter = class org.apache.kafka.connect.storage.SimpleHeaderConverter
+	key.converter = class org.apache.kafka.connect.json.JsonConverter
+	listeners = [http://:8083]
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	offset.flush.interval.ms = 10000
+	offset.flush.timeout.ms = 5000
+	offset.storage.file.filename = /tmp/connect.offsets
+	plugin.path = [/home/nefi/kafka/libs]
+	response.http.headers.config = 
+	rest.advertised.host.name = null
+	rest.advertised.listener = null
+	rest.advertised.port = null
+	rest.extension.classes = []
+	ssl.cipher.suites = null
+	ssl.client.auth = none
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	task.shutdown.graceful.timeout.ms = 5000
+	topic.creation.enable = true
+	topic.tracking.allow.reset = true
+	topic.tracking.enable = true
+	value.converter = class org.apache.kafka.connect.json.JsonConverter
+ (org.apache.kafka.connect.runtime.standalone.StandaloneConfig:376)
+[2022-12-19 05:51:47,297] INFO Creating Kafka admin client (org.apache.kafka.connect.util.ConnectUtils:56)
+[2022-12-19 05:51:47,301] INFO AdminClientConfig values: 
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+ (org.apache.kafka.clients.admin.AdminClientConfig:376)
+[2022-12-19 05:51:47,350] WARN These configurations '[offset.flush.interval.ms, key.converter.schemas.enable, offset.storage.file.filename, value.converter.schemas.enable, plugin.path, value.converter, key.converter]' were supplied but are not used yet. (org.apache.kafka.clients.admin.AdminClientConfig:385)
+[2022-12-19 05:51:47,351] INFO Kafka version: 3.3.1 (org.apache.kafka.common.utils.AppInfoParser:119)
+[2022-12-19 05:51:47,351] INFO Kafka commitId: e23c59d00e687ff5 (org.apache.kafka.common.utils.AppInfoParser:120)
+[2022-12-19 05:51:47,351] INFO Kafka startTimeMs: 1671457907351 (org.apache.kafka.common.utils.AppInfoParser:121)
+[2022-12-19 05:51:47,616] INFO Kafka cluster ID: CmgIp-RuRdyTwctWkECMjw (org.apache.kafka.connect.util.ConnectUtils:72)
+[2022-12-19 05:51:47,617] INFO App info kafka.admin.client for adminclient-1 unregistered (org.apache.kafka.common.utils.AppInfoParser:83)
+[2022-12-19 05:51:47,622] INFO Metrics scheduler closed (org.apache.kafka.common.metrics.Metrics:693)
+[2022-12-19 05:51:47,622] INFO Closing reporter org.apache.kafka.common.metrics.JmxReporter (org.apache.kafka.common.metrics.Metrics:697)
+[2022-12-19 05:51:47,622] INFO Metrics reporters closed (org.apache.kafka.common.metrics.Metrics:703)
+[2022-12-19 05:51:47,629] INFO Logging initialized @3709ms to org.eclipse.jetty.util.log.Slf4jLog (org.eclipse.jetty.util.log:170)
+[2022-12-19 05:51:47,662] INFO Added connector for http://:8083 (org.apache.kafka.connect.runtime.rest.RestServer:120)
+[2022-12-19 05:51:47,662] INFO Initializing REST server (org.apache.kafka.connect.runtime.rest.RestServer:191)
+[2022-12-19 05:51:47,675] INFO jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 11.0.17+8-post-Ubuntu-1ubuntu222.04 (org.eclipse.jetty.server.Server:375)
+[2022-12-19 05:51:47,699] INFO Started http_8083@257ef9ed{HTTP/1.1, (http/1.1)}{0.0.0.0:8083} (org.eclipse.jetty.server.AbstractConnector:333)
+[2022-12-19 05:51:47,699] INFO Started @3779ms (org.eclipse.jetty.server.Server:415)
+[2022-12-19 05:51:47,715] INFO Advertised URI: http://127.0.1.1:8083/ (org.apache.kafka.connect.runtime.rest.RestServer:364)
+[2022-12-19 05:51:47,715] INFO REST server listening at http://127.0.1.1:8083/, advertising URL http://127.0.1.1:8083/ (org.apache.kafka.connect.runtime.rest.RestServer:206)
+[2022-12-19 05:51:47,716] INFO Advertised URI: http://127.0.1.1:8083/ (org.apache.kafka.connect.runtime.rest.RestServer:364)
+[2022-12-19 05:51:47,716] INFO REST admin endpoints at http://127.0.1.1:8083/ (org.apache.kafka.connect.runtime.rest.RestServer:207)
+[2022-12-19 05:51:47,716] INFO Advertised URI: http://127.0.1.1:8083/ (org.apache.kafka.connect.runtime.rest.RestServer:364)
+[2022-12-19 05:51:47,716] INFO Setting up All Policy for ConnectorClientConfigOverride. This will allow all client configurations to be overridden (org.apache.kafka.connect.connector.policy.AllConnectorClientConfigOverridePolicy:44)
+[2022-12-19 05:51:47,721] INFO Creating Kafka admin client (org.apache.kafka.connect.util.ConnectUtils:56)
+[2022-12-19 05:51:47,722] INFO AdminClientConfig values: 
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+ (org.apache.kafka.clients.admin.AdminClientConfig:376)
+[2022-12-19 05:51:47,725] WARN These configurations '[offset.flush.interval.ms, key.converter.schemas.enable, offset.storage.file.filename, value.converter.schemas.enable, plugin.path, value.converter, key.converter]' were supplied but are not used yet. (org.apache.kafka.clients.admin.AdminClientConfig:385)
+[2022-12-19 05:51:47,726] INFO Kafka version: 3.3.1 (org.apache.kafka.common.utils.AppInfoParser:119)
+[2022-12-19 05:51:47,726] INFO Kafka commitId: e23c59d00e687ff5 (org.apache.kafka.common.utils.AppInfoParser:120)
+[2022-12-19 05:51:47,726] INFO Kafka startTimeMs: 1671457907725 (org.apache.kafka.common.utils.AppInfoParser:121)
+[2022-12-19 05:51:47,739] INFO Kafka cluster ID: CmgIp-RuRdyTwctWkECMjw (org.apache.kafka.connect.util.ConnectUtils:72)
+[2022-12-19 05:51:47,739] INFO App info kafka.admin.client for adminclient-2 unregistered (org.apache.kafka.common.utils.AppInfoParser:83)
+[2022-12-19 05:51:47,743] INFO Metrics scheduler closed (org.apache.kafka.common.metrics.Metrics:693)
+[2022-12-19 05:51:47,743] INFO Closing reporter org.apache.kafka.common.metrics.JmxReporter (org.apache.kafka.common.metrics.Metrics:697)
+[2022-12-19 05:51:47,744] INFO Metrics reporters closed (org.apache.kafka.common.metrics.Metrics:703)
+[2022-12-19 05:51:47,746] INFO Kafka version: 3.3.1 (org.apache.kafka.common.utils.AppInfoParser:119)
+[2022-12-19 05:51:47,746] INFO Kafka commitId: e23c59d00e687ff5 (org.apache.kafka.common.utils.AppInfoParser:120)
+[2022-12-19 05:51:47,746] INFO Kafka startTimeMs: 1671457907746 (org.apache.kafka.common.utils.AppInfoParser:121)
+[2022-12-19 05:51:47,825] INFO JsonConverterConfig values: 
+	converter.type = key
+	decimal.format = BASE64
+	schemas.cache.size = 1000
+	schemas.enable = false
+ (org.apache.kafka.connect.json.JsonConverterConfig:376)
+[2022-12-19 05:51:47,826] INFO JsonConverterConfig values: 
+	converter.type = value
+	decimal.format = BASE64
+	schemas.cache.size = 1000
+	schemas.enable = false
+ (org.apache.kafka.connect.json.JsonConverterConfig:376)
+[2022-12-19 05:51:47,832] INFO Kafka Connect standalone worker initialization took 3539ms (org.apache.kafka.connect.cli.ConnectStandalone:99)
+[2022-12-19 05:51:47,832] INFO Kafka Connect starting (org.apache.kafka.connect.runtime.Connect:50)
+[2022-12-19 05:51:47,833] INFO Herder starting (org.apache.kafka.connect.runtime.standalone.StandaloneHerder:98)
+[2022-12-19 05:51:47,833] INFO Worker starting (org.apache.kafka.connect.runtime.Worker:203)
+[2022-12-19 05:51:47,834] INFO Starting FileOffsetBackingStore with file /tmp/connect.offsets (org.apache.kafka.connect.storage.FileOffsetBackingStore:58)
+[2022-12-19 05:51:47,836] INFO Worker started (org.apache.kafka.connect.runtime.Worker:213)
+[2022-12-19 05:51:47,836] INFO Herder started (org.apache.kafka.connect.runtime.standalone.StandaloneHerder:101)
+[2022-12-19 05:51:47,836] INFO Initializing REST resources (org.apache.kafka.connect.runtime.rest.RestServer:211)
+[2022-12-19 05:51:47,863] INFO Adding admin resources to main listener (org.apache.kafka.connect.runtime.rest.RestServer:230)
+[2022-12-19 05:51:47,909] INFO DefaultSessionIdManager workerName=node0 (org.eclipse.jetty.server.session:334)
+[2022-12-19 05:51:47,909] INFO No SessionScavenger set, using defaults (org.eclipse.jetty.server.session:339)
+[2022-12-19 05:51:47,910] INFO node0 Scavenging every 660000ms (org.eclipse.jetty.server.session:132)
+[2022-12-19 05:51:48,250] INFO Started o.e.j.s.ServletContextHandler@4c19d42e{/,null,AVAILABLE} (org.eclipse.jetty.server.handler.ContextHandler:921)
+[2022-12-19 05:51:48,250] INFO REST resources initialized; server is started and ready to handle requests (org.apache.kafka.connect.runtime.rest.RestServer:312)
+[2022-12-19 05:51:48,250] INFO Kafka Connect started (org.apache.kafka.connect.runtime.Connect:56)
+[2022-12-19 05:51:48,349] ERROR Failed testing connection for jdbc:postgresql://localhost:5432/outbox-test with user 'postgres' (io.debezium.connector.postgresql.PostgresConnector:138)
+org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:319)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:247)
+	at org.postgresql.Driver.makeConnection(Driver.java:434)
+	at org.postgresql.Driver.connect(Driver.java:291)
+	at io.debezium.jdbc.JdbcConnection.lambda$patternBasedFactory$1(JdbcConnection.java:240)
+	at io.debezium.jdbc.JdbcConnection$ConnectionFactoryDecorator.connect(JdbcConnection.java:126)
+	at io.debezium.jdbc.JdbcConnection.connection(JdbcConnection.java:872)
+	at io.debezium.connector.postgresql.PostgresConnector.validateConnection(PostgresConnector.java:90)
+	at io.debezium.connector.common.RelationalBaseSourceConnector.validate(RelationalBaseSourceConnector.java:55)
+	at org.apache.kafka.connect.runtime.AbstractHerder.validateConnectorConfig(AbstractHerder.java:491)
+	at org.apache.kafka.connect.runtime.AbstractHerder.lambda$validateConnectorConfig$2(AbstractHerder.java:372)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:412)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.base/java.net.Socket.connect(Socket.java:609)
+	at org.postgresql.core.PGStream.createSocket(PGStream.java:241)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:98)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:109)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:235)
+	... 16 more
+[2022-12-19 05:51:48,352] INFO AbstractConfig values: 
+ (org.apache.kafka.common.config.AbstractConfig:376)
+[2022-12-19 05:51:48,361] ERROR Failed to create job for config/connect-debezium-postgresql.properties (org.apache.kafka.connect.cli.ConnectStandalone:107)
+[2022-12-19 05:51:48,361] ERROR Stopping after connector error (org.apache.kafka.connect.cli.ConnectStandalone:117)
+java.util.concurrent.ExecutionException: org.apache.kafka.connect.runtime.rest.errors.BadRequestException: Connector configuration is invalid and contains the following 1 error(s):
+Error while validating connector config: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+You can also find the above list of errors at the endpoint `/connector-plugins/{connectorType}/config/validate`
+	at org.apache.kafka.connect.util.ConvertingFutureCallback.result(ConvertingFutureCallback.java:115)
+	at org.apache.kafka.connect.util.ConvertingFutureCallback.get(ConvertingFutureCallback.java:99)
+	at org.apache.kafka.connect.cli.ConnectStandalone.main(ConnectStandalone.java:114)
+Caused by: org.apache.kafka.connect.runtime.rest.errors.BadRequestException: Connector configuration is invalid and contains the following 1 error(s):
+Error while validating connector config: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+You can also find the above list of errors at the endpoint `/connector-plugins/{connectorType}/config/validate`
+	at org.apache.kafka.connect.runtime.AbstractHerder.maybeAddConfigErrors(AbstractHerder.java:733)
+	at org.apache.kafka.connect.runtime.standalone.StandaloneHerder.putConnectorConfig(StandaloneHerder.java:207)
+	at org.apache.kafka.connect.runtime.standalone.StandaloneHerder.lambda$null$0(StandaloneHerder.java:193)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+[2022-12-19 05:51:48,362] INFO Kafka Connect stopping (org.apache.kafka.connect.runtime.Connect:66)
+[2022-12-19 05:51:48,362] INFO Stopping REST server (org.apache.kafka.connect.runtime.rest.RestServer:320)
+[2022-12-19 05:51:48,364] INFO Stopped http_8083@257ef9ed{HTTP/1.1, (http/1.1)}{0.0.0.0:8083} (org.eclipse.jetty.server.AbstractConnector:383)
+[2022-12-19 05:51:48,365] INFO node0 Stopped scavenging (org.eclipse.jetty.server.session:149)
+[2022-12-19 05:51:48,367] INFO REST server stopped (org.apache.kafka.connect.runtime.rest.RestServer:337)
+[2022-12-19 05:51:48,367] INFO Herder stopping (org.apache.kafka.connect.runtime.standalone.StandaloneHerder:106)
+[2022-12-19 05:51:48,367] INFO Worker stopping (org.apache.kafka.connect.runtime.Worker:220)
+[2022-12-19 05:51:48,368] INFO Stopped FileOffsetBackingStore (org.apache.kafka.connect.storage.FileOffsetBackingStore:66)
+[2022-12-19 05:51:48,368] INFO Metrics scheduler closed (org.apache.kafka.common.metrics.Metrics:693)
+[2022-12-19 05:51:48,368] INFO Closing reporter org.apache.kafka.common.metrics.JmxReporter (org.apache.kafka.common.metrics.Metrics:697)
+[2022-12-19 05:51:48,368] INFO Metrics reporters closed (org.apache.kafka.common.metrics.Metrics:703)
+[2022-12-19 05:51:48,368] INFO App info kafka.connect for 127.0.1.1:8083 unregistered (org.apache.kafka.common.utils.AppInfoParser:83)
+[2022-12-19 05:51:48,368] INFO Worker stopped (org.apache.kafka.connect.runtime.Worker:241)
+[2022-12-19 05:51:48,369] INFO Herder stopped (org.apache.kafka.connect.runtime.standalone.StandaloneHerder:124)
+[2022-12-19 05:51:48,369] INFO Kafka Connect stopped (org.apache.kafka.connect.runtime.Connect:71)
+[2022-12-19 05:53:13,660] INFO Kafka Connect standalone worker initializing ... (org.apache.kafka.connect.cli.ConnectStandalone:68)
+[2022-12-19 05:53:13,667] INFO WorkerInfo values: 
+	jvm.args = -Xms256M, -Xmx2G, -XX:+UseG1GC, -XX:MaxGCPauseMillis=20, -XX:InitiatingHeapOccupancyPercent=35, -XX:+ExplicitGCInvokesConcurrent, -XX:MaxInlineLevel=15, -Djava.awt.headless=true, -Dcom.sun.management.jmxremote, -Dcom.sun.management.jmxremote.authenticate=false, -Dcom.sun.management.jmxremote.ssl=false, -Dkafka.logs.dir=/home/nefi/kafka/bin/../logs, -Dlog4j.configuration=file:bin/../config/connect-log4j.properties
+	jvm.spec = Ubuntu, OpenJDK 64-Bit Server VM, 11.0.17, 11.0.17+8-post-Ubuntu-1ubuntu222.04
+	jvm.classpath = /home/nefi/kafka/bin/../libs/activation-1.1.1.jar:/home/nefi/kafka/bin/../libs/aopalliance-repackaged-2.6.1.jar:/home/nefi/kafka/bin/../libs/argparse4j-0.7.0.jar:/home/nefi/kafka/bin/../libs/audience-annotations-0.5.0.jar:/home/nefi/kafka/bin/../libs/commons-cli-1.4.jar:/home/nefi/kafka/bin/../libs/commons-lang3-3.12.0.jar:/home/nefi/kafka/bin/../libs/commons-lang3-3.8.1.jar:/home/nefi/kafka/bin/../libs/connect-api-3.3.1.jar:/home/nefi/kafka/bin/../libs/connect-basic-auth-extension-3.3.1.jar:/home/nefi/kafka/bin/../libs/connect-json-3.3.1.jar:/home/nefi/kafka/bin/../libs/connect-mirror-3.3.1.jar:/home/nefi/kafka/bin/../libs/connect-mirror-client-3.3.1.jar:/home/nefi/kafka/bin/../libs/connect-runtime-3.3.1.jar:/home/nefi/kafka/bin/../libs/connect-transforms-3.3.1.jar:/home/nefi/kafka/bin/../libs/debezium-connector-postgres:/home/nefi/kafka/bin/../libs/hk2-api-2.6.1.jar:/home/nefi/kafka/bin/../libs/hk2-locator-2.6.1.jar:/home/nefi/kafka/bin/../libs/hk2-utils-2.6.1.jar:/home/nefi/kafka/bin/../libs/jackson-annotations-2.13.3.jar:/home/nefi/kafka/bin/../libs/jackson-core-2.13.3.jar:/home/nefi/kafka/bin/../libs/jackson-databind-2.13.3.jar:/home/nefi/kafka/bin/../libs/jackson-dataformat-csv-2.13.3.jar:/home/nefi/kafka/bin/../libs/jackson-datatype-jdk8-2.13.3.jar:/home/nefi/kafka/bin/../libs/jackson-jaxrs-base-2.13.3.jar:/home/nefi/kafka/bin/../libs/jackson-jaxrs-json-provider-2.13.3.jar:/home/nefi/kafka/bin/../libs/jackson-module-jaxb-annotations-2.13.3.jar:/home/nefi/kafka/bin/../libs/jackson-module-scala_2.13-2.13.3.jar:/home/nefi/kafka/bin/../libs/jakarta.activation-api-1.2.2.jar:/home/nefi/kafka/bin/../libs/jakarta.annotation-api-1.3.5.jar:/home/nefi/kafka/bin/../libs/jakarta.inject-2.6.1.jar:/home/nefi/kafka/bin/../libs/jakarta.validation-api-2.0.2.jar:/home/nefi/kafka/bin/../libs/jakarta.ws.rs-api-2.1.6.jar:/home/nefi/kafka/bin/../libs/jakarta.xml.bind-api-2.3.3.jar:/home/nefi/kafka/bin/../libs/javassist-3.27.0-GA.jar:/home/nefi/kafka/bin/../libs/javax.servlet-api-3.1.0.jar:/home/nefi/kafka/bin/../libs/javax.ws.rs-api-2.1.1.jar:/home/nefi/kafka/bin/../libs/jaxb-api-2.3.0.jar:/home/nefi/kafka/bin/../libs/jersey-client-2.34.jar:/home/nefi/kafka/bin/../libs/jersey-common-2.34.jar:/home/nefi/kafka/bin/../libs/jersey-container-servlet-2.34.jar:/home/nefi/kafka/bin/../libs/jersey-container-servlet-core-2.34.jar:/home/nefi/kafka/bin/../libs/jersey-hk2-2.34.jar:/home/nefi/kafka/bin/../libs/jersey-server-2.34.jar:/home/nefi/kafka/bin/../libs/jetty-client-9.4.48.v20220622.jar:/home/nefi/kafka/bin/../libs/jetty-continuation-9.4.48.v20220622.jar:/home/nefi/kafka/bin/../libs/jetty-http-9.4.48.v20220622.jar:/home/nefi/kafka/bin/../libs/jetty-io-9.4.48.v20220622.jar:/home/nefi/kafka/bin/../libs/jetty-security-9.4.48.v20220622.jar:/home/nefi/kafka/bin/../libs/jetty-server-9.4.48.v20220622.jar:/home/nefi/kafka/bin/../libs/jetty-servlet-9.4.48.v20220622.jar:/home/nefi/kafka/bin/../libs/jetty-servlets-9.4.48.v20220622.jar:/home/nefi/kafka/bin/../libs/jetty-util-9.4.48.v20220622.jar:/home/nefi/kafka/bin/../libs/jetty-util-ajax-9.4.48.v20220622.jar:/home/nefi/kafka/bin/../libs/jline-3.21.0.jar:/home/nefi/kafka/bin/../libs/jopt-simple-5.0.4.jar:/home/nefi/kafka/bin/../libs/jose4j-0.7.9.jar:/home/nefi/kafka/bin/../libs/kafka_2.13-3.3.1.jar:/home/nefi/kafka/bin/../libs/kafka-clients-3.3.1.jar:/home/nefi/kafka/bin/../libs/kafka-log4j-appender-3.3.1.jar:/home/nefi/kafka/bin/../libs/kafka-metadata-3.3.1.jar:/home/nefi/kafka/bin/../libs/kafka-raft-3.3.1.jar:/home/nefi/kafka/bin/../libs/kafka-server-common-3.3.1.jar:/home/nefi/kafka/bin/../libs/kafka-shell-3.3.1.jar:/home/nefi/kafka/bin/../libs/kafka-storage-3.3.1.jar:/home/nefi/kafka/bin/../libs/kafka-storage-api-3.3.1.jar:/home/nefi/kafka/bin/../libs/kafka-streams-3.3.1.jar:/home/nefi/kafka/bin/../libs/kafka-streams-examples-3.3.1.jar:/home/nefi/kafka/bin/../libs/kafka-streams-scala_2.13-3.3.1.jar:/home/nefi/kafka/bin/../libs/kafka-streams-test-utils-3.3.1.jar:/home/nefi/kafka/bin/../libs/kafka-tools-3.3.1.jar:/home/nefi/kafka/bin/../libs/lz4-java-1.8.0.jar:/home/nefi/kafka/bin/../libs/maven-artifact-3.8.4.jar:/home/nefi/kafka/bin/../libs/metrics-core-2.2.0.jar:/home/nefi/kafka/bin/../libs/metrics-core-4.1.12.1.jar:/home/nefi/kafka/bin/../libs/netty-buffer-4.1.78.Final.jar:/home/nefi/kafka/bin/../libs/netty-codec-4.1.78.Final.jar:/home/nefi/kafka/bin/../libs/netty-common-4.1.78.Final.jar:/home/nefi/kafka/bin/../libs/netty-handler-4.1.78.Final.jar:/home/nefi/kafka/bin/../libs/netty-resolver-4.1.78.Final.jar:/home/nefi/kafka/bin/../libs/netty-transport-4.1.78.Final.jar:/home/nefi/kafka/bin/../libs/netty-transport-classes-epoll-4.1.78.Final.jar:/home/nefi/kafka/bin/../libs/netty-transport-native-epoll-4.1.78.Final.jar:/home/nefi/kafka/bin/../libs/netty-transport-native-unix-common-4.1.78.Final.jar:/home/nefi/kafka/bin/../libs/osgi-resource-locator-1.0.3.jar:/home/nefi/kafka/bin/../libs/paranamer-2.8.jar:/home/nefi/kafka/bin/../libs/plexus-utils-3.3.0.jar:/home/nefi/kafka/bin/../libs/reflections-0.9.12.jar:/home/nefi/kafka/bin/../libs/reload4j-1.2.19.jar:/home/nefi/kafka/bin/../libs/rocksdbjni-6.29.4.1.jar:/home/nefi/kafka/bin/../libs/scala-collection-compat_2.13-2.6.0.jar:/home/nefi/kafka/bin/../libs/scala-java8-compat_2.13-1.0.2.jar:/home/nefi/kafka/bin/../libs/scala-library-2.13.8.jar:/home/nefi/kafka/bin/../libs/scala-logging_2.13-3.9.4.jar:/home/nefi/kafka/bin/../libs/scala-reflect-2.13.8.jar:/home/nefi/kafka/bin/../libs/slf4j-api-1.7.36.jar:/home/nefi/kafka/bin/../libs/slf4j-reload4j-1.7.36.jar:/home/nefi/kafka/bin/../libs/snappy-java-1.1.8.4.jar:/home/nefi/kafka/bin/../libs/swagger-annotations-2.2.0.jar:/home/nefi/kafka/bin/../libs/trogdor-3.3.1.jar:/home/nefi/kafka/bin/../libs/zookeeper-3.6.3.jar:/home/nefi/kafka/bin/../libs/zookeeper-jute-3.6.3.jar:/home/nefi/kafka/bin/../libs/zstd-jni-1.5.2-1.jar
+	os.spec = Linux, amd64, 5.15.0-56-generic
+	os.vcpus = 4
+ (org.apache.kafka.connect.runtime.WorkerInfo:71)
+[2022-12-19 05:53:13,668] INFO Scanning for plugin classes. This might take a moment ... (org.apache.kafka.connect.cli.ConnectStandalone:77)
+[2022-12-19 05:53:13,680] INFO Loading plugin from: /home/nefi/kafka/libs/netty-resolver-4.1.78.Final.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:13,754] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/netty-resolver-4.1.78.Final.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:13,754] INFO Added plugin 'org.apache.kafka.connect.connector.policy.AllConnectorClientConfigOverridePolicy' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:53:13,755] INFO Added plugin 'org.apache.kafka.connect.connector.policy.PrincipalConnectorClientConfigOverridePolicy' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:53:13,755] INFO Added plugin 'org.apache.kafka.connect.connector.policy.NoneConnectorClientConfigOverridePolicy' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:53:13,756] INFO Loading plugin from: /home/nefi/kafka/libs/kafka-raft-3.3.1.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:13,779] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/kafka-raft-3.3.1.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:13,779] INFO Loading plugin from: /home/nefi/kafka/libs/jetty-util-ajax-9.4.48.v20220622.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:13,796] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/jetty-util-ajax-9.4.48.v20220622.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:13,796] INFO Loading plugin from: /home/nefi/kafka/libs/reload4j-1.2.19.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:13,830] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/reload4j-1.2.19.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:13,831] INFO Loading plugin from: /home/nefi/kafka/libs/jetty-client-9.4.48.v20220622.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:13,857] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/jetty-client-9.4.48.v20220622.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:13,857] INFO Loading plugin from: /home/nefi/kafka/libs/lz4-java-1.8.0.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:13,871] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/lz4-java-1.8.0.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:13,871] INFO Loading plugin from: /home/nefi/kafka/libs/connect-transforms-3.3.1.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:13,887] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/connect-transforms-3.3.1.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:13,887] INFO Added plugin 'org.apache.kafka.connect.transforms.ReplaceField$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:53:13,887] INFO Added plugin 'org.apache.kafka.connect.transforms.SetSchemaMetadata$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:53:13,888] INFO Added plugin 'org.apache.kafka.connect.transforms.ReplaceField$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:53:13,888] INFO Added plugin 'org.apache.kafka.connect.transforms.Filter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:53:13,888] INFO Added plugin 'org.apache.kafka.connect.transforms.HeaderFrom$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:53:13,888] INFO Added plugin 'org.apache.kafka.connect.transforms.InsertField$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:53:13,888] INFO Added plugin 'org.apache.kafka.connect.transforms.TimestampConverter$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:53:13,888] INFO Added plugin 'org.apache.kafka.connect.transforms.MaskField$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:53:13,888] INFO Added plugin 'org.apache.kafka.connect.transforms.TimestampRouter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:53:13,889] INFO Added plugin 'org.apache.kafka.connect.transforms.RegexRouter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:53:13,889] INFO Added plugin 'org.apache.kafka.connect.transforms.HoistField$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:53:13,889] INFO Added plugin 'org.apache.kafka.connect.transforms.ValueToKey' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:53:13,889] INFO Added plugin 'org.apache.kafka.connect.transforms.MaskField$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:53:13,889] INFO Added plugin 'org.apache.kafka.connect.transforms.DropHeaders' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:53:13,889] INFO Added plugin 'org.apache.kafka.connect.transforms.Cast$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:53:13,889] INFO Added plugin 'org.apache.kafka.connect.transforms.Cast$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:53:13,890] INFO Added plugin 'org.apache.kafka.connect.transforms.ExtractField$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:53:13,890] INFO Added plugin 'org.apache.kafka.connect.transforms.Flatten$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:53:13,890] INFO Added plugin 'org.apache.kafka.connect.transforms.InsertHeader' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:53:13,890] INFO Added plugin 'org.apache.kafka.connect.transforms.InsertField$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:53:13,890] INFO Added plugin 'org.apache.kafka.connect.transforms.Flatten$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:53:13,890] INFO Added plugin 'org.apache.kafka.connect.transforms.HeaderFrom$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:53:13,890] INFO Added plugin 'org.apache.kafka.connect.transforms.SetSchemaMetadata$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:53:13,891] INFO Added plugin 'org.apache.kafka.connect.transforms.ExtractField$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:53:13,891] INFO Added plugin 'org.apache.kafka.connect.transforms.TimestampConverter$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:53:13,891] INFO Added plugin 'org.apache.kafka.connect.transforms.HoistField$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:53:13,891] INFO Added plugin 'org.apache.kafka.connect.transforms.predicates.HasHeaderKey' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:53:13,891] INFO Added plugin 'org.apache.kafka.connect.transforms.predicates.RecordIsTombstone' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:53:13,891] INFO Added plugin 'org.apache.kafka.connect.transforms.predicates.TopicNameMatches' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:53:13,892] INFO Loading plugin from: /home/nefi/kafka/libs/jackson-core-2.13.3.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:13,911] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/jackson-core-2.13.3.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:13,912] INFO Loading plugin from: /home/nefi/kafka/libs/jersey-container-servlet-core-2.34.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:13,922] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/jersey-container-servlet-core-2.34.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:13,922] INFO Loading plugin from: /home/nefi/kafka/libs/javax.ws.rs-api-2.1.1.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:13,942] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/javax.ws.rs-api-2.1.1.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:13,942] INFO Loading plugin from: /home/nefi/kafka/libs/jersey-client-2.34.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:13,973] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/jersey-client-2.34.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:13,973] INFO Loading plugin from: /home/nefi/kafka/libs/connect-runtime-3.3.1.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:14,027] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/connect-runtime-3.3.1.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:14,028] INFO Added plugin 'org.apache.kafka.connect.tools.VerifiableSinkConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:53:14,028] INFO Added plugin 'org.apache.kafka.connect.tools.MockSinkConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:53:14,028] INFO Added plugin 'org.apache.kafka.connect.tools.VerifiableSourceConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:53:14,028] INFO Added plugin 'org.apache.kafka.connect.tools.MockSourceConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:53:14,028] INFO Added plugin 'org.apache.kafka.connect.tools.SchemaSourceConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:53:14,028] INFO Added plugin 'org.apache.kafka.connect.converters.FloatConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:53:14,028] INFO Added plugin 'org.apache.kafka.connect.converters.DoubleConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:53:14,028] INFO Added plugin 'org.apache.kafka.connect.converters.ByteArrayConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:53:14,028] INFO Added plugin 'org.apache.kafka.connect.converters.IntegerConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:53:14,028] INFO Added plugin 'org.apache.kafka.connect.converters.LongConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:53:14,028] INFO Added plugin 'org.apache.kafka.connect.converters.ShortConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:53:14,029] INFO Added plugin 'org.apache.kafka.connect.runtime.PredicatedTransformation' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:53:14,029] INFO Loading plugin from: /home/nefi/kafka/libs/netty-buffer-4.1.78.Final.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:14,043] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/netty-buffer-4.1.78.Final.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:14,044] INFO Loading plugin from: /home/nefi/kafka/libs/connect-file-3.3.1.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:14,052] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/connect-file-3.3.1.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:14,052] INFO Added plugin 'org.apache.kafka.connect.file.FileStreamSinkConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:53:14,052] INFO Added plugin 'org.apache.kafka.connect.file.FileStreamSourceConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:53:14,053] INFO Loading plugin from: /home/nefi/kafka/libs/jetty-http-9.4.48.v20220622.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:14,075] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/jetty-http-9.4.48.v20220622.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:14,075] INFO Loading plugin from: /home/nefi/kafka/libs/jackson-dataformat-csv-2.13.3.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:14,096] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/jackson-dataformat-csv-2.13.3.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:14,097] INFO Loading plugin from: /home/nefi/kafka/libs/plexus-utils-3.3.0.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:14,113] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/plexus-utils-3.3.0.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:14,114] INFO Loading plugin from: /home/nefi/kafka/libs/kafka-server-common-3.3.1.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:14,120] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/kafka-server-common-3.3.1.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:14,121] INFO Loading plugin from: /home/nefi/kafka/libs/reflections-0.9.12.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:14,128] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/reflections-0.9.12.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:14,128] INFO Loading plugin from: /home/nefi/kafka/libs/commons-lang3-3.8.1.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:14,158] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/commons-lang3-3.8.1.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:14,159] INFO Loading plugin from: /home/nefi/kafka/libs/connect-mirror-client-3.3.1.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:14,162] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/connect-mirror-client-3.3.1.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:14,162] INFO Loading plugin from: /home/nefi/kafka/libs/jakarta.annotation-api-1.3.5.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:14,165] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/jakarta.annotation-api-1.3.5.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:14,165] INFO Loading plugin from: /home/nefi/kafka/libs/zookeeper-jute-3.6.3.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:14,175] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/zookeeper-jute-3.6.3.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:14,175] INFO Loading plugin from: /home/nefi/kafka/libs/jetty-security-9.4.48.v20220622.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:14,186] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/jetty-security-9.4.48.v20220622.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:14,186] INFO Loading plugin from: /home/nefi/kafka/libs/commons-cli-1.4.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:14,190] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/commons-cli-1.4.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:14,190] INFO Loading plugin from: /home/nefi/kafka/libs/scala-library-2.13.8.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:14,425] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/scala-library-2.13.8.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:14,425] INFO Loading plugin from: /home/nefi/kafka/libs/netty-codec-4.1.78.Final.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:14,441] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/netty-codec-4.1.78.Final.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:14,442] INFO Loading plugin from: /home/nefi/kafka/libs/jakarta.validation-api-2.0.2.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:14,450] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/jakarta.validation-api-2.0.2.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:14,451] INFO Loading plugin from: /home/nefi/kafka/libs/jersey-common-2.34.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:14,510] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/jersey-common-2.34.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:14,511] INFO Loading plugin from: /home/nefi/kafka/libs/kafka-storage-api-3.3.1.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:14,518] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/kafka-storage-api-3.3.1.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:14,518] INFO Loading plugin from: /home/nefi/kafka/libs/jackson-datatype-jdk8-2.13.3.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:14,527] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/jackson-datatype-jdk8-2.13.3.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:14,528] INFO Loading plugin from: /home/nefi/kafka/libs/audience-annotations-0.5.0.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:14,531] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/audience-annotations-0.5.0.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:14,532] INFO Loading plugin from: /home/nefi/kafka/libs/scala-logging_2.13-3.9.4.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:14,540] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/scala-logging_2.13-3.9.4.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:14,541] INFO Loading plugin from: /home/nefi/kafka/libs/jackson-jaxrs-json-provider-2.13.3.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:14,545] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/jackson-jaxrs-json-provider-2.13.3.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:14,545] INFO Loading plugin from: /home/nefi/kafka/libs/jackson-module-scala_2.13-2.13.3.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:14,574] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/jackson-module-scala_2.13-2.13.3.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:14,577] INFO Loading plugin from: /home/nefi/kafka/libs/jakarta.activation-api-1.2.2.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:14,584] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/jakarta.activation-api-1.2.2.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:14,585] INFO Loading plugin from: /home/nefi/kafka/libs/rocksdbjni-6.29.4.1.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:14,601] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/rocksdbjni-6.29.4.1.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:14,602] INFO Loading plugin from: /home/nefi/kafka/libs/netty-transport-native-unix-common-4.1.78.Final.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:14,609] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/netty-transport-native-unix-common-4.1.78.Final.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:14,609] INFO Loading plugin from: /home/nefi/kafka/libs/snappy-java-1.1.8.4.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:14,614] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/snappy-java-1.1.8.4.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:14,614] INFO Loading plugin from: /home/nefi/kafka/libs/jersey-container-servlet-2.34.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:14,617] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/jersey-container-servlet-2.34.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:14,618] INFO Loading plugin from: /home/nefi/kafka/libs/jersey-hk2-2.34.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:14,624] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/jersey-hk2-2.34.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:14,625] INFO Loading plugin from: /home/nefi/kafka/libs/jakarta.ws.rs-api-2.1.6.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:14,632] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/jakarta.ws.rs-api-2.1.6.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:14,632] INFO Loading plugin from: /home/nefi/kafka/libs/swagger-annotations-2.2.0.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:14,635] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/swagger-annotations-2.2.0.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:14,636] INFO Loading plugin from: /home/nefi/kafka/libs/debezium-connector-postgres (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:14,763] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/debezium-connector-postgres/} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:14,763] INFO Added plugin 'io.debezium.connector.postgresql.PostgresConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:53:14,763] INFO Added plugin 'io.debezium.converters.ByteArrayConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:53:14,763] INFO Added plugin 'io.debezium.converters.BinaryDataConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:53:14,763] INFO Added plugin 'io.debezium.converters.CloudEventsConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:53:14,763] INFO Added plugin 'io.debezium.transforms.outbox.EventRouter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:53:14,763] INFO Added plugin 'io.debezium.transforms.ExtractNewRecordState' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:53:14,764] INFO Added plugin 'io.debezium.transforms.ByLogicalTableRouter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:53:14,764] INFO Added plugin 'io.debezium.transforms.tracing.ActivateTracingSpan' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:53:14,767] INFO Loading plugin from: /home/nefi/kafka/libs/jaxb-api-2.3.0.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:14,775] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/jaxb-api-2.3.0.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:14,776] INFO Loading plugin from: /home/nefi/kafka/libs/javassist-3.27.0-GA.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:14,820] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/javassist-3.27.0-GA.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:14,820] INFO Loading plugin from: /home/nefi/kafka/libs/jose4j-0.7.9.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:14,834] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/jose4j-0.7.9.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:14,834] INFO Loading plugin from: /home/nefi/kafka/libs/trogdor-3.3.1.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:14,847] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/trogdor-3.3.1.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:14,847] INFO Loading plugin from: /home/nefi/kafka/libs/connect-json-3.3.1.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:14,851] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/connect-json-3.3.1.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:14,851] INFO Added plugin 'org.apache.kafka.connect.json.JsonConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:53:14,851] INFO Loading plugin from: /home/nefi/kafka/libs/scala-collection-compat_2.13-2.6.0.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:14,853] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/scala-collection-compat_2.13-2.6.0.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:14,853] INFO Loading plugin from: /home/nefi/kafka/libs/slf4j-reload4j-1.7.36.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:14,856] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/slf4j-reload4j-1.7.36.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:14,856] INFO Loading plugin from: /home/nefi/kafka/libs/hk2-api-2.6.1.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:14,866] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/hk2-api-2.6.1.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:14,867] INFO Loading plugin from: /home/nefi/kafka/libs/jetty-io-9.4.48.v20220622.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:14,875] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/jetty-io-9.4.48.v20220622.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:14,875] INFO Loading plugin from: /home/nefi/kafka/libs/kafka-clients-3.3.1.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:15,002] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/kafka-clients-3.3.1.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:15,002] INFO Added plugin 'org.apache.kafka.common.config.provider.FileConfigProvider' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:53:15,002] INFO Added plugin 'org.apache.kafka.common.config.provider.DirectoryConfigProvider' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:53:15,002] INFO Loading plugin from: /home/nefi/kafka/libs/javax.servlet-api-3.1.0.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:15,007] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/javax.servlet-api-3.1.0.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:15,007] INFO Loading plugin from: /home/nefi/kafka/libs/jakarta.xml.bind-api-2.3.3.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:15,012] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/jakarta.xml.bind-api-2.3.3.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:15,012] INFO Loading plugin from: /home/nefi/kafka/libs/slf4j-api-1.7.36.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:15,015] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/slf4j-api-1.7.36.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:15,015] INFO Loading plugin from: /home/nefi/kafka/libs/kafka-metadata-3.3.1.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:15,034] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/kafka-metadata-3.3.1.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:15,034] INFO Loading plugin from: /home/nefi/kafka/libs/paranamer-2.8.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:15,038] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/paranamer-2.8.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:15,038] INFO Loading plugin from: /home/nefi/kafka/libs/jackson-module-jaxb-annotations-2.13.3.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:15,041] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/jackson-module-jaxb-annotations-2.13.3.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:15,041] INFO Loading plugin from: /home/nefi/kafka/libs/kafka-storage-3.3.1.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:15,048] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/kafka-storage-3.3.1.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:15,048] INFO Loading plugin from: /home/nefi/kafka/libs/jetty-servlets-9.4.48.v20220622.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:15,053] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/jetty-servlets-9.4.48.v20220622.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:15,053] INFO Loading plugin from: /home/nefi/kafka/libs/connect-api-3.3.1.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:15,058] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/connect-api-3.3.1.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:15,058] INFO Added plugin 'org.apache.kafka.connect.storage.StringConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:53:15,058] INFO Added plugin 'org.apache.kafka.connect.storage.SimpleHeaderConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:53:15,059] INFO Loading plugin from: /home/nefi/kafka/libs/jackson-databind-2.13.3.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:15,106] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/jackson-databind-2.13.3.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:15,106] INFO Loading plugin from: /home/nefi/kafka/libs/kafka-streams-test-utils-3.3.1.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:15,113] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/kafka-streams-test-utils-3.3.1.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:15,113] INFO Loading plugin from: /home/nefi/kafka/libs/activation-1.1.1.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:15,117] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/activation-1.1.1.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:15,117] INFO Loading plugin from: /home/nefi/kafka/libs/kafka-streams-examples-3.3.1.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:15,121] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/kafka-streams-examples-3.3.1.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:15,121] INFO Loading plugin from: /home/nefi/kafka/libs/jackson-annotations-2.13.3.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:15,125] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/jackson-annotations-2.13.3.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:15,125] INFO Loading plugin from: /home/nefi/kafka/libs/scala-java8-compat_2.13-1.0.2.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:15,153] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/scala-java8-compat_2.13-1.0.2.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:15,153] INFO Loading plugin from: /home/nefi/kafka/libs/metrics-core-4.1.12.1.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:15,159] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/metrics-core-4.1.12.1.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:15,159] INFO Loading plugin from: /home/nefi/kafka/libs/kafka-streams-scala_2.13-3.3.1.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:15,171] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/kafka-streams-scala_2.13-3.3.1.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:15,172] INFO Loading plugin from: /home/nefi/kafka/libs/metrics-core-2.2.0.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:15,177] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/metrics-core-2.2.0.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:15,177] INFO Loading plugin from: /home/nefi/kafka/libs/zstd-jni-1.5.2-1.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:15,180] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/zstd-jni-1.5.2-1.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:15,180] INFO Loading plugin from: /home/nefi/kafka/libs/kafka-shell-3.3.1.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:15,185] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/kafka-shell-3.3.1.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:15,185] INFO Loading plugin from: /home/nefi/kafka/libs/kafka-tools-3.3.1.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:15,191] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/kafka-tools-3.3.1.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:15,192] INFO Loading plugin from: /home/nefi/kafka/libs/aopalliance-repackaged-2.6.1.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:15,194] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/aopalliance-repackaged-2.6.1.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:15,194] INFO Loading plugin from: /home/nefi/kafka/libs/jopt-simple-5.0.4.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:15,199] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/jopt-simple-5.0.4.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:15,199] INFO Loading plugin from: /home/nefi/kafka/libs/jetty-continuation-9.4.48.v20220622.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:15,202] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/jetty-continuation-9.4.48.v20220622.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:15,202] INFO Loading plugin from: /home/nefi/kafka/libs/maven-artifact-3.8.4.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:15,208] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/maven-artifact-3.8.4.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:15,208] INFO Loading plugin from: /home/nefi/kafka/libs/connect-mirror-3.3.1.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:15,219] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/connect-mirror-3.3.1.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:15,219] INFO Added plugin 'org.apache.kafka.connect.mirror.MirrorSourceConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:53:15,219] INFO Added plugin 'org.apache.kafka.connect.mirror.MirrorHeartbeatConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:53:15,219] INFO Added plugin 'org.apache.kafka.connect.mirror.MirrorCheckpointConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:53:15,219] INFO Loading plugin from: /home/nefi/kafka/libs/hk2-utils-2.6.1.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:15,225] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/hk2-utils-2.6.1.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:15,225] INFO Loading plugin from: /home/nefi/kafka/libs/jetty-server-9.4.48.v20220622.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:15,254] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/jetty-server-9.4.48.v20220622.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:15,254] INFO Loading plugin from: /home/nefi/kafka/libs/zookeeper-3.6.3.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:15,294] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/zookeeper-3.6.3.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:15,295] INFO Loading plugin from: /home/nefi/kafka/libs/osgi-resource-locator-1.0.3.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:15,297] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/osgi-resource-locator-1.0.3.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:15,297] INFO Loading plugin from: /home/nefi/kafka/libs/hk2-locator-2.6.1.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:15,308] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/hk2-locator-2.6.1.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:15,308] INFO Loading plugin from: /home/nefi/kafka/libs/commons-lang3-3.12.0.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:15,326] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/commons-lang3-3.12.0.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:15,326] INFO Loading plugin from: /home/nefi/kafka/libs/jackson-jaxrs-base-2.13.3.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:15,329] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/jackson-jaxrs-base-2.13.3.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:15,330] INFO Loading plugin from: /home/nefi/kafka/libs/netty-transport-classes-epoll-4.1.78.Final.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:15,345] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/netty-transport-classes-epoll-4.1.78.Final.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:15,345] INFO Loading plugin from: /home/nefi/kafka/libs/netty-handler-4.1.78.Final.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:15,367] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/netty-handler-4.1.78.Final.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:15,367] INFO Loading plugin from: /home/nefi/kafka/libs/netty-transport-native-epoll-4.1.78.Final.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:15,369] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/netty-transport-native-epoll-4.1.78.Final.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:15,369] INFO Loading plugin from: /home/nefi/kafka/libs/netty-common-4.1.78.Final.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:15,393] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/netty-common-4.1.78.Final.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:15,394] INFO Loading plugin from: /home/nefi/kafka/libs/scala-reflect-2.13.8.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:15,564] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/scala-reflect-2.13.8.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:15,565] INFO Loading plugin from: /home/nefi/kafka/libs/jersey-server-2.34.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:15,624] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/jersey-server-2.34.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:15,624] INFO Loading plugin from: /home/nefi/kafka/libs/argparse4j-0.7.0.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:15,628] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/argparse4j-0.7.0.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:15,629] INFO Loading plugin from: /home/nefi/kafka/libs/connect-basic-auth-extension-3.3.1.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:15,632] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/connect-basic-auth-extension-3.3.1.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:15,632] INFO Added plugin 'org.apache.kafka.connect.rest.basic.auth.extension.BasicAuthSecurityRestExtension' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:230)
+[2022-12-19 05:53:15,633] INFO Loading plugin from: /home/nefi/kafka/libs/jline-3.21.0.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:15,659] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/jline-3.21.0.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:15,660] INFO Loading plugin from: /home/nefi/kafka/libs/kafka-streams-3.3.1.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:15,716] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/kafka-streams-3.3.1.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:15,716] INFO Loading plugin from: /home/nefi/kafka/libs/jakarta.inject-2.6.1.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:15,718] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/jakarta.inject-2.6.1.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:15,718] INFO Loading plugin from: /home/nefi/kafka/libs/jetty-servlet-9.4.48.v20220622.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:15,727] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/jetty-servlet-9.4.48.v20220622.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:15,727] INFO Loading plugin from: /home/nefi/kafka/libs/kafka-log4j-appender-3.3.1.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:15,729] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/kafka-log4j-appender-3.3.1.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:15,729] INFO Loading plugin from: /home/nefi/kafka/libs/jetty-util-9.4.48.v20220622.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:15,746] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/jetty-util-9.4.48.v20220622.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:15,746] INFO Loading plugin from: /home/nefi/kafka/libs/netty-transport-4.1.78.Final.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:15,764] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/netty-transport-4.1.78.Final.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:15,764] INFO Loading plugin from: /home/nefi/kafka/libs/kafka_2.13-3.3.1.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:277)
+[2022-12-19 05:53:15,903] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/nefi/kafka/libs/kafka_2.13-3.3.1.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:16,548] INFO Registered loader: jdk.internal.loader.ClassLoaders$AppClassLoader@3d4eac69 (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:299)
+[2022-12-19 05:53:16,549] INFO Added aliases 'PostgresConnector' and 'Postgres' to plugin 'io.debezium.connector.postgresql.PostgresConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:476)
+[2022-12-19 05:53:16,549] INFO Added aliases 'FileStreamSinkConnector' and 'FileStreamSink' to plugin 'org.apache.kafka.connect.file.FileStreamSinkConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:476)
+[2022-12-19 05:53:16,549] INFO Added aliases 'FileStreamSourceConnector' and 'FileStreamSource' to plugin 'org.apache.kafka.connect.file.FileStreamSourceConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:476)
+[2022-12-19 05:53:16,549] INFO Added aliases 'MirrorCheckpointConnector' and 'MirrorCheckpoint' to plugin 'org.apache.kafka.connect.mirror.MirrorCheckpointConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:476)
+[2022-12-19 05:53:16,549] INFO Added aliases 'MirrorHeartbeatConnector' and 'MirrorHeartbeat' to plugin 'org.apache.kafka.connect.mirror.MirrorHeartbeatConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:476)
+[2022-12-19 05:53:16,549] INFO Added aliases 'MirrorSourceConnector' and 'MirrorSource' to plugin 'org.apache.kafka.connect.mirror.MirrorSourceConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:476)
+[2022-12-19 05:53:16,549] INFO Added aliases 'MockSinkConnector' and 'MockSink' to plugin 'org.apache.kafka.connect.tools.MockSinkConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:476)
+[2022-12-19 05:53:16,549] INFO Added aliases 'MockSourceConnector' and 'MockSource' to plugin 'org.apache.kafka.connect.tools.MockSourceConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:476)
+[2022-12-19 05:53:16,549] INFO Added aliases 'SchemaSourceConnector' and 'SchemaSource' to plugin 'org.apache.kafka.connect.tools.SchemaSourceConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:476)
+[2022-12-19 05:53:16,549] INFO Added aliases 'VerifiableSinkConnector' and 'VerifiableSink' to plugin 'org.apache.kafka.connect.tools.VerifiableSinkConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:476)
+[2022-12-19 05:53:16,550] INFO Added aliases 'VerifiableSourceConnector' and 'VerifiableSource' to plugin 'org.apache.kafka.connect.tools.VerifiableSourceConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:476)
+[2022-12-19 05:53:16,550] INFO Added aliases 'BinaryDataConverter' and 'BinaryData' to plugin 'io.debezium.converters.BinaryDataConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:476)
+[2022-12-19 05:53:16,550] INFO Added aliases 'CloudEventsConverter' and 'CloudEvents' to plugin 'io.debezium.converters.CloudEventsConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:476)
+[2022-12-19 05:53:16,550] INFO Added aliases 'DoubleConverter' and 'Double' to plugin 'org.apache.kafka.connect.converters.DoubleConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:476)
+[2022-12-19 05:53:16,550] INFO Added aliases 'FloatConverter' and 'Float' to plugin 'org.apache.kafka.connect.converters.FloatConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:476)
+[2022-12-19 05:53:16,550] INFO Added aliases 'IntegerConverter' and 'Integer' to plugin 'org.apache.kafka.connect.converters.IntegerConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:476)
+[2022-12-19 05:53:16,550] INFO Added aliases 'LongConverter' and 'Long' to plugin 'org.apache.kafka.connect.converters.LongConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:476)
+[2022-12-19 05:53:16,550] INFO Added aliases 'ShortConverter' and 'Short' to plugin 'org.apache.kafka.connect.converters.ShortConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:476)
+[2022-12-19 05:53:16,550] INFO Added aliases 'JsonConverter' and 'Json' to plugin 'org.apache.kafka.connect.json.JsonConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:476)
+[2022-12-19 05:53:16,550] INFO Added aliases 'StringConverter' and 'String' to plugin 'org.apache.kafka.connect.storage.StringConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:476)
+[2022-12-19 05:53:16,550] INFO Added aliases 'BinaryDataConverter' and 'BinaryData' to plugin 'io.debezium.converters.BinaryDataConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:476)
+[2022-12-19 05:53:16,550] INFO Added aliases 'DoubleConverter' and 'Double' to plugin 'org.apache.kafka.connect.converters.DoubleConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:476)
+[2022-12-19 05:53:16,550] INFO Added aliases 'FloatConverter' and 'Float' to plugin 'org.apache.kafka.connect.converters.FloatConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:476)
+[2022-12-19 05:53:16,550] INFO Added aliases 'IntegerConverter' and 'Integer' to plugin 'org.apache.kafka.connect.converters.IntegerConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:476)
+[2022-12-19 05:53:16,550] INFO Added aliases 'LongConverter' and 'Long' to plugin 'org.apache.kafka.connect.converters.LongConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:476)
+[2022-12-19 05:53:16,551] INFO Added aliases 'ShortConverter' and 'Short' to plugin 'org.apache.kafka.connect.converters.ShortConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:476)
+[2022-12-19 05:53:16,551] INFO Added aliases 'JsonConverter' and 'Json' to plugin 'org.apache.kafka.connect.json.JsonConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:476)
+[2022-12-19 05:53:16,551] INFO Added aliases 'SimpleHeaderConverter' and 'Simple' to plugin 'org.apache.kafka.connect.storage.SimpleHeaderConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:476)
+[2022-12-19 05:53:16,551] INFO Added aliases 'StringConverter' and 'String' to plugin 'org.apache.kafka.connect.storage.StringConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:476)
+[2022-12-19 05:53:16,551] INFO Added alias 'ByLogicalTableRouter' to plugin 'io.debezium.transforms.ByLogicalTableRouter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:473)
+[2022-12-19 05:53:16,551] INFO Added alias 'ExtractNewRecordState' to plugin 'io.debezium.transforms.ExtractNewRecordState' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:473)
+[2022-12-19 05:53:16,551] INFO Added alias 'EventRouter' to plugin 'io.debezium.transforms.outbox.EventRouter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:473)
+[2022-12-19 05:53:16,551] INFO Added alias 'ActivateTracingSpan' to plugin 'io.debezium.transforms.tracing.ActivateTracingSpan' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:473)
+[2022-12-19 05:53:16,551] INFO Added aliases 'PredicatedTransformation' and 'Predicated' to plugin 'org.apache.kafka.connect.runtime.PredicatedTransformation' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:476)
+[2022-12-19 05:53:16,551] INFO Added alias 'DropHeaders' to plugin 'org.apache.kafka.connect.transforms.DropHeaders' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:473)
+[2022-12-19 05:53:16,551] INFO Added alias 'Filter' to plugin 'org.apache.kafka.connect.transforms.Filter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:473)
+[2022-12-19 05:53:16,551] INFO Added alias 'InsertHeader' to plugin 'org.apache.kafka.connect.transforms.InsertHeader' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:473)
+[2022-12-19 05:53:16,551] INFO Added alias 'RegexRouter' to plugin 'org.apache.kafka.connect.transforms.RegexRouter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:473)
+[2022-12-19 05:53:16,551] INFO Added alias 'TimestampRouter' to plugin 'org.apache.kafka.connect.transforms.TimestampRouter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:473)
+[2022-12-19 05:53:16,552] INFO Added alias 'ValueToKey' to plugin 'org.apache.kafka.connect.transforms.ValueToKey' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:473)
+[2022-12-19 05:53:16,552] INFO Added alias 'HasHeaderKey' to plugin 'org.apache.kafka.connect.transforms.predicates.HasHeaderKey' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:473)
+[2022-12-19 05:53:16,552] INFO Added alias 'RecordIsTombstone' to plugin 'org.apache.kafka.connect.transforms.predicates.RecordIsTombstone' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:473)
+[2022-12-19 05:53:16,552] INFO Added alias 'TopicNameMatches' to plugin 'org.apache.kafka.connect.transforms.predicates.TopicNameMatches' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:473)
+[2022-12-19 05:53:16,552] INFO Added alias 'BasicAuthSecurityRestExtension' to plugin 'org.apache.kafka.connect.rest.basic.auth.extension.BasicAuthSecurityRestExtension' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:473)
+[2022-12-19 05:53:16,552] INFO Added aliases 'AllConnectorClientConfigOverridePolicy' and 'All' to plugin 'org.apache.kafka.connect.connector.policy.AllConnectorClientConfigOverridePolicy' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:476)
+[2022-12-19 05:53:16,552] INFO Added aliases 'NoneConnectorClientConfigOverridePolicy' and 'None' to plugin 'org.apache.kafka.connect.connector.policy.NoneConnectorClientConfigOverridePolicy' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:476)
+[2022-12-19 05:53:16,552] INFO Added aliases 'PrincipalConnectorClientConfigOverridePolicy' and 'Principal' to plugin 'org.apache.kafka.connect.connector.policy.PrincipalConnectorClientConfigOverridePolicy' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:476)
+[2022-12-19 05:53:16,569] INFO StandaloneConfig values: 
+	access.control.allow.methods = 
+	access.control.allow.origin = 
+	admin.listeners = null
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = use_all_dns_ips
+	config.providers = []
+	connector.client.config.override.policy = All
+	header.converter = class org.apache.kafka.connect.storage.SimpleHeaderConverter
+	key.converter = class org.apache.kafka.connect.json.JsonConverter
+	listeners = [http://:8083]
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	offset.flush.interval.ms = 10000
+	offset.flush.timeout.ms = 5000
+	offset.storage.file.filename = /tmp/connect.offsets
+	plugin.path = [/home/nefi/kafka/libs]
+	response.http.headers.config = 
+	rest.advertised.host.name = null
+	rest.advertised.listener = null
+	rest.advertised.port = null
+	rest.extension.classes = []
+	ssl.cipher.suites = null
+	ssl.client.auth = none
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	task.shutdown.graceful.timeout.ms = 5000
+	topic.creation.enable = true
+	topic.tracking.allow.reset = true
+	topic.tracking.enable = true
+	value.converter = class org.apache.kafka.connect.json.JsonConverter
+ (org.apache.kafka.connect.runtime.standalone.StandaloneConfig:376)
+[2022-12-19 05:53:16,570] INFO Creating Kafka admin client (org.apache.kafka.connect.util.ConnectUtils:56)
+[2022-12-19 05:53:16,574] INFO AdminClientConfig values: 
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+ (org.apache.kafka.clients.admin.AdminClientConfig:376)
+[2022-12-19 05:53:16,624] WARN These configurations '[offset.flush.interval.ms, key.converter.schemas.enable, offset.storage.file.filename, value.converter.schemas.enable, plugin.path, value.converter, key.converter]' were supplied but are not used yet. (org.apache.kafka.clients.admin.AdminClientConfig:385)
+[2022-12-19 05:53:16,624] INFO Kafka version: 3.3.1 (org.apache.kafka.common.utils.AppInfoParser:119)
+[2022-12-19 05:53:16,624] INFO Kafka commitId: e23c59d00e687ff5 (org.apache.kafka.common.utils.AppInfoParser:120)
+[2022-12-19 05:53:16,624] INFO Kafka startTimeMs: 1671457996624 (org.apache.kafka.common.utils.AppInfoParser:121)
+[2022-12-19 05:53:16,868] INFO Kafka cluster ID: CmgIp-RuRdyTwctWkECMjw (org.apache.kafka.connect.util.ConnectUtils:72)
+[2022-12-19 05:53:16,869] INFO App info kafka.admin.client for adminclient-1 unregistered (org.apache.kafka.common.utils.AppInfoParser:83)
+[2022-12-19 05:53:16,874] INFO Metrics scheduler closed (org.apache.kafka.common.metrics.Metrics:693)
+[2022-12-19 05:53:16,874] INFO Closing reporter org.apache.kafka.common.metrics.JmxReporter (org.apache.kafka.common.metrics.Metrics:697)
+[2022-12-19 05:53:16,874] INFO Metrics reporters closed (org.apache.kafka.common.metrics.Metrics:703)
+[2022-12-19 05:53:16,881] INFO Logging initialized @3598ms to org.eclipse.jetty.util.log.Slf4jLog (org.eclipse.jetty.util.log:170)
+[2022-12-19 05:53:16,924] INFO Added connector for http://:8083 (org.apache.kafka.connect.runtime.rest.RestServer:120)
+[2022-12-19 05:53:16,924] INFO Initializing REST server (org.apache.kafka.connect.runtime.rest.RestServer:191)
+[2022-12-19 05:53:16,929] INFO jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 11.0.17+8-post-Ubuntu-1ubuntu222.04 (org.eclipse.jetty.server.Server:375)
+[2022-12-19 05:53:16,944] INFO Started http_8083@6ee99964{HTTP/1.1, (http/1.1)}{0.0.0.0:8083} (org.eclipse.jetty.server.AbstractConnector:333)
+[2022-12-19 05:53:16,945] INFO Started @3661ms (org.eclipse.jetty.server.Server:415)
+[2022-12-19 05:53:16,959] INFO Advertised URI: http://127.0.1.1:8083/ (org.apache.kafka.connect.runtime.rest.RestServer:364)
+[2022-12-19 05:53:16,959] INFO REST server listening at http://127.0.1.1:8083/, advertising URL http://127.0.1.1:8083/ (org.apache.kafka.connect.runtime.rest.RestServer:206)
+[2022-12-19 05:53:16,959] INFO Advertised URI: http://127.0.1.1:8083/ (org.apache.kafka.connect.runtime.rest.RestServer:364)
+[2022-12-19 05:53:16,959] INFO REST admin endpoints at http://127.0.1.1:8083/ (org.apache.kafka.connect.runtime.rest.RestServer:207)
+[2022-12-19 05:53:16,959] INFO Advertised URI: http://127.0.1.1:8083/ (org.apache.kafka.connect.runtime.rest.RestServer:364)
+[2022-12-19 05:53:16,960] INFO Setting up All Policy for ConnectorClientConfigOverride. This will allow all client configurations to be overridden (org.apache.kafka.connect.connector.policy.AllConnectorClientConfigOverridePolicy:44)
+[2022-12-19 05:53:16,965] INFO Creating Kafka admin client (org.apache.kafka.connect.util.ConnectUtils:56)
+[2022-12-19 05:53:16,965] INFO AdminClientConfig values: 
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+ (org.apache.kafka.clients.admin.AdminClientConfig:376)
+[2022-12-19 05:53:16,968] WARN These configurations '[offset.flush.interval.ms, key.converter.schemas.enable, offset.storage.file.filename, value.converter.schemas.enable, plugin.path, value.converter, key.converter]' were supplied but are not used yet. (org.apache.kafka.clients.admin.AdminClientConfig:385)
+[2022-12-19 05:53:16,969] INFO Kafka version: 3.3.1 (org.apache.kafka.common.utils.AppInfoParser:119)
+[2022-12-19 05:53:16,969] INFO Kafka commitId: e23c59d00e687ff5 (org.apache.kafka.common.utils.AppInfoParser:120)
+[2022-12-19 05:53:16,969] INFO Kafka startTimeMs: 1671457996969 (org.apache.kafka.common.utils.AppInfoParser:121)
+[2022-12-19 05:53:16,979] INFO Kafka cluster ID: CmgIp-RuRdyTwctWkECMjw (org.apache.kafka.connect.util.ConnectUtils:72)
+[2022-12-19 05:53:16,980] INFO App info kafka.admin.client for adminclient-2 unregistered (org.apache.kafka.common.utils.AppInfoParser:83)
+[2022-12-19 05:53:16,986] INFO Metrics scheduler closed (org.apache.kafka.common.metrics.Metrics:693)
+[2022-12-19 05:53:16,986] INFO Closing reporter org.apache.kafka.common.metrics.JmxReporter (org.apache.kafka.common.metrics.Metrics:697)
+[2022-12-19 05:53:16,986] INFO Metrics reporters closed (org.apache.kafka.common.metrics.Metrics:703)
+[2022-12-19 05:53:16,989] INFO Kafka version: 3.3.1 (org.apache.kafka.common.utils.AppInfoParser:119)
+[2022-12-19 05:53:16,989] INFO Kafka commitId: e23c59d00e687ff5 (org.apache.kafka.common.utils.AppInfoParser:120)
+[2022-12-19 05:53:16,989] INFO Kafka startTimeMs: 1671457996989 (org.apache.kafka.common.utils.AppInfoParser:121)
+[2022-12-19 05:53:17,063] INFO JsonConverterConfig values: 
+	converter.type = key
+	decimal.format = BASE64
+	schemas.cache.size = 1000
+	schemas.enable = false
+ (org.apache.kafka.connect.json.JsonConverterConfig:376)
+[2022-12-19 05:53:17,064] INFO JsonConverterConfig values: 
+	converter.type = value
+	decimal.format = BASE64
+	schemas.cache.size = 1000
+	schemas.enable = false
+ (org.apache.kafka.connect.json.JsonConverterConfig:376)
+[2022-12-19 05:53:17,069] INFO Kafka Connect standalone worker initialization took 3408ms (org.apache.kafka.connect.cli.ConnectStandalone:99)
+[2022-12-19 05:53:17,070] INFO Kafka Connect starting (org.apache.kafka.connect.runtime.Connect:50)
+[2022-12-19 05:53:17,070] INFO Herder starting (org.apache.kafka.connect.runtime.standalone.StandaloneHerder:98)
+[2022-12-19 05:53:17,070] INFO Worker starting (org.apache.kafka.connect.runtime.Worker:203)
+[2022-12-19 05:53:17,071] INFO Starting FileOffsetBackingStore with file /tmp/connect.offsets (org.apache.kafka.connect.storage.FileOffsetBackingStore:58)
+[2022-12-19 05:53:17,073] INFO Worker started (org.apache.kafka.connect.runtime.Worker:213)
+[2022-12-19 05:53:17,073] INFO Herder started (org.apache.kafka.connect.runtime.standalone.StandaloneHerder:101)
+[2022-12-19 05:53:17,073] INFO Initializing REST resources (org.apache.kafka.connect.runtime.rest.RestServer:211)
+[2022-12-19 05:53:17,099] INFO Adding admin resources to main listener (org.apache.kafka.connect.runtime.rest.RestServer:230)
+[2022-12-19 05:53:17,145] INFO DefaultSessionIdManager workerName=node0 (org.eclipse.jetty.server.session:334)
+[2022-12-19 05:53:17,146] INFO No SessionScavenger set, using defaults (org.eclipse.jetty.server.session:339)
+[2022-12-19 05:53:17,146] INFO node0 Scavenging every 660000ms (org.eclipse.jetty.server.session:132)
+[2022-12-19 05:53:17,473] INFO Started o.e.j.s.ServletContextHandler@ec7b5de{/,null,AVAILABLE} (org.eclipse.jetty.server.handler.ContextHandler:921)
+[2022-12-19 05:53:17,474] INFO REST resources initialized; server is started and ready to handle requests (org.apache.kafka.connect.runtime.rest.RestServer:312)
+[2022-12-19 05:53:17,474] INFO Kafka Connect started (org.apache.kafka.connect.runtime.Connect:56)
+[2022-12-19 05:53:17,780] INFO Successfully tested connection for jdbc:postgresql://172.17.0.3:5432/outbox-test with user 'postgres' (io.debezium.connector.postgresql.PostgresConnector:93)
+[2022-12-19 05:53:17,784] ERROR Postgres server wal_level property must be "logical" but is: replica (io.debezium.connector.postgresql.PostgresConnector:101)
+[2022-12-19 05:53:17,807] INFO Connection gracefully closed (io.debezium.jdbc.JdbcConnection:946)
+[2022-12-19 05:53:17,809] INFO AbstractConfig values: 
+ (org.apache.kafka.common.config.AbstractConfig:376)
+[2022-12-19 05:53:17,817] ERROR Failed to create job for config/connect-debezium-postgresql.properties (org.apache.kafka.connect.cli.ConnectStandalone:107)
+[2022-12-19 05:53:17,818] ERROR Stopping after connector error (org.apache.kafka.connect.cli.ConnectStandalone:117)
+java.util.concurrent.ExecutionException: org.apache.kafka.connect.runtime.rest.errors.BadRequestException: Connector configuration is invalid and contains the following 1 error(s):
+Postgres server wal_level property must be "logical" but is: replica
+You can also find the above list of errors at the endpoint `/connector-plugins/{connectorType}/config/validate`
+	at org.apache.kafka.connect.util.ConvertingFutureCallback.result(ConvertingFutureCallback.java:115)
+	at org.apache.kafka.connect.util.ConvertingFutureCallback.get(ConvertingFutureCallback.java:99)
+	at org.apache.kafka.connect.cli.ConnectStandalone.main(ConnectStandalone.java:114)
+Caused by: org.apache.kafka.connect.runtime.rest.errors.BadRequestException: Connector configuration is invalid and contains the following 1 error(s):
+Postgres server wal_level property must be "logical" but is: replica
+You can also find the above list of errors at the endpoint `/connector-plugins/{connectorType}/config/validate`
+	at org.apache.kafka.connect.runtime.AbstractHerder.maybeAddConfigErrors(AbstractHerder.java:733)
+	at org.apache.kafka.connect.runtime.standalone.StandaloneHerder.putConnectorConfig(StandaloneHerder.java:207)
+	at org.apache.kafka.connect.runtime.standalone.StandaloneHerder.lambda$null$0(StandaloneHerder.java:193)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+[2022-12-19 05:53:17,819] INFO Kafka Connect stopping (org.apache.kafka.connect.runtime.Connect:66)
+[2022-12-19 05:53:17,820] INFO Stopping REST server (org.apache.kafka.connect.runtime.rest.RestServer:320)
+[2022-12-19 05:53:17,824] INFO Stopped http_8083@6ee99964{HTTP/1.1, (http/1.1)}{0.0.0.0:8083} (org.eclipse.jetty.server.AbstractConnector:383)
+[2022-12-19 05:53:17,824] INFO node0 Stopped scavenging (org.eclipse.jetty.server.session:149)
+[2022-12-19 05:53:17,825] INFO REST server stopped (org.apache.kafka.connect.runtime.rest.RestServer:337)
+[2022-12-19 05:53:17,826] INFO Herder stopping (org.apache.kafka.connect.runtime.standalone.StandaloneHerder:106)
+[2022-12-19 05:53:17,826] INFO Worker stopping (org.apache.kafka.connect.runtime.Worker:220)
+[2022-12-19 05:53:17,826] INFO Stopped FileOffsetBackingStore (org.apache.kafka.connect.storage.FileOffsetBackingStore:66)
+[2022-12-19 05:53:17,826] INFO Metrics scheduler closed (org.apache.kafka.common.metrics.Metrics:693)
+[2022-12-19 05:53:17,826] INFO Closing reporter org.apache.kafka.common.metrics.JmxReporter (org.apache.kafka.common.metrics.Metrics:697)
+[2022-12-19 05:53:17,827] INFO Metrics reporters closed (org.apache.kafka.common.metrics.Metrics:703)
+[2022-12-19 05:53:17,827] INFO App info kafka.connect for 127.0.1.1:8083 unregistered (org.apache.kafka.common.utils.AppInfoParser:83)
+[2022-12-19 05:53:17,827] INFO Worker stopped (org.apache.kafka.connect.runtime.Worker:241)
+[2022-12-19 05:53:17,827] INFO Herder stopped (org.apache.kafka.connect.runtime.standalone.StandaloneHerder:124)
+[2022-12-19 05:53:17,828] INFO Kafka Connect stopped (org.apache.kafka.connect.runtime.Connect:71)

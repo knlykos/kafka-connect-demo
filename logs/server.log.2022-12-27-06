@@ -1,0 +1,2 @@
+[2022-12-27 06:44:57,087] INFO [GroupMetadataManager brokerId=0] Group tracker-consumer-2-client transitioned to Dead in generation 7 (kafka.coordinator.group.GroupMetadataManager)
+[2022-12-27 06:44:57,088] INFO [GroupMetadataManager brokerId=0] Group tracker-consumer-client transitioned to Dead in generation 9 (kafka.coordinator.group.GroupMetadataManager)
